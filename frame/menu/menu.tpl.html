@@ -1,0 +1,20 @@
+<!--菜单页模板-->
+<ul class="left_ul">
+    <li ng-repeat="message in leftMenu" ui-sref="{{message.uisref}}"
+        ng-class="{true:'li_active',false:''}[curTitle==message.title]" ng-click="activeMenu(message)">
+        <a href="#">
+            <i ng-class="message.classi"></i>
+            <span ng-bind="message.title"></span>
+        </a>
+        <ul ng-if="message.title=='微店管理页面配置'">
+        <!--<ul ng-show="tabMenu" ng-if="message.title=='微店管理页面配置'">-->
+            <li ng-repeat="mes in lefttwoMenu" ui-sref="{{mes.uisref}}"
+                ng-class="{true:'twoli_active',false:''}[curTitle==mes.title]" ng-click="activeMenutwo(mes)">
+                <a href="#">
+                    <p ng-bind="mes.title2"></p>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+

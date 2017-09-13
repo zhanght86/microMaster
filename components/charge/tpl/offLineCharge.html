@@ -1,0 +1,40 @@
+<!--线下支付-->
+<div ng-controller="offLineChargeCtrl">
+    <ul class="index_process">
+        <li class="li_finish"><i></i><span>1.填写投保信息</span></li>
+        <li class="li_active"><i class="i_1"></i><span>2.收费</span></li>
+        <li><i class="i_2"></i><span>3.完成</span></li>
+    </ul>
+    <div class="index_con">
+        <div class="index_list">
+            <div class="index_tit"><h6>支付信息</h6></div>
+            <ul class="list_ul list_ul1">
+                <li><span>投保单号：</span></li>
+                <li>
+                    <span class="fl"><a ui-sref="main.application" class="order_num">{{proposalNo}}</a></span>
+                </li>
+                <li></li>
+                <li></li>
+                <li><span>产品：</span></li>
+                <li><span class="fl">{{riskName}}</span></li>
+                <li><span>应收金额：</span></li>
+                <li><span class="fl order_money"><b>{{premium}}</b>元</span></li>
+                <li><span>投保人姓名/名称：</span></li>
+                <li><span class="fl">{{applicant}}</span></li>
+            </ul>
+        </div>
+        <div class="index_list">
+            <ul class="list_ul ul_notice">
+                <li class="li_first"><span>该投保单付款通知书已生成，请您下载。</span></li>
+                <li><a href="javascript:void(0)">下载付款通知书</a></li>
+                <li class="li_last"><span class="email_notice fl">下载并发送电子邮件：</span><input type="text" /></li>
+            </ul>
+        </div>
+        <div class="index_list">
+            <ul class="list_ul ul_notice ul_notice1">
+                <li><span>投保人支付后，请上传付款凭证。</span></li>
+                <li><a href="javascript:void(0)">文件上传</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

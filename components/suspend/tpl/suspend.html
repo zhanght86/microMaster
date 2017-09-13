@@ -1,0 +1,11 @@
+<!--v保豆管理-批改奖励调整-->
+<div ng-controller="suspendCtrl">
+    <div class="">
+        <ul class="title">
+            <li class="btntab btn-style1 fl top-btn" ng-class="{true:'btn-style1',false:'btn-style2'}[curActive=='appli']" ng-click="applicationTab()">批改奖励调整</li>
+            <li  class="btntab btn-style2 fl top-btn" ng-class="{true:'btn-style1',false:'btn-style2'}[curActive=='endor']" ng-click="endorseTab()">
+批改结果查询</li>
+        </ul>
+    </div>
+    <div class="proposalTab" ui-view=""> </div>
+</div>

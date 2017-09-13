@@ -1,0 +1,167 @@
+<div class="bg">
+    <div class="title"><h2>焦点图管理</h2></div>
+    <div class="banner-head clearfix">
+        <ul class="banner-head-left fl">
+            <li>
+                <label class="label label-w1">焦点图位置：</label>
+                <select class="input input-w1">
+                    <option value ="volvo">店铺首页</option>
+                    <option value="audi">微店管理首页</option>
+                </select>
+            </li>
+            <li>
+                <label class="label label-w1">活动名称：</label>
+                <input class="input input-w1" type="text"/>
+            </li>
+        </ul>
+        <ul class="banner-head-center fl">
+            <li>
+                <label class="label label-w1">起止时间：</label>
+                <input type="text" id="flightData3" jedate class="input input-w2 calendar2"
+                       format="YYYY-MM-DD" ng-model="endDate"/>
+                <span style="display: block;float: left;padding:12px 6px 0">-</span>
+                <input type="text" id="flightData2" jedate class="input input-w2 calendar2"
+                       format="YYYY-MM-DD" ng-model="beginDate"/>
+            </li>
+            <li>
+                <label class="label label-w1">投放地区：</label>
+                <select class="input input-w2">
+                    <option value ="volvo">--请选择--</option>
+                    <option value ="volvo">河北省</option>
+                    <option value="audi">河南省</option>
+                </select><span style="display: block;float: left;padding:12px 6px 0">-</span>
+                <select class="input input-w2">
+                    <option value ="volvo">--请选择--</option>
+                    <option value ="volvo">濮阳市</option>
+                </select>
+            </li>
+        </ul>
+        <div class="banner-head-right fl">
+            <input class="btn btn-style1" type="button" value="查询"/>
+        </div>
+    </div>
+    <div class="banner-body">
+        <div class="banner-body-head clearfix">
+            <span class="fl">焦点图列表</span>
+            <a href="添加焦点图.html" class="add-btn fr">添加</a>
+        </div>
+        <div class="banner-body-list clearfix">
+            <table class="line-bottom" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <th width="15%"><p>活动名称</p></th>
+                    <th width="12%"><p>投放位置</p></th>
+                    <th width="15%"><p>投放地区</p></th>
+                    <th width="15%"><p>开始时间</p></th>
+                    <th width="15%"><p>结束时间</p></th>
+                    <th width="10%"><p>状态</p></th>
+                    <th width="18%">操作</th>
+                </tr>
+                <tr>
+                    <td>****活动</td>
+                    <td>店铺首页</td>
+                    <td>山东</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>已发布</td>
+                    <td><a class="release" href="javascript:;">撤回</a><a class="modify" href="javascript:;">修改</a><a class="delete" href="javascript:;">删除</a></td>
+                </tr>
+                <tr>
+                    <td>****活动</td>
+                    <td>微店管理首页</td>
+                    <td>山东、北京、上海</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>未发布</td>
+                    <td><a class="release" href="javascript:;">发布</a><a class="modify" href="javascript:;">修改</a><a class="delete" href="javascript:;">删除</a></td>
+                </tr>
+                <tr>
+                    <td>****活动</td>
+                    <td>店铺首页</td>
+                    <td>山东</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>未发布</td>
+                    <td><a class="release" href="javascript:;">发布</a><a class="modify" href="javascript:;">修改</a><a class="delete" href="javascript:;">删除</a></td>
+                </tr>
+                <tr>
+                    <td>****活动</td>
+                    <td>微店管理首页</td>
+                    <td>山东、北京、上海</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>未发布</td>
+                    <td><a class="release" href="javascript:;">发布</a><a class="modify" href="javascript:;">修改</a><a class="delete" href="javascript:;">删除</a></td>
+                </tr>
+                <tr>
+                    <td>****活动</td>
+                    <td>店铺首页</td>
+                    <td>山东</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>未发布</td>
+                    <td><a class="release" href="javascript:;">发布</a><a class="modify" href="javascript:;">修改</a><a class="delete" href="javascript:;">删除</a></td>
+                </tr>
+                <tr>
+                    <td>****活动</td>
+                    <td>微店管理首页</td>
+                    <td>山东、北京、上海</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>未发布</td>
+                    <td><a class="release" href="javascript:;">发布</a><a class="modify" href="javascript:;">修改</a><a class="delete" href="javascript:;">删除</a></td>
+                </tr>
+                <tr>
+                    <td>****活动</td>
+                    <td>店铺首页</td>
+                    <td>山东</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>未发布</td>
+                    <td><a class="release" href="javascript:;">发布</a><a class="modify" href="javascript:;">修改</a><a class="delete" href="javascript:;">删除</a></td>
+                </tr>
+                <tr>
+                    <td>****活动</td>
+                    <td>微店管理首页</td>
+                    <td>山东、北京、上海</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>未发布</td>
+                    <td><a class="release" href="javascript:;">发布</a><a class="modify" href="javascript:;">修改</a><a class="delete" href="javascript:;">删除</a></td>
+                </tr>
+                <tr>
+                    <td>****活动</td>
+                    <td>微店管理首页</td>
+                    <td>山东、北京、上海</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>2016-10-10   12:10</td>
+                    <td>未发布</td>
+                    <td><a class="release" href="javascript:;">发布</a><a class="modify" href="javascript:;">修改</a><a class="delete" href="javascript:;">删除</a></td>
+                </tr>
+            </table>
+            <div class="page clearfix fr">
+                <a class="first" href="javascript:;"></a>
+                <a class="prev" href="javascript:;"></a>
+                <a href="javascript:;">1</a>
+                <a class="current" href="javascript:;">2</a>
+                <a href="javascript:;">3</a>
+                <a href="javascript:;">4</a>
+                <a href="javascript:;">5</a>
+                <a href="javascript:;">6</a>
+                <a href="javascript:;">7</a>
+                <a href="javascript:;">8</a>
+                <a href="javascript:;">9</a>
+                <a href="javascript:;">10</a>
+                <a class="next" href="javascript:;"></a>
+                <a class="end" href="javascript:;"></a>
+                <span style="margin-left: 21px">跳至第</span>
+                <select class="jump">
+                    <option value=""></option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+                <span>页（共365个）</span>
+            </div>
+        </div>
+    </div>
+</div>

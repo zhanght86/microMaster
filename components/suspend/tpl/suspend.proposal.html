@@ -1,0 +1,67 @@
+<div class="bg">
+    <div class="banner-head clearfix">
+        <ul class="banner-head-form clearfix">
+            <li class="fl">
+                <label class="label label-w1 label-w3">导入起止时间：</label>
+                <input type="text" id="flightData4" jedate class="input input-w2 calendar2"
+                       format="YYYY-MM-DD" ng-model="xxx"/>
+                <span style="display: block;float: left;padding:12px 6px 0">-</span>
+                <input type="text" id="flightData5" jedate class="input input-w2 calendar2"
+                       format="YYYY-MM-DD" ng-model="xxxx"/>
+            </li>
+            <li class="fl">
+                <div class="m fl">
+                    <input class="btn btn-style1" type="button" value="查询"/>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="banner-body" style="margin-top: 20px;">
+        <div class="banner-body-head clearfix">
+            <span class="fl">批改信息导入历史</span>
+            <a href="批改数据导入.html" class="add-btn fr">批改数据导入</a>
+        </div>
+        <div class="banner-body-list clearfix">
+            <table class="line-bottom" width="100%" cellpadding="0" cellspacing="0">
+                <thead>
+                <tr>
+                    <th width="15%"><p>序号</p></th>
+                    <th width="30%"><p>导入时间</p></th>
+                    <th width="30%"><p>操作人</p></th>
+                    <th width="25%"><p>状态</p></th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>2016-11-15  03:00</td>
+                    <td>张三</td>
+                    <td>已变更</td>
+                </tr>
+            </table>
+            <div class="page clearfix fr">
+                <a class="first" href="javascript:;"></a>
+                <a class="prev" href="javascript:;"></a>
+                <a href="javascript:;">1</a>
+                <a class="current" href="javascript:;">2</a>
+                <a href="javascript:;">3</a>
+                <a href="javascript:;">4</a>
+                <a href="javascript:;">5</a>
+                <a href="javascript:;">6</a>
+                <a href="javascript:;">7</a>
+                <a href="javascript:;">8</a>
+                <a href="javascript:;">9</a>
+                <a href="javascript:;">10</a>
+                <a class="next" href="javascript:;"></a>
+                <a class="end" href="javascript:;"></a>
+                <span style="margin-left: 21px">跳至第</span>
+                <select class="jump">
+                    <option value=""></option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+                <span>页（共365个）</span>
+            </div>
+        </div>
+    </div>
+</div>

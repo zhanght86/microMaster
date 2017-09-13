@@ -1,0 +1,96 @@
+<div class="bg">
+    <div class="banner-head clearfix">
+        <ul class="banner-head-left fl" style="width: 439px;">
+            <li>
+                <label class="label label-w1 label-w2">机构代码：</label>
+                <input class="input input-w1" type="text"/>
+            </li>
+            <li>
+                <label class="label label-w1 label-w2">保单号：</label>
+                <input class="input input-w1" type="text"/>
+            </li>
+            <li>
+                <label class="label label-w1 label-w2">批单号：</label>
+                <input class="input input-w1" type="text"/>
+            </li>
+        </ul>
+        <ul class="banner-head-center fl">
+            <li>
+                <label class="label label-w1 label-w2">微店账号：</label>
+                <input class="input input-w1" type="text"/>
+            </li>
+            <li>
+                <label class="label label-w1 label-w2">生效起止时间：</label>
+                <input type="text" id="flightData6" jedate class="input input-w2 calendar2"
+                       format="YYYY-MM-DD" ng-model="xx"/>
+                <span style="display: block;float: left;padding:12px 6px 0">-</span>
+                <input type="text" id="flightData7" jedate class="input input-w2 calendar2"
+                       format="YYYY-MM-DD" ng-model="xxx"/>
+            </li>
+            <li class="fl">
+                <label class="label label-w1  label-w2">V保豆变动数量：</label>
+                <input class="input input-w2" type="text" value="" />
+                <span style="display: block;float: left;padding:12px 6px 0">-</span>
+                <input class="input input-w2" type="text" value=""/>
+            </li>
+        </ul>
+        <div class="banner-head-right fl">
+            <input class="btn btn-style1" type="button" value="查询"/>
+        </div>
+    </div>
+    <div class="banner-body">
+        <div class="banner-body-head clearfix">
+            <span class="fl">批改信息列表</span>
+        </div>
+        <div class="banner-body-list clearfix">
+            <table class="line-bottom" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <th width="5%"><p>序号</p></th>
+                    <th width="15%"><p>业务归属机构</p></th>
+                    <th width="10%"><p>微店账号</p></th>
+                    <th width="10%"><p>批单号</p></th>
+                    <th width="15%"><p>批改生效日期</p></th>
+                    <th width="15%"><p>核批日期</p></th>
+                    <th width="10%"><p>操作人</p></th>
+                    <th width="10%"><p>V保豆变动数量</p></th>
+                    <th width="10%"><p>操作</p></th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>*****</td>
+                    <td>1361234567</td>
+                    <td>0029948</td>
+                    <td>2016-11-15</td>
+                    <td>2016-11-15</td>
+                    <td>张三</td>
+                    <td>-1100</td>
+                    <td><a  href="批改信息详情.html">查看</a></td>
+                </tr>
+            </table>
+            <div class="page clearfix fr">
+                <a class="first" href="javascript:;"></a>
+                <a class="prev" href="javascript:;"></a>
+                <a href="javascript:;">1</a>
+                <a class="current" href="javascript:;">2</a>
+                <a href="javascript:;">3</a>
+                <a href="javascript:;">4</a>
+                <a href="javascript:;">5</a>
+                <a href="javascript:;">6</a>
+                <a href="javascript:;">7</a>
+                <a href="javascript:;">8</a>
+                <a href="javascript:;">9</a>
+                <a href="javascript:;">10</a>
+                <a class="next" href="javascript:;"></a>
+                <a class="end" href="javascript:;"></a>
+                <span style="margin-left: 21px">跳至第</span>
+                <select class="jump">
+                    <option value=""></option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+                <span>页（共365个）</span>
+            </div>
+        </div>
+    </div>
+</div>
