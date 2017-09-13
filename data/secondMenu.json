@@ -15,16 +15,5 @@
     "classes": "",
     "classi": "i_2",
     "uisref": "main.serManage"
-  },
-  {
-    "title3": "功能配置",
-    "classes": "",
-    "classi": "i_1",
-    "uisref": "main.regionManage"
-  },
-  {
-    "title3": "服务管理",
-    "classes": "",
-    "classi": "i_2",
-    "uisref": "main.serManage"
-  }]
+  }
+ ]

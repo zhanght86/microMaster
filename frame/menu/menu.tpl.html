@@ -6,7 +6,7 @@
             <i ng-class="message.classi"></i>
             <span ng-bind="message.title"></span>
         </a>
-        <ul ng-if="message.title=='微店管理页面配置'&&curTitle=='微店管理页面配置'">
+        <ul ng-if="message.title=='微店管理页面配置'">
             <!--<ul ng-show="tabMenu" ng-if="message.title=='微店管理页面配置'">-->
             <li ng-repeat="mes in lefttwoMenu" ui-sref="{{mes.uisref}}"
                 ng-class="{true:'twoli_active',false:''}[curTitle==mes.title]" ng-click="activeMenutwo(mes)" ng-if="mes.title2">
@@ -15,15 +15,7 @@
                 </a>
             </li>
         </ul>
-        <ul ng-if="message.title=='装修模板管理'&&curTitle=='装修模板管理'">
-            <!--<ul ng-show="tabMenu" ng-if="message.title=='装修模板管理'">-->
-            <li ng-repeat="mes in lefttwoMenu" ui-sref="{{mes.uisref}}"
-                ng-class="{true:'twoli_active',false:''}[curTitle==mes.title]" ng-click="activeMenutwo(mes)" ng-if="mes.title3">
-                <a href="#">
-                    <p ng-bind="mes.title3"></p>
-                </a>
-            </li>
-        </ul>
+
     </li>
 </ul>
 

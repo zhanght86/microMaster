@@ -8,7 +8,7 @@
     "title": "装修模板管理",
     "classes": "",
     "classi": "i_1",
-    "uisref": "main.index"
+    "uisref": "main.application"
   },
   {
     "title": "权限管理",
