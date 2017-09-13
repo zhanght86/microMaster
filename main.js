@@ -3,7 +3,7 @@
  * requireJS入口文件
  */
 require.config({
-    baseUrl: '/shie',
+    baseUrl: '/microMaster',
     urlArgs: 'v=' + (new Date()).getTime() + Math.random() * 10000,
     paths: {
         /*第三方库文件*/
