@@ -1,5 +1,5 @@
 [{
-  "title": "微店管理页面配置",
+  "title": "权限管理",
   "classes": "",
   "classi": "",
   "uisref": "main.index"
@@ -11,7 +11,7 @@
     "uisref": "main.application"
   },
   {
-    "title": "权限管理",
+    "title": "权限管理44444",
     "classes": "",
     "classi": "i_2",
     "uisref": "main.endorse"

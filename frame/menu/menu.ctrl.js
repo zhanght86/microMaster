@@ -24,14 +24,10 @@ define(['app','uiRouter',
             }
 
 
-
-
-
-
             //选中菜单高亮显示
             $scope.activeMenu=function(message){
                 $scope.curTitle = message.title;
-                if($scope.curTitle=="微店管理页面配置"){
+                if($scope.curTitle=="权限管理"){
                     //$scope.tabMenu = !$scope.tabMenu;
                     menuServ.getTWOData(user.userCode).then(
                         function(answer){
