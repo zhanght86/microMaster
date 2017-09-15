@@ -28,7 +28,7 @@
         <div class="index_tit">
             <h6 class="fl">查询结果</h6>
             <div class="fr">
-                <div class="div_a" ng-click="addRole()">
+                <div class="div_a" ng-click="addRoleConfig()">
                     <i></i><span>添加</span>
                 </div>
             </div>
@@ -67,6 +67,23 @@
                 </td>
             </tr>
         </table>
-        <tm-pagination conf="paginationConf"></tm-pagination>
+        <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
     </div>
+
+    <!--&lt;!&ndash;删除&ndash;&gt;-->
+    <!--<div ng-if="layer_cancle" data-ng-include="'components/index/tpl/layer/layer_tipMessag.html'"></div>-->
+</div>
+<div class="mask"  ng-if="layer_cancle"></div>
+<div class="mask_remove picontent"  ng-if="layer_cancle">
+    <ul>
+        <li class="remove_header">
+            <span>提示信息</span>
+            <em ng-click="addRole_back()"><i></i></em>
+        </li>
+    </ul>
+    <div class="picbj1"></div>
+    <span class="pimessage">{{tipMessage}}</span>
+<div class="config_button">
+    <button>确 定</button> <button ng-click="addRole_back()">取消</button>
+</div>
 </div>

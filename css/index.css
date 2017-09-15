@@ -15,7 +15,7 @@
 .main_con .main_left_wid{width:60px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px}
 .main_con .main_left span{display:block}
 .main_con .main_left_wid span{display:none}
-.main_con .main_right{background:#fff;margin-left:190px;overflow:hidden;}
+.main_con .main_right{background:#f7f7f7;margin-left:190px;overflow:hidden;}
 .main_con .main_right_col{margin-left:60px;background:#f7f7f7;overflow:hidden;padding:20px 0 40px 0}
 .main_left .left_ul{width:100%;background:#2a3f54}
 .left_ul li{width:100%;position:relative;border-bottom:1px solid #2a3f54;border-top:1px solid #2a3f54}
@@ -188,7 +188,7 @@
 /*弹层-wangjijun*/
 /*删除投保*/
 .mask{width:100%;height:100%;background:#000;opacity: 0.3;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);position: fixed;left: 0;top: 0;z-index: 111;}
-.mask_remove{z-index: 999;position:fixed;top:50%;left:50%;background-color:#fff;width:350px;height:210px;box-shadow:0 0 15px rgba(0,0,0,0.15);margin:-105px auto auto -175px;border-radius:5px;}
+.mask_remove{z-index: 999;position:fixed;top:30%;left:50%;background-color:#fff;width:560px;box-shadow:0 0 15px rgba(0,0,0,0.15);margin-left:-25%;border-radius:5px;}
 .mask_remove ul li{clear:both;}
 .remove_header{width:100%;height:37px;border-bottom:1px solid #cdcdcd;background:#2a3f54;border-top-left-radius: 3px;border-top-right-radius: 3px;line-height:37px;}
 .remove_header span{font-size:16px;color:#fff;margin-left:19px;}
@@ -234,8 +234,6 @@
 .revise_insurant .revise_info li span{margin-left:5px;}
 .revise_insurant .revise_info li.long_width .form-control{margin-right:20px;}
 .revise_insurant .revise_info li.li_time{margin-left:-47px;}
-.config_button{width:100%;height:66px;border-top:1px solid #dfdfdf;}
-.config_button button{display:block;width:180px;heihgt:36px;line-height:36px;text-align:center;background:#f27318;color:#fff;font-size:16px;margin:15px auto;border-radius:5px;padding: 0;border: 0;}
 .revise_insurant .list_ul{padding-top:22px;padding-bottom:12px;}
 /*文件上传-投保*/
 .list_ul_1 li{width: 21%;}
@@ -404,7 +402,7 @@
 .ind_edo{margin:0 1.9% 0 0;float: right}
 
 
-/*20170905  下面是人保后台页面的样式*/
+/*--------------------------------------20170905  下面是人保后台页面的样式------------------------------------------------------*/
 .banner-head-form{margin:0 0 20px 28px;}
 .banner-head-form .m{margin:2px 0 0 39px}
 .banner-head-form .m2{margin-top:2px;}
@@ -522,6 +520,24 @@
 .error_msg{color: #e8340c;line-height: 34px;font-size: 12px;}
 .error_msg span{padding-left: 10px}
 .content{padding-left:0;}
+
+
+
+
+/*--------------------------------------20170915  caoruixia 不可删样式-----------------------------------------------------*/
+.comLabel{width: 47%;border: 1px solid #cdcdcd;margin:10px 0 10px 10px;}
+.comLabel h6{height: 32px;line-height: 32px;padding-left: 20px;background-color: #f5f5f5;}
+.rolelist li{width:38%;}
+.rolelist li input{width:100%;}
+.rolelist li textarea{width:100%;height:100px;margin-top: 12px;}
+.config_button{text-align: center}
+.config_button button{width:112px;heihgt:36px;line-height:36px;text-align:center;background:#f27318;color:#fff;font-size:16px;margin:15px 15px 35px;border-radius:5px;padding: 0;border: 0;}
+
+.picontent{background: #fff;border: none;}
+.picontent .picbj1{width: 52px;height: 50px;overflow: hidden;margin:38px auto 10px;background: url(../images/icon_11.png) no-repeat;}
+.pimessage{display: block;text-align: center;margin-top: 10px;font-size: 16px;color: #333;margin-bottom: 20px;}
+
+
 
 
 
