@@ -1,0 +1,97 @@
+<div class="bg">
+    <div class="index_list">
+        <div class="index_tit"><h6>日志管理</h6></div>
+        <ul class="list_ul">
+            <li>
+                <span>操作用户：</span>
+            </li>
+            <li>
+                <input type="text" class="fl"  ng-model="xxxx">
+            </li>
+            <li>
+                <span>操作日期：</span>
+            </li>
+            <li>
+                <input type="text"  id="flightData4" jedate="" placeholder="" class="fl date" format="YYYY-MM-DD" ng-model="xxx"/>
+            </li>
+            <br>
+            <li>
+                <span>模块：</span>
+            </li>
+            <li>
+                <input type="text" class="fl"  ng-model="xxxx">
+            </li>
+            <li>
+                <span>操作描述：</span>
+            </li>
+            <li>
+                <input type="text" class="fl"  ng-model="xxxx">
+            </li>
+
+        </ul>
+        <div class="pending_btn">
+            <div class="pending_btn1">
+                <a href="#" class="a_search">查询</a>
+                <a href="#" class="a_reset">重置</a>
+            </div>
+        </div>
+    </div>
+    <div class="banner-body">
+        <div class="index_tit"><h6>查询列表</h6></div>
+        <div class="banner-body-list clearfix">
+            <table class="table table-striped table-bordered table-hover">
+                <tr>
+                    <th ng-click="col='state';desc=!desc">序号</th>
+                    <th ng-click="col='idente';desc=!desc">操作用户</th>
+                    <th ng-click="col='checkNum';desc=!desc">模块</th>
+                    <th ng-click="col='name';desc=!desc">操作结果</th>
+                    <th ng-click="col='Ip';desc=!desc">IP地址</th>
+                    <th ng-click="col='startDate';desc=!desc">操作日期</th>
+                    <th class="t_last">描述</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>张某某</td>
+                    <td>权限管理</td>
+                    <td>成功</td>
+                    <td>255.255.0.0</td>
+                    <td>2013-7-1 09:21:32</td>
+                    <td class="t_last">XXXX</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>admin</td>
+                    <td>机构管理</td>
+                    <td>成功</td>
+                    <td>255.255.255.255</td>
+                    <td>2013-7-1 09:24:30</td>
+                    <td class="t_last">修改机构，机构代码1039274，机构名称：XXXX</td>
+                </tr>
+            </table>
+            <div class="page clearfix fr">
+                <a class="first" href="javascript:;"></a>
+                <a class="prev" href="javascript:;"></a>
+                <a href="javascript:;">1</a>
+                <a class="current" href="javascript:;">2</a>
+                <a href="javascript:;">3</a>
+                <a href="javascript:;">4</a>
+                <a href="javascript:;">5</a>
+                <a href="javascript:;">6</a>
+                <a href="javascript:;">7</a>
+                <a href="javascript:;">8</a>
+                <a href="javascript:;">9</a>
+                <a href="javascript:;">10</a>
+                <a class="next" href="javascript:;"></a>
+                <a class="end" href="javascript:;"></a>
+                <span style="margin-left: 21px">跳至第</span>
+                <select class="jump">
+                    <option value=""></option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+                <span>页（共365个）</span>
+            </div>
+        </div>
+    </div>
+</div>

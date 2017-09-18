@@ -3,8 +3,12 @@
  * 文件资料维护模块定义
  */
 define([
-    'angular'
-],function (angular) {
+    'angular',
+    'components/material/controller/material.ctrl',
+    'components/material/service/material.serv',
+],function (angular,
+            materialCtrlHandler,
+            materialServHandler) {
     'use strict';
     console.log("load business.material module");
     /*文件资料维护*/
@@ -13,10 +17,12 @@ define([
             function ($stateProvider) {
                 $stateProvider
                     .state("main.material", {
-                        url:"/material"
-                        //templateUrl: "components/report/tpl/",
+                        url:"/material",
+                        templateUrl: "components/material/tpl/material.html"
                         //controller: ""
                     });
-            }]);
+            }])
+        .controller('materialCtrl',materialCtrlHandler)
+        .service('materialServ',materialServHandler);
 });
 
