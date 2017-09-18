@@ -476,7 +476,7 @@
 .banner-body{min-width:1080px;;margin-bottom:50px;}
 .banner-body-head{margin-bottom: 9px;}
 .banner-body-list,.line-bottom{border: 1px solid #eee}
-.banner-body-list th{position:relative;height: 24px;background-color: #dbf6ff;text-align: center}
+.banner-body-list th{position:relative;height: 24px;background-color: #f9f9f9;text-align: center}
 .banner-body-list th p:after{content: "";position:absolute;top:7px;right:0;width:1px;height:10px;background-color: #fff}
 .banner-body-list th p.top:after{top: 17px;}
 .banner-body-list td{height:34px;text-align: center;border-right: 1px solid #eee;border-top: 1px solid #e2e2e2;color: #999}
