@@ -5,8 +5,17 @@
 define([], function () {
     'use strict';
     function serManageCtrlHandler($scope,$state) {
-        $scope.showMainNagiv = false;
-    };
+        // $scope.showMainNagiv = false;
+        //删除
+        $scope.canale=function () {
+            $scope.layer_cancle=true;
+            $scope.tipMessage="您确认删除吗！";
+        };
+        //弹层关闭
+        $scope.addRole_back=function () {
+            $scope.layer_cancle=false;
+        };
 
+    };
     return serManageCtrlHandler;
 });

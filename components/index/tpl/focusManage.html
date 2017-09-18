@@ -70,20 +70,6 @@
         <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
     </div>
 
-    <!--&lt;!&ndash;删除&ndash;&gt;-->
-    <!--<div ng-if="layer_cancle" data-ng-include="'components/index/tpl/layer/layer_tipMessag.html'"></div>-->
-</div>
-<div class="mask"  ng-if="layer_cancle"></div>
-<div class="mask_remove picontent"  ng-if="layer_cancle">
-    <ul>
-        <li class="remove_header">
-            <span>提示信息</span>
-            <em ng-click="addRole_back()"><i></i></em>
-        </li>
-    </ul>
-    <div class="picbj1"></div>
-    <span class="pimessage">{{tipMessage}}</span>
-<div class="config_button pageBtn">
-    <button class="btnConfirm">确 定</button> <button class="btnBack" ng-click="addRole_back()">返回</button>
-</div>
+    <!--删除-->
+    <div ng-if="layer_cancle" data-ng-include="'components/index/tpl/layer/layer_tipMessage.html'"></div>
 </div>

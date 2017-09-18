@@ -1,12 +1,14 @@
 <div class="mask"></div>
-<div class="layerTop" ng-if="layer_cancle">
-    <i class="layerIcon1 layerImg4"></i><span class="layerTitle">提示信息</span><i class="layerClose layerImg2" ng-click="addRole_back()"></i>
-</div>
-<div class="picontent layercontent">
-    <div class="lcicon picbj1"></div>
+<div class="mask_remove picontent">
+    <ul>
+        <li class="remove_header">
+            <span>提示信息</span>
+            <em ng-click="addRole_back()"><i></i></em>
+        </li>
+    </ul>
+    <div class="picbj1"></div>
     <span class="pimessage">{{tipMessage}}</span>
+    <div class="config_button pageBtn">
+        <button class="btnConfirm">确 定</button> <button class="btnBack" ng-click="addRole_back()">返回</button>
+    </div>
 </div>
-<div class="config_button">
-    <button>确 定</button> <button ng-click="addRole_back()">取消</button>
-</div>
-666
