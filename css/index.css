@@ -544,6 +544,11 @@
 input[type="radio"]{display: block;margin:0 auto;}
 .config_top{border:1px solid #cdcdcd;background-color:#fff;margin-bottom:42px;}
 .index_list{border:1px solid #cdcdcd;}
+/*客户管理*/
+.Downdrag{cursor:pointer;color:#4395ff;}
+.cus{width:848px;margin-left: -424px;}
+.tab_width{margin: 20px 16px 20px;}
+.tab_width th,.tab_width td{text-align:center;}
 
 
 
