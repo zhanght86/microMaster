@@ -18,32 +18,27 @@
   "classes": "",
   "classi": "i_3",
   "uisref": "main.region"
-},
-{
+},{
+    "title": "展业人员管理",
+    "classes": "",
+    "classi": "i_6",
+    "uisref": "main.suspend"
+},{
   "title": "客户管理",
   "classes": "",
   "classi": "i_1",
   "uisref": "main.application"
-},
-{
-  "title": "专业人员管理",
-  "classes": "",
-  "classi": "i_6",
-  "uisref": "main.suspend"
-},
-{
+},{
   "title": "统计管理",
   "classes": "",
   "classi": "i_7",
   "uisref": "main.document"
-},
-{
+},{
   "title": "销售数据管理",
   "classes": "",
   "classi": "i_8",
   "uisref": "main.community"
-},
-{
+},{
   "title": "日志管理",
   "classes": "",
   "classi": "i_9",

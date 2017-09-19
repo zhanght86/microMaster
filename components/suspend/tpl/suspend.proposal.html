@@ -1,67 +1,110 @@
-<div class="bg">
-    <div class="banner-head clearfix">
-        <ul class="banner-head-form clearfix">
-            <li class="fl">
-                <label class="label label-w1 label-w3">导入起止时间：</label>
-                <input type="text" id="flightData4" jedate class="input input-w2 calendar2"
-                       format="YYYY-MM-DD" ng-model="xxx"/>
-                <span style="display: block;float: left;padding:12px 6px 0">-</span>
-                <input type="text" id="flightData5" jedate class="input input-w2 calendar2"
-                       format="YYYY-MM-DD" ng-model="xxxx"/>
+<div class="index_con">
+    <!--查询条件-->
+    <div class="index_list">
+        <div class="index_tit"><h6>查询条件</h6></div>
+        <ul class="list_ul">
+            <li>
+                <span>账户名：</span>
             </li>
-            <li class="fl">
-                <div class="m fl">
-                    <input class="btn btn-style1" type="button" value="查询"/>
-                </div>
+            <li>
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+            </li>
+            <li>
+                <span>手机号码：</span>
+            </li>
+            <li>
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+            </li>
+            <li>
+                <span>证件号码：</span>
+            </li>
+            <li>
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+            </li>
+            <li>
+                <span>注册时间：</span>
+            </li>
+            <li>
+                <input type="text"  id="flightData4" jedate="" placeholder="" class="fl date" format="YYYY-MM-DD" ng-model="xxx"/>
+            </li>
+            <li>
+                <span>人员属性：</span>
+            </li>
+            <li>
+                <select  class="fl" >
+                    <option value ="volvo">--请选择--</option>
+                    <option value ="volvo">001</option>
+                    <option value ="saab">002</option>
+                </select>
+            </li>
+            <li>
+                <span>用户注册地区：</span>
+            </li>
+            <li>
+                <select  class="fl" >
+                    <option value ="volvo">--请选择--</option>
+                    <option value ="volvo">001</option>
+                    <option value ="saab">002</option>
+                </select>
             </li>
         </ul>
-    </div>
-    <div class="banner-body" style="margin-top: 20px;">
-        <div class="banner-body-head clearfix">
-            <span class="fl">批改信息导入历史</span>
-            <a href="批改数据导入.html" class="add-btn fr">批改数据导入</a>
-        </div>
-        <div class="banner-body-list clearfix">
-            <table class="line-bottom" width="100%" cellpadding="0" cellspacing="0">
-                <thead>
-                <tr>
-                    <th width="15%"><p>序号</p></th>
-                    <th width="30%"><p>导入时间</p></th>
-                    <th width="30%"><p>操作人</p></th>
-                    <th width="25%"><p>状态</p></th>
-                </tr>
-                </thead>
-                <tr>
-                    <td>1</td>
-                    <td>2016-11-15  03:00</td>
-                    <td>张三</td>
-                    <td>已变更</td>
-                </tr>
-            </table>
-            <div class="page clearfix fr">
-                <a class="first" href="javascript:;"></a>
-                <a class="prev" href="javascript:;"></a>
-                <a href="javascript:;">1</a>
-                <a class="current" href="javascript:;">2</a>
-                <a href="javascript:;">3</a>
-                <a href="javascript:;">4</a>
-                <a href="javascript:;">5</a>
-                <a href="javascript:;">6</a>
-                <a href="javascript:;">7</a>
-                <a href="javascript:;">8</a>
-                <a href="javascript:;">9</a>
-                <a href="javascript:;">10</a>
-                <a class="next" href="javascript:;"></a>
-                <a class="end" href="javascript:;"></a>
-                <span style="margin-left: 21px">跳至第</span>
-                <select class="jump">
-                    <option value=""></option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                </select>
-                <span>页（共365个）</span>
+        <div class="pending_btn">
+            <div class="pending_btn1">
+                <a href="#" class="a_search">查询</a>
+                <a href="#" class="a_reset">重置</a>
             </div>
         </div>
     </div>
+    <!--查询结果-->
+    <div class="index_list">
+        <div class="index_tit">
+            <h6 class="fl">查询结果</h6>
+        </div>
+        <table class="table table-striped table-bordered table-hover">
+            <tr>
+                <th>序号</th>
+                <th>账户名</th>
+                <th>手机号码</th>
+                <th>证件号码</th>
+                <th>邮箱</th>
+                <th>好友数量</th>
+                <th>注册地区</th>
+                <th>承包金额</th>
+                <th>承包笔数</th>
+                <th>人员属性</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="Downdrag" ng-click="userMess()">李四</td>
+                <td>15745863215</td>
+                <td>41092319960112</td>
+                <td>1361874583@qq.com</td>
+                <td>88</td>
+                <td>北京市</td>
+                <td>40万</td>
+                <td class="Downdrag" ng-click="nums()">6</td>
+                <td class="Downdrag" ng-click="attribute()">一级</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="Downdrag" ng-click="userMess()">王五</td>
+                <td>15745863215</td>
+                <td>41092319960112</td>
+                <td>1361874583@qq.com</td>
+                <td>88</td>
+                <td>北京市</td>
+                <td>40万</td>
+                <td class="Downdrag" ng-click="nums()">6</td>
+                <td class="Downdrag" ng-click="attribute()">一级</td>
+            </tr>
+        </table>
+        <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
+    </div>
+
+    <!--添加关联机构-->
+    <div ng-if="layer_addRalation" data-ng-include="'components/region/tpl/layer/layer_addRalation.html'"></div>
+    <!--修改关联机构-->
+    <div ng-if="layer_modRalation" data-ng-include="'components/region/tpl/layer/layer_modRalation.html'"></div>
+    <!--停用-->
+    <div ng-if="layer_Disable" data-ng-include="'components/region/tpl/layer/layer_Disable.html'"></div>
 </div>
