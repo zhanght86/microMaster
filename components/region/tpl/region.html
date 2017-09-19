@@ -56,7 +56,7 @@
         <div class="index_tit">
             <h6 class="fl">查询结果</h6>
             <div class="fr">
-                <div class="div_a" ng-click="addRoleConfig()">
+                <div class="div_a" ng-click="addRelation()">
                     <i></i><span>添加关联机构</span>
                 </div>
             </div>
@@ -116,6 +116,10 @@
         <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
     </div>
 
-    <!--删除-->
-    <div ng-if="layer_cancle" data-ng-include="'components/index/tpl/layer/layer_tipMessage.html'"></div>
+    <!--添加关联机构-->
+    <div ng-if="layer_addRalation" data-ng-include="'components/region/tpl/layer/layer_addRalation.html'"></div>
+    <!--修改关联机构-->
+    <div ng-if="layer_modRalation" data-ng-include="'components/region/tpl/layer/layer_modRalation.html'"></div>
+    <!--停用-->
+    <div ng-if="layer_Disable" data-ng-include="'components/region/tpl/layer/layer_Disable.html'"></div>
 </div>

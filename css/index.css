@@ -188,7 +188,7 @@
 /*弹层-wangjijun*/
 /*删除投保*/
 .mask{width:100%;height:100%;background:#000;opacity: 0.3;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);position: fixed;left: 0;top: 0;z-index: 111;}
-.mask_remove{z-index: 999;position:fixed;top:30%;left:50%;background-color:#fff;width:516px;box-shadow:0 0 15px rgba(0,0,0,0.15);margin-left:-258px;border-radius:5px;}
+.mask_remove,.newMask{z-index: 999;position:fixed;top:30%;left:50%;background-color:#fff;width:516px;box-shadow:0 0 15px rgba(0,0,0,0.15);margin-left:-258px;border-radius:5px;}
 .mask_remove ul li{clear:both;}
 .remove_header{width:100%;height:37px;border-bottom:1px solid #cdcdcd;background:#2a3f54;border-top-left-radius: 3px;border-top-right-radius: 3px;line-height:37px;}
 .remove_header span{font-size:16px;color:#fff;margin-left:19px;}
@@ -549,6 +549,10 @@ input[type="radio"]{display: block;margin:0 auto;}
 .cus{width:848px;margin-left: -424px;}
 .tab_width{margin: 20px 16px 20px;}
 .tab_width th,.tab_width td{text-align:center;}
+/*区域管理*/
+.layerList{overflow: hidden;}
+.layerList li{float: left;}
+.list_ul  .tal{text-align:left;}
 
 
 
