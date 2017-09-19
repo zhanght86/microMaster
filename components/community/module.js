@@ -1,19 +1,28 @@
 /**
- * Created by ZhangJiansen on 2016/9/19.
- * 共同体维护模块
+ * Created by ZhangJiansen on 2016/9/18.
+ * 文件资料维护模块定义
  */
 define([
-    'angular'
-],function (angular) {
+    'angular',
+    'components/community/controller/servi.ctrl',
+    'components/community/service/servi.serv',
+],function (angular,
+            serviCtrlHandler,
+            serviServHandler) {
     'use strict';
     console.log("load business.community module");
-    /*共同体维护*/
+    /*文件资料维护*/
     return angular.module('business.community', [])
         .config(['$stateProvider',
             function ($stateProvider) {
                 $stateProvider
                     .state("main.community", {
-                        url:"/community"
+                        url:"/community",
+                        templateUrl: "components/community/tpl/servi.html"
+                        //controller: ""
                     });
-            }]);
+            }])
+        .controller('serviCtrl',serviCtrlHandler)
+        .service('serviServ',serviServHandler);
 });
+

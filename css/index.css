@@ -576,17 +576,40 @@ input[type="radio"]{display: block;margin:0 auto;}
 .layerList li{float: left;}
 .list_ul  .tal{text-align:left;}
 
+/*20170918 add to lichenyi*/
+.personnel_table{width:100%;font-size: 0;}
+.personnel_table .staff_list,.personnel_table .group_list{display:inline-block;vertical-align: top;max-height:380px;overflow-x: hidden;overflow-y: auto;}
+.personnel_table .group_list{width:10%;max-height:380px;overflow-x: hidden;overflow-y: auto;}
+.personnel_table .group_list li,.personnel_table .group_list h6{text-align:center;height:24px;line-height:24px;padding: 8px;border-bottom:1px solid #ddd;border-left:1px solid #ddd;border-right:1px solid #ddd}
+.group_list ul li{    cursor: pointer}
+.personnel_table .staff_list{width:90%;}
+.personnel_table .staff_list .table-bordered{width:100%;}
+.pending_edit{text-align: center;padding-top: 10px;}
+.pending_edit a,.add_phrase{display:inline-block;width: 140px;height: 32px;background: #0b7cc3;text-align: center;line-height: 32px;color: #fff;font-size: 16px;border-radius: 2px;text-decoration:none;}
+.pending_edit a:hover,.add_phrase:hover{color:#fff;background-color: #4693c8;}
+.add_phrase{margin:15px;}
+.a_add{}
+.a_view{}
+.a_move{}
+.staff_list tr:hover td,.group_list ul li:hover{background-color:#ccc;}
+.staff_list tr.hover td,.group_list ul li.hover{background-color:#0b7cc3;color:#fff;}
+.index_list tr.hover td a{color:#fd9a9a;}
+.staff_list .text_area span{font-size:14px;display:block;}
+.staff_list .text_area span.text_right{text-align: right;}
+.staff_list .text_area p{font-size:16px;text-indent:1.5em;padding:5px 5px 8px;background-color:#f2f2f2;margin:3px 0 5px;}
+.text_area{padding: 18px;border:1px solid #ddd;border-radius:2px;margin-left: 35px;border-top-width:0;max-height: 375px;overflow-x: hidden;overflow-y: auto;}
+.box_page{text-align: center;margin-top:10px;}
+.box_page a{font-size:18px;display:inline-block;padding:3px 5px;margin: 0 5px;}
 
-
-
-
-
-
-
-
-
-
-
+.box_page span,.box_page div{
+    display: inline-block;font-size:18px;color:#666;}
+.box_page div input{width:25px;border-bottom:1px solid #999;padding-right:5px;text-align: right}
+.box_phrase{width:100%;}
+.box_phrase tr td,.box_phrase tr th{height: 28px;
+    padding: 0!important;
+    text-align: center;
+    line-height: 28px;}
+.box_phrase tr:hover td{background-color:#f7f7f7;}
 
 
 
