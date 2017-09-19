@@ -8,46 +8,44 @@
   "classes": "",
   "classi": "",
   "uisref": "main.power"
+},{
+  "title": "机构管理",
+  "classes": "",
+  "classi": "i_2",
+  "uisref": "main.endorse"
+},{
+  "title": "区域管理",
+  "classes": "",
+  "classi": "i_3",
+  "uisref": "main.report"
 },
-  {
-    "title": "客户管理",
-    "classes": "",
-    "classi": "i_1",
-    "uisref": "main.application"
-  },
-  {
-    "title": "权限管理44444",
-    "classes": "",
-    "classi": "i_2",
-    "uisref": "main.endorse"
-  },
-  {
-    "title": "v保豆管理",
-    "classes": "",
-    "classi": "i_3",
-    "uisref": "main.suspend"
-  },
-  {
-    "title": "专业人员管理",
-    "classes": "",
-    "classi": "i_6",
-    "uisref": "main.report"
-  },
-  {
-    "title": "统计管理",
-    "classes": "",
-    "classi": "i_7",
-    "uisref": "main.document"
-  },
-  {
-    "title": "销售数据管理",
-    "classes": "",
-    "classi": "i_8",
-    "uisref": "main.community"
-  },
-  {
-    "title": "日志管理",
-    "classes": "",
-    "classi": "i_9",
-    "uisref": "main.material"
-  }]
+{
+  "title": "客户管理",
+  "classes": "",
+  "classi": "i_1",
+  "uisref": "main.application"
+},
+{
+  "title": "专业人员管理",
+  "classes": "",
+  "classi": "i_6",
+  "uisref": "main.suspend"
+},
+{
+  "title": "统计管理",
+  "classes": "",
+  "classi": "i_7",
+  "uisref": "main.document"
+},
+{
+  "title": "销售数据管理",
+  "classes": "",
+  "classi": "i_8",
+  "uisref": "main.community"
+},
+{
+  "title": "日志管理",
+  "classes": "",
+  "classi": "i_9",
+  "uisref": "main.material"
+}]

@@ -1,88 +1,72 @@
-<div class="bg">
-    <div class="title"><h2>角色管理</h2></div>
-    <div class="banner-head clearfix">
-        <ul class="banner-head-form clearfix">
-            <li class="fl">
-                <label class="label label-w5 label-w1">创建日期：</label>
-                <input type="text" id="flightData2" jedate class="input input-w2 calendar2"
-                       format="YYYY-MM-DD" ng-model="xxxxxxxxxxx"/>
-                <span style="display: block;float: left;padding:12px 6px 0">-</span>
-                <input type="text" id="flightData3" jedate class="input input-w2 calendar2"
-                       format="YYYY-MM-DD" ng-model="xxxxxx"/>
-            </li>
-            <li>
-                <label class="label label-w1">用户角色：</label>
-                <input class="input input-w1" type="text"/>
-            </li>
-            <li class="fl" style="margin-left: 39px;">
-                <div class="m2 fl">
-                    <input class="btn btn-style1" type="button" value="查询">
+<div style="overflow: hidden">
+    <!--<div class="index_tit"><h6>角色指派</h6></div>-->
+    <div class="fl comLabel confr bgcolor border">
+        <h6>机构列表</h6>
+        <div>机构树插件</div>
+    </div>
+    <div class="fr confr">
+        <div class="config_top">
+            <h6>查询条件</h6>
+            <ul class="list_ul">
+                <li>
+                    <span>当前机构：</span>
+                </li>
+                <li>
+                    <input type="text" class="fl"  ng-model="xxxx">
+                </li>
+            </ul>
+            <div class="pending_btn">
+                <div class="pending_btn1">
+                    <a href="#" class="a_search">查询</a>
+                    <a href="#" class="a_reset">重置</a>
                 </div>
-            </li>
-        </ul>
-    </div>
-    <div class="banner-body" style="margin-top: 20px;">
-    <div class="banner-body-head clearfix">
-        <span class="fl">角色权限列表</span>
-        <a href="添加用户角色.html" class="add-btn fr">添加</a>
-    </div>
-    <div class="banner-body-list clearfix">
-        <table class="region" width="100%" cellpadding="0" cellspacing="0">
-            <thead>
-            <tr>
-                <th width="10%"><p>序号</p></th>
-                <th width="20%"><p>用户角色</p></th>
-                <th width="20%"><p>创建日期</p></th>
-                <th width="30%"><p>管理权限</p></th>
-                <th width="20%">操作</th>
-            </tr>
-            </thead>
-            <tr>
-                <td>1</td>
-                <td>总公司管理员</td>
-                <td>2016-10-10  12:10</td>
-                <td>微店配置 产品配置 微店装修 运营支持 数据统计</td>
-                <td><a class="modify" href="添加用户角色.html">修改</a><a class="delete" href="javascript:;">删除</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>总公司管理员</td>
-                <td>2016-10-10  12:10</td>
-                <td>微店配置 产品配置 微店装修 运营支持 数据统计</td>
-                <td><a class="modify" href="添加用户角色.html">修改</a><a class="delete" href="javascript:;">删除</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>总公司管理员</td>
-                <td>2016-10-10  12:10</td>
-                <td>微店配置 产品配置 微店装修 运营支持 数据统计</td>
-                <td><a class="modify" href="添加用户角色.html">修改</a><a class="delete" href="javascript:;">删除</a></td>
-            </tr>
-        </table>
-        <div class="page clearfix fr">
-            <a class="first" href="javascript:;"></a>
-            <a class="prev" href="javascript:;"></a>
-            <a href="javascript:;">1</a>
-            <a class="current" href="javascript:;">2</a>
-            <a href="javascript:;">3</a>
-            <a href="javascript:;">4</a>
-            <a href="javascript:;">5</a>
-            <a href="javascript:;">6</a>
-            <a href="javascript:;">7</a>
-            <a href="javascript:;">8</a>
-            <a href="javascript:;">9</a>
-            <a href="javascript:;">10</a>
-            <a class="next" href="javascript:;"></a>
-            <a class="end" href="javascript:;"></a>
-            <span style="margin-left: 21px">跳至第</span>
-            <select class="jump">
-                <option value=""></option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-            </select>
-            <span>页（共365个）</span>
+            </div>
+        </div>
+        <!--查询结果-->
+        <div class="index_list">
+            <div class="index_tit">
+                <h6 class="fl">查询结果</h6>
+            </div>
+            <table class="table table-striped table-bordered table-hover">
+                <tr>
+                    <th ng-click="col='state';desc=!desc">序号</th>
+                    <th ng-click="col='idente';desc=!desc">机构代码</th>
+                    <th ng-click="col='checkNum';desc=!desc">机构名称</th>
+                    <th ng-click="col='name';desc=!desc">地址</th>
+                    <th ng-click="col='name';desc=!desc">电话</th>
+                    <th class="t_last">操作</th>
+                </tr>
+                <!--<tr ng-repeat="d in correctiondata|orderBy:col:desc">-->
+                <!--<td ng-bind="$index+1"></td>-->
+                <!--<td ng-bind="d.xxx">1</td>-->
+                <!--<td ng-bind="d.xxx">1</td>-->
+                <!--<td ng-bind="d.xxx">1</td>-->
+                <!--<td class="t_last">-->
+                <!--<div class="div_pad">-->
+                <!--<a href="#" class="a_col" ng-click="modify()">修改</a><span>|</span><a href="#" class="a_col" ng-click="canale()">删除</a>-->
+                <!--</div>-->
+                <!--</td>-->
+                <!--</tr>-->
+                <tr>
+                    <td>1</td>
+                    <td>21465</td>
+                    <td>机构1</td>
+                    <td>北京市朝阳区</td>
+                    <td>15713684582</td>
+                    <td class="t_last">
+                        <div class="div_pad">
+                            <a href="#" class="a_col" ng-click="see()">查看</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
         </div>
     </div>
 </div>
+<div class="config_button pageBtn">
+    <button class="btnConfirm" ng-click="save()">保 存</button>
 </div>
+
+<!--删除-->
+<div ng-if="layer_cancle" data-ng-include="'components/index/tpl/layer/layer_tipMessage.html'"></div>
