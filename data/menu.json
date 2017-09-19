@@ -1,8 +1,13 @@
 [{
-  "title": "权限管理",
+  "title": "首页",
   "classes": "",
   "classi": "",
   "uisref": "main.index"
+},{
+  "title": "权限管理",
+  "classes": "",
+  "classi": "",
+  "uisref": "main.power"
 },
   {
     "title": "客户管理",

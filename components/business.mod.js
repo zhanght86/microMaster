@@ -8,6 +8,7 @@
 define([
     'angular',
     'components/index/module',
+    'components/power/module',
     'components/application/module',
     'components/endorse/module',
     'components/suspend/module',
@@ -23,6 +24,7 @@ define([
     /*增加模块依赖*/
     return angular.module('business',
         [   'business.index',
+             'business.power',
             'business.application',
             'business.endorse',
             'business.suspend',
