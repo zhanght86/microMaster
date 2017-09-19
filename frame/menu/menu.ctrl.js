@@ -45,6 +45,12 @@ define(['app','uiRouter',
             $scope.activeMenutwo=function(mes){
                 $scope.curTitle = mes.title2;
             };
+            $scope.leave=function(mes){
+                if($scope.curTitle=="权限管理"){
+                $scope.lefttwoMenu=false;
+                };
+            };
+
 
         }]);
 });
