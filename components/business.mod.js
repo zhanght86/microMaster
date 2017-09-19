@@ -13,7 +13,7 @@ define([
     'components/endorse/module',
     'components/suspend/module',
     'components/charge/module',
-    'components/report/module',
+    'components/region/module',
     'components/document/module',
     'components/material/module',
     'components/community/module'
@@ -29,7 +29,7 @@ define([
             'business.endorse',
             'business.suspend',
             'business.charge',
-            'business.report',
+            'business.region',
             'business.document',
             'business.material',
             'business.community'
