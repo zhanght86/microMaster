@@ -75,7 +75,7 @@
 /*.index_con .index_list.index_list_hide{display:none}*/
 .index_tit{width:100%;height:37px;background:#efefef}
 .index_tit h6{line-height:37px;padding-left:20px;font-size:16px;color:#333}
-.list_ul{width:100%;padding:23px 0;overflow:hidden}
+.list_ul{width:100%;padding:20px 0;overflow:hidden}
 .list_ul li{width:23%;height:44px;text-align:right;float:left;position:relative}
 .list_ul li em{color:#f5752d;font-size:14px;line-height:44px}
 .list_ul li strong{color:#f5752d;font-size:12px;line-height:44px;overflow:hidden;height:100%;width:100%;position:absolute;left:0;font-weight:400;text-align:left;top:21px;}
@@ -555,7 +555,7 @@
 .rolelist li input{width:100%;}
 .rolelist li textarea{width:100%;height:100px;margin-top: 12px;}
 .config_button{text-align: center}
-.config_button button{width:96px;heihgt:32px;line-height:36px;text-align:center;background:#f27318;color:#fff;font-size:16px;margin:15px 15px 28px;border-radius:5px;padding: 0;border: 0;}
+.config_button button{width:102px;heihgt:28px;line-height:28px;text-align:center;background:#f27318;color:#fff;font-size:16px;margin:4px 15px 24px;border-radius:5px;padding: 0;border: 0;}
 .pageBtn .btnConfirm{background-color:#0b7cc3;}
 .pageBtn .btnBack{background-color:#fff;border:1px solid #0b7cc3;color: #0b7cc3;}
 .picontent{background: #fff;border: none;}
