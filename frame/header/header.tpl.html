@@ -3,15 +3,18 @@
         <div class="logo fl"><img src="images/logo.png" alt=""/>
             <!--<span>后台管理系统</span>-->
         </div>
-        <div class="top_right fr">
-            <div class="logo_p">
-                <img src="images/logo_p.jpg">
+        <div class="fr">
+            <div class="top_r" ng-click="funListShow()" ng-mouseleave="contentBoxLeave()">
+                <img src="images/icon_name.png">
+                <span>
+                    <label ng-bind="topName"></label>，欢迎登录系统！
+                    <label class="dateCSS">{{currentData | date:'yyyy-MM-dd HH:mm'}}</label>
+                </span>
             </div>
-            <div class="fl logo_span">
-                <span>姓名：{{user.userName}}</span>
-                <span>编号：{{user.userCode}}</span>
-            </div>
-            <span ng-click="logout()" class="fr icon_a"><i></i></span>
+            <ul class="top_ul" ng-show="headerFunList" ng-mouseenter="funListShow()" ng-mouseleave="contentBoxLeave()">
+                <li ng-click="changePassword()"><img src="images/top_ul2.png" style="margin-top: 5px" >修改密码</li>
+                <li ng-click="log_out()"><img src="images/top_ul4.png" style="margin-top: 8px">注销登录</li>
+            </ul>
         </div>
     </div>
 </div>

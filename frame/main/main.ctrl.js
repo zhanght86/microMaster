@@ -1,8 +1,8 @@
 define(['app', 'config','uiRouter'
 ], function (app) {
     'use strict';
-    app.controller('mainCtrl', ['$scope','$state','AuthHandler',
-        function ($scope,$state,AuthHandler) {
+    app.controller('mainCtrl', ['$scope','$state','$interval','AuthHandler',
+        function ($scope,$state,$interval,AuthHandler) {
             //校验是否已登录
             if(!AuthHandler.isLogined){
                 console.log("not logined");
@@ -31,5 +31,23 @@ define(['app', 'config','uiRouter'
             //    $scope.leftFlag = true;
             //    $scope.rightFlag = true;
             //}
+
+            //当前的日期
+            $interval(function () {
+                $scope.currentData = new Date();
+            });
+            //点击下拉
+            $scope.funListShow = function () {
+                $scope.headerFunList = true;
+                $scope.topTriangle = true;
+            };
+            $scope.contentBoxLeave = function () {
+                $scope.headerFunList = false;
+                $scope.topTriangle = false;
+            };
+
+
+
+
         }]);
 });
