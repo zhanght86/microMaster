@@ -4,38 +4,38 @@
  */
 define([
     'angular',
-    'components/index/controller/index.ctrl',
+    'components/region/controller/region.ctrl',
     // 'components/index/controller/focusManage.ctrl',
     // 'components/index/controller/regionManage.ctrl',
     // 'components/index/controller/serManage.ctrl',
     // 'components/index/controller/addRole.ctrl',
-    'components/index/service/index.serv',
+    'components/region/service/region.serv',
     // 'components/index/service/focusManage.serv',
     // 'components/index/service/regionManage.serv',
     // 'components/index/service/serManage.serv',
     // 'components/index/service/addRole.serv',
 ],function (angular,
-            indexCtrlHandler,
+            regionCtrlHandler,
             // focusManageCtrlHandler,
             // regionManageCtrlHandler,
             // serManageCtrlHandler,
             // addRoleCtrlHandler,
-            indexServHandler){
+            regionServHandler){
             // focusManageServHandler,
             // regionManageServHandler,
             // serManageServHandler,
             // addRoleServHandler ) {
     'use strict';
-    console.log("load business.index module");
+    console.log("load business.region module");
     /*首页-统计图表*/
-    return angular.module('business.index', [])
+    return angular.module('business.region', [])
         .config(['$stateProvider',
             function ($stateProvider) {
                 $stateProvider
-                    .state("main.index", {
-                       url:"/index",
-                       templateUrl: "components/index/tpl/index.html",
-                       controller: "indexCtrl"
+                    .state("main.region", {
+                       url:"/region",
+                       templateUrl: "components/region/tpl/region.html",
+                       controller: "regionCtrl"
                     });
                 // .state("main.focusManage", {
                 //         url:"/focusManage",
@@ -58,12 +58,12 @@ define([
                 //     controller: "addRoleCtrl"
                 // });
             }])
-        .controller('indexCtrl',indexCtrlHandler)
+        .controller('regionCtrl',regionCtrlHandler)
         // .controller('focusManageCtrl',focusManageCtrlHandler)
         // .controller('regionManageCtrl',regionManageCtrlHandler)
         // .controller('serManageCtrl',serManageCtrlHandler)
         // .controller('addRoleCtrl',addRoleCtrlHandler)
-        .service('indexServ',indexServHandler);
+        .service('regionServ',regionServHandler);
         // .service('focusManageServ',focusManageServHandler)
         // .service('regionManageServ',regionManageServHandler)
         // .service('serManageServ',serManageServHandler)

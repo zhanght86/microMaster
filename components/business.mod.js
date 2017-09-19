@@ -8,11 +8,12 @@
 define([
     'angular',
     'components/index/module',
+    'components/power/module',
     'components/application/module',
     'components/endorse/module',
     'components/suspend/module',
     'components/charge/module',
-    'components/report/module',
+    'components/region/module',
     'components/document/module',
     'components/material/module',
     'components/community/module'
@@ -23,11 +24,12 @@ define([
     /*增加模块依赖*/
     return angular.module('business',
         [   'business.index',
+             'business.power',
             'business.application',
             'business.endorse',
             'business.suspend',
             'business.charge',
-            'business.report',
+            'business.region',
             'business.document',
             'business.material',
             'business.community'

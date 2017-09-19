@@ -4,8 +4,12 @@
  */
 define([], function () {
     'use strict';
-    function serManageCtrlHandler($scope,$state) {
-        // $scope.showMainNagiv = false;
+    function focusManageCtrlHandler($scope,$state) {
+        $scope.showMainNagiv = false;
+        //增加按钮跳转
+        $scope.addRoleConfig=function () {
+            $state.go("main.addRole");
+        };
         //删除
         $scope.canale=function () {
             $scope.layer_cancle=true;
@@ -15,7 +19,7 @@ define([], function () {
         $scope.addRole_back=function () {
             $scope.layer_cancle=false;
         };
-
+        
     };
-    return serManageCtrlHandler;
+    return focusManageCtrlHandler;
 });
