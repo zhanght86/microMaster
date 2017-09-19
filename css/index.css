@@ -542,6 +542,11 @@
 .top_ul li img{margin-left:21px;margin-right: 10px;float: left; }
 .top_ul li a{display: block;}
 .top_ul li:first-child{border-top: 0;}
+.modbg{background-color:#f7f7f7;}
+.modLi{overflow: hidden;border: 1px solid #e4e4e4;}
+.modLi .describe{width:34%;}
+.modLi .tal{width:66%;}
+.modLi .tal input{width:62%;}
 /*角色管理*/
 .comLabel{width: 47%;border: 1px solid #cdcdcd;margin:10px 0 10px 10px;background-color:#fff;}
 .confr{width: 47%;margin:10px 0 10px 10px;}

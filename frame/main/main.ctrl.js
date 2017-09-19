@@ -45,7 +45,13 @@ define(['app', 'config','uiRouter'
                 $scope.headerFunList = false;
                 $scope.topTriangle = false;
             };
-
+            //修改密码
+            $scope.changePassword = function () {
+                $scope.layer_modpassword = true;
+            };
+            $scope.close = function () {
+                $scope.layer_modpassword = false;
+            };
 
 
 

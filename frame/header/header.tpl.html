@@ -13,8 +13,40 @@
             </div>
             <ul class="top_ul" ng-show="headerFunList" ng-mouseenter="funListShow()" ng-mouseleave="contentBoxLeave()">
                 <li ng-click="changePassword()"><img src="images/top_ul2.png" style="margin-top: 5px" >修改密码</li>
-                <li ng-click="log_out()"><img src="images/top_ul4.png" style="margin-top: 8px">注销登录</li>
+                <li ng-click="logout()"><img src="images/top_ul4.png" style="margin-top: 8px">注销登录</li>
             </ul>
         </div>
     </div>
 </div>
+
+<!--修改密码-->
+<div class="mask" ng-if="layer_modpassword"></div>
+<div class="newMask picontent"  ng-if="layer_modpassword">
+    <ul>
+        <li class="remove_header">
+            <span>修改密码</span>
+            <em ng-click="close()"><i></i></em>
+        </li>
+    </ul>
+    <div class="tab_width modbg">
+        <ul class=" list_ul modLi">
+            <li class="describe">
+                <span>新密码：</span>
+            </li>
+            <li class="tal">
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+            </li>
+            <li class="describe">
+                <span>重置新密码：</span>
+            </li>
+            <li class="tal">
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+            </li>
+        </ul>
+    </div>
+    <div class="config_button pageBtn">
+        <button class="btnConfirm"  ng-click="addRole_back()">确 定</button>
+        <button class="btnBack" ng-click="close()">取 消</button>
+    </div>
+</div>
+
