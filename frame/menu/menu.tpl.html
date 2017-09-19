@@ -1,15 +1,15 @@
 <!--菜单页模板-->
 <ul class="left_ul">
-    <li ng-repeat="message in leftMenu" ui-sref="{{message.uisref}}"
+    <li class="firstLi" ng-repeat="message in leftMenu" ui-sref="{{message.uisref}}"
         ng-class="{true:'li_active',false:''}[curTitle==message.title]" ng-click="activeMenu(message)"  ng-mouseleave="leave()">
         <a href="#">
             <i ng-class="message.classi"></i>
             <span ng-bind="message.title"></span>
         </a>
-        <ul ng-if="message.title=='权限管理'"  ng-mouseleave="leave()">
+        <ul class="secondUl" ng-if="message.title=='权限管理'"  ng-mouseleave="leave()">
             <!--<ul ng-show="tabMenu" ng-if="message.title=='权限管理'">-->
             <li ng-repeat="mes in lefttwoMenu" ui-sref="{{mes.uisref}}"
-                ng-class="{true:'twoli_active',false:''}[curTitle==mes.title]" ng-click="activeMenutwo(mes)"  ng-if="mes.title2">
+class="secondMenu" ng-click="activeMenutwo(mes)"  ng-if="mes.title2">
                 <a href="#">
                     <p ng-bind="mes.title2"></p>
                 </a>

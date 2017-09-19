@@ -11,14 +11,15 @@
 /*main_con*/
 .main{background:#2a3f54;width: 100%;}
 .main_con{min-width:1024px}
-.main_con .main_left{width:190px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px}
+.main_con .main_left{width:162px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px}
 .main_con .main_left_wid{width:60px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px}
 .main_con .main_left span{display:block}
 .main_con .main_left_wid span{display:none}
-.main_con .main_right{background:#f7f7f7;margin-left:190px;overflow:hidden;}
+.main_con .main_right{background:#f7f7f7;margin-left:162px;overflow:hidden;}
 .main_con .main_right_col{margin-left:60px;background:#f7f7f7;overflow:hidden;padding:20px 0 40px 0}
 .main_left .left_ul{width:100%;background:#2a3f54}
-.left_ul li{width:100%;position:relative;border-bottom:1px solid #2a3f54;border-top:1px solid #2a3f54}
+.left_ul .firstLi{width:100%;position:relative;border-bottom:1px solid #2a3f54;border-top:1px solid #2a3f54}
+.left_ul .secondUl li{border-top:1px solid #fff;}
 .left_ul li em{width:100%;height:2px;position:absolute;left:0;bottom:0;background:url(../images/li_bom.jpg) repeat-x;display:none}
 .left_ul li.li_active{border-bottom:1px solid #25313b}
 .left_ul li.li_active1{border-top:1px solid #4a5c6d}
@@ -31,7 +32,7 @@
 .left_ul li i.i_6{background-position:0 -90px}
 .left_ul li i.i_7{background-position:0 -120px}
 .left_ul li span{line-height:45px;color:#d3d6d9;font-size:16px}
-.left_ul li.li_active{background:#202f3c}
+.left_ul li.li_active{background:#202f3c;}
 .left_ul li.li_active i{background-position:-30px -30px}
 .left_ul li.li_active i.i_1{background-position:-30px -60px}
 .left_ul li.li_active i.i_2{background-position:-30px -90px}
@@ -42,9 +43,11 @@
 .left_ul li.li_active i.i_7{background-position:-30px -120px}
 .left_ul li.li_active span{color:#fff}
 .left_ul ul{background-color: #eff6fd;}
-.left_ul ul li{boeder-top:none;border-bottom: 1px solid #fff;}
+.left_ul ul li{boeder-top:none;}
 .left_ul ul li p{height: 36px;line-height: 36px;padding-left:70px;}
 .left_ul li.twoli_active{background-color:#00a0d4}
+.left_ul li.secondMenu:hover{background:#1caad9 url("../images/right-arrow.png") no-repeat right center;}
+.left_ul li.secondMenu:hover p{color: #fff;}
 /*local*/
 .index_local{width:100%;height:33px;border-top:1px solid #c3c3c3;border-bottom:1px solid #c3c3c3;background:#fff}
 .index_local1{margin-top:1px;width:100%;height:32px;background:#efefef}
@@ -610,6 +613,11 @@ input[type="radio"]{display: block;margin:0 auto;}
     text-align: center;
     line-height: 28px;}
 .box_phrase tr:hover td{background-color:#f7f7f7;}
+
+
+
+/*caoruixia*/
+
 
 
 
