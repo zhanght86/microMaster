@@ -82,7 +82,7 @@
 .list_ul li{width:23%;height:44px;text-align:right;float:left;position:relative}
 .list_ul li em{color:#f5752d;font-size:14px;line-height:44px}
 .list_ul li strong{color:#f5752d;font-size:12px;line-height:44px;overflow:hidden;height:100%;width:100%;position:absolute;left:0;font-weight:400;text-align:left;top:21px;}
-.list_ul li span{font-size:14px;line-height:44px}
+.list_ul li span{color:#333;font-size:14px;line-height:44px}
 .list_ul li input{width:80%;height:26px;border:1px solid #cdcdcd;margin-top:8px;text-align:left;box-shadow:inset 0 1px 1px rgba(0,0,0,.075);line-height:26px;float: left}
 .list_ul li input:focus{border:1px solid #f27318;box-shadow:0 0 2px #fde8dc}
 
@@ -404,7 +404,19 @@
 .ind_app,.ind_applic,.ind_edo{width: 48%;height: 62px;border: 1px solid #c3c3c3;float: left;margin-left: 1.9%;}
 .ind_edo{margin:0 1.9% 0 0;float: right}
 
-/*--------------------20170915  caoruixia 不可删样式------------------------------*/
+
+/*--------------------------------------20170915  caoruixia 不可删样式------------------------------------------------------*/
+/*展业人员管理tab切换*/
+.title{width:100%;padding-top:10px;background-color:#fff;border-bottom: 1px solid #00a0d4;padding-bottom: 1px;min-width:1080px;}
+.title h2{font-size: 16px;font-weight: bold;border-left: 4px solid #00a0d4;padding-left:10px;margin-left: 1px;margin-bottom: 5px;}
+.btntab{display: block;width: 90px;height: 30px;line-height: 28px;text-align: center;border-radius: 2px;cursor: pointer}
+.btn-style1{color: #fff;background-color: #00a0d4;}
+.btn-style2{color: #00a0d4;background-color: #fff;border: 1px solid #00a0d4}
+.title{background: url(../images/nocutstyle.jpg) no-repeat center bottom;border: none;padding-bottom:32px;background-size: 100% 6px;}
+.title .btntab{height: 20px;line-height: 20px;padding-bottom:12px;}
+.title .btn-style1{background: url(../images/cutstyle.jpg) no-repeat center bottom;color: #00a0d4;font-weight: bold;border: none;font-size: 16px;}
+.title .btn-style2{background: url(../images/nocutstyle.jpg) no-repeat center bottom;color: #333;font-weight: bold;border: none;font-size: 16px;}
+.top-btn{margin-right: 20px;width:150px;}
 /*头部*/
 .top{width: 100%;height: 70px;box-shadow: 0 1px 6px #ced0d2;background-color: #fff;min-width: 1000px;position: fixed;z-index: 9;}
 .top_l{float: left;}
