@@ -101,10 +101,10 @@
         <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
     </div>
 
-    <!--添加关联机构-->
-    <div ng-if="layer_addRalation" data-ng-include="'components/region/tpl/layer/layer_addRalation.html'"></div>
-    <!--修改关联机构-->
-    <div ng-if="layer_modRalation" data-ng-include="'components/region/tpl/layer/layer_modRalation.html'"></div>
-    <!--停用-->
-    <div ng-if="layer_Disable" data-ng-include="'components/region/tpl/layer/layer_Disable.html'"></div>
+    <!--保单详情-->
+    <div ng-if="layer_customer" data-ng-include="'components/suspend/tpl/layer/layer_customer.html'"></div>
+    <!--用户详细信息-->
+    <div ng-if="layer_Policy" data-ng-include="'components/suspend/tpl/layer/layer_Policy.html'"></div>
+    <!--车商渠道详情-->
+    <div ng-if="layer_carChannel" data-ng-include="'components/suspend/tpl/layer/layer_carChannel.html'"></div>
 </div>
