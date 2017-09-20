@@ -21,7 +21,7 @@
 
 <!--修改密码-->
 <div class="mask" ng-if="layer_modpassword"></div>
-<div class="newMask picontent"  ng-if="layer_modpassword">
+<div class="newMask picontent"  ng-if="layer_modpassword" style="top:15%;">
     <ul>
         <li class="remove_header">
             <span>修改密码</span>
@@ -31,13 +31,24 @@
     <div class="tab_width modbg">
         <ul class=" list_ul modLi">
             <li class="describe">
+                <span>员工编号：</span>
+            </li>
+            <li class="tal">
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="x">
+            </li>
+            <li class="describe">
+                <span>原密码：</span>
+            </li>
+            <li class="tal">
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="xx">
+            </li> <li class="describe">
                 <span>新密码：</span>
             </li>
             <li class="tal">
-                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxx">
             </li>
             <li class="describe">
-                <span>重置新密码：</span>
+                <span>确认新密码：</span>
             </li>
             <li class="tal">
                 <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
