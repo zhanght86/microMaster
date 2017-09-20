@@ -1,96 +1,100 @@
-<div class="bg">
-    <div class="banner-head clearfix">
-        <ul class="banner-head-left fl" style="width: 439px;">
+<div class="index_con">
+    <!--查询条件-->
+    <div class="index_list">
+        <div class="index_tit"><h6>查询条件</h6></div>
+        <ul class="list_ul">
             <li>
-                <label class="label label-w1 label-w2">机构代码：</label>
-                <input class="input input-w1" type="text"/>
+                <span>用户姓名：</span>
             </li>
             <li>
-                <label class="label label-w1 label-w2">保单号：</label>
-                <input class="input input-w1" type="text"/>
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
             </li>
             <li>
-                <label class="label label-w1 label-w2">批单号：</label>
-                <input class="input input-w1" type="text"/>
+                <span>员工工号：</span>
+            </li>
+            <li>
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+            </li>
+            <li>
+                <span>归属机构：</span>
+            </li>
+            <li>
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+            </li>
+            <li>
+                <span>是否有效：</span>
+            </li>
+            <li>
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
             </li>
         </ul>
-        <ul class="banner-head-center fl">
-            <li>
-                <label class="label label-w1 label-w2">微店账号：</label>
-                <input class="input input-w1" type="text"/>
-            </li>
-            <li>
-                <label class="label label-w1 label-w2">生效起止时间：</label>
-                <input type="text" id="flightData6" jedate class="input input-w2 calendar2"
-                       format="YYYY-MM-DD" ng-model="xx"/>
-                <span style="display: block;float: left;padding:12px 6px 0">-</span>
-                <input type="text" id="flightData7" jedate class="input input-w2 calendar2"
-                       format="YYYY-MM-DD" ng-model="xxx"/>
-            </li>
-            <li class="fl">
-                <label class="label label-w1  label-w2">V保豆变动数量：</label>
-                <input class="input input-w2" type="text" value="" />
-                <span style="display: block;float: left;padding:12px 6px 0">-</span>
-                <input class="input input-w2" type="text" value=""/>
-            </li>
-        </ul>
-        <div class="banner-head-right fl">
-            <input class="btn btn-style1" type="button" value="查询"/>
-        </div>
-    </div>
-    <div class="banner-body">
-        <div class="banner-body-head clearfix">
-            <span class="fl">批改信息列表</span>
-        </div>
-        <div class="banner-body-list clearfix">
-            <table class="line-bottom" width="100%" cellpadding="0" cellspacing="0">
-                <tr>
-                    <th width="5%"><p>序号</p></th>
-                    <th width="15%"><p>业务归属机构</p></th>
-                    <th width="10%"><p>微店账号</p></th>
-                    <th width="10%"><p>批单号</p></th>
-                    <th width="15%"><p>批改生效日期</p></th>
-                    <th width="15%"><p>核批日期</p></th>
-                    <th width="10%"><p>操作人</p></th>
-                    <th width="10%"><p>V保豆变动数量</p></th>
-                    <th width="10%"><p>操作</p></th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>*****</td>
-                    <td>1361234567</td>
-                    <td>0029948</td>
-                    <td>2016-11-15</td>
-                    <td>2016-11-15</td>
-                    <td>张三</td>
-                    <td>-1100</td>
-                    <td><a  href="批改信息详情.html">查看</a></td>
-                </tr>
-            </table>
-            <div class="page clearfix fr">
-                <a class="first" href="javascript:;"></a>
-                <a class="prev" href="javascript:;"></a>
-                <a href="javascript:;">1</a>
-                <a class="current" href="javascript:;">2</a>
-                <a href="javascript:;">3</a>
-                <a href="javascript:;">4</a>
-                <a href="javascript:;">5</a>
-                <a href="javascript:;">6</a>
-                <a href="javascript:;">7</a>
-                <a href="javascript:;">8</a>
-                <a href="javascript:;">9</a>
-                <a href="javascript:;">10</a>
-                <a class="next" href="javascript:;"></a>
-                <a class="end" href="javascript:;"></a>
-                <span style="margin-left: 21px">跳至第</span>
-                <select class="jump">
-                    <option value=""></option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                </select>
-                <span>页（共365个）</span>
+        <div class="pending_btn">
+            <div class="pending_btn1">
+                <a href="#" class="a_search">查询</a>
+                <a href="#" class="a_reset">重置</a>
             </div>
         </div>
     </div>
+    <!--查询结果-->
+    <div class="index_list">
+        <div class="index_tit">
+            <h6 class="fl">查询结果</h6>
+        </div>
+        <table class="table table-striped table-bordered table-hover">
+            <tr>
+                <th>序号</th>
+                <th>员工姓名</th>
+                <th>员工工号</th>
+                <th>归属机构</th>
+                <th>好友数量</th>
+                <th>本月承保金额</th>
+                <th>本月承保笔数</th>
+                <th>本月绩效</th>
+                <th>总承保金额</th>
+                <th>总承保笔数</th>
+                <th>总绩效</th>
+                <th>是否有效</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="Downdrag" ng-click="enUserMess()">李四</td>
+                <td>21465</td>
+                <td>机构1</td>
+                <td>00</td>
+                <td>99</td>
+                <td class="Downdrag" ng-click="enThisnum()">10</td>
+                <td class="Downdrag" ng-click="enThisMoney()">40万</td>
+                <td>99</td>
+                <td class="Downdrag" ng-click="enTotalnum()">38</td>
+                <td class="Downdrag" ng-click="enTotalMoney()">40万</td>
+                <td>是</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="Downdrag" ng-click="enUserMess()">李四</td>
+                <td>21465</td>
+                <td>机构1</td>
+                <td>00</td>
+                <td>99</td>
+                <td class="Downdrag" ng-click="enThisnum()">10</td>
+                <td class="Downdrag" ng-click="enThisMoney()">40万</td>
+                <td>99</td>
+                <td class="Downdrag" ng-click="enTotalnum()">38</td>
+                <td class="Downdrag" ng-click="enTotalMoney()">40万</td>
+                <td>是</td>
+            </tr>
+        </table>
+        <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
+    </div>
+
+    <!--保单详情(本月承包笔数)-->
+    <div ng-if="layer_encustomer" data-ng-include="'components/suspend/tpl/layer/layer_encustomer.html'"></div>
+    <!--保单详情(总承包笔数)-->
+    <div ng-if="layer_entotalcustomer" data-ng-include="'components/suspend/tpl/layer/layer_entotalcustomer.html'"></div>
+    <!--用户详细信息-->
+    <div ng-if="layer_enPolicy" data-ng-include="'components/suspend/tpl/layer/layer_enPolicy.html'"></div>
+    <!--绩效详情(本月)-->
+    <div ng-if="layer_performance" data-ng-include="'components/suspend/tpl/layer/layer_performance.html'"></div>
+    <!--绩效详情(总)-->
+    <div ng-if="layer_totalperformance" data-ng-include="'components/suspend/tpl/layer/layer_totalperformance.html'"></div>
 </div>
