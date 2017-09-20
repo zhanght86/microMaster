@@ -412,10 +412,10 @@
 .btntab{display: block;width: 90px;height: 30px;line-height: 28px;text-align: center;border-radius: 2px;cursor: pointer}
 .btn-style1{color: #fff;background-color: #00a0d4;}
 .btn-style2{color: #00a0d4;background-color: #fff;border: 1px solid #00a0d4}
-.title{background: url(../images/nocutstyle.jpg) no-repeat center bottom;border: none;padding-bottom:32px;background-size: 100% 6px;mrgin-left:20px;}
+.title{background: url(../images/nocutstyle.png) no-repeat center bottom;border: none;padding-bottom:32px;background-size: 100% 6px;margin-left:20px;}
 .title .btntab{height: 20px;line-height: 20px;padding-bottom:12px;}
-.title .btn-style1{background: url(../images/cutstyle.jpg) no-repeat center bottom;color: #00a0d4;font-weight: bold;border: none;font-size: 16px;}
-.title .btn-style2{background: url(../images/nocutstyle.jpg) no-repeat center bottom;color: #333;font-weight: bold;border: none;font-size: 16px;}
+.title .btn-style1{background: url(../images/cutstyle.png) no-repeat center bottom;color: #00a0d4;font-weight: bold;border: none;font-size: 16px;}
+.title .btn-style2{background: url(../images/nocutstyle.png) no-repeat center bottom;color: #333;font-weight: bold;border: none;font-size: 16px;}
 .top-btn{margin-right: 20px;width:150px;}
 /*头部*/
 .top{width: 100%;height: 70px;box-shadow: 0 1px 6px #ced0d2;background-color: #fff;min-width: 1000px;position: fixed;z-index: 9;}
