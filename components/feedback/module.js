@@ -18,8 +18,8 @@ define([
                 $stateProvider
                     .state("main.feedback", {
                         url:"/feedback",
-                        templateUrl: "components/feedback/tpl/feedback.html"
-                        //controller: ""
+                        templateUrl: "components/feedback/tpl/feedback.html",
+                        controller: "feedbackCtrl"
                     });
             }])
         .controller('feedbackCtrl',feedbackCtrlHandler)

@@ -3,7 +3,7 @@
  */
 define([], function () {
     'use strict';
-    function FeedbackServHandler($http,$q){
+    function feedbackServHandler($http,$q){
         return {
 
 
@@ -12,5 +12,5 @@ define([], function () {
         }
     };
 
-    return FeedbackServHandler;
+    return feedbackServHandler;
 });

@@ -22,11 +22,10 @@
             <li>
                 <input type="text" class="fl"  ng-model="xxxx">
             </li>
-
         </ul>
         <div class="pending_btn">
             <div class="pending_btn1">
-                <a href="#" class="a_search">查询</a>
+                <a class="a_search">查询</a>
                 <a href="#" class="a_reset">重置</a>
             </div>
         </div>
@@ -42,36 +41,34 @@
                     <th ng-click="col='name';desc=!desc">提交时间</th>
                     <th class="t_last">描述</th>
                 </tr>
-                <tr>
+                <tr ng-click="addsssssss()">
                     <td>1</td>
                     <td>评价</td>
                     <td>待处理</td>
                     <td>2017-09-21</td>
                     <td class="t_last">XXXX</td>
                 </tr>
-                <tr>
+                <tr ng-click="addsssssss()">
                     <td>2</td>
                     <td>评价</td>
                     <td>处理中</td>
                     <td>2017-09-21</td>
                     <td class="t_last">修改机构，机构代码1039274，机构名称：XXXX</td>
                 </tr>
-                <tr>
+                <tr ng-click="addsssssss()">
                     <td>3</td>
                     <td>评价</td>
                     <td>已完成</td>
                     <td>2017-09-21</td>
                     <td class="t_last">修改机构，机构代码1039274，机构名称：XXXX</td>
                 </tr>
-                <tr>
+                <tr ng-click="addsssssss()">
                     <td>4</td>
                     <td>评价</td>
                     <td>已完成</td>
                     <td>2017-09-21</td>
-                    <td class="t_last">修改机构，机构代码1039274，机构名称：XXXX</td>
+                    <td class="t_last" >修改机构，机构代码1039274，机构名称：XXXX</td>
                 </tr>
-
-
             </table>
             <div class="page clearfix fr">
                 <a class="first" href="javascript:;"></a>
@@ -99,20 +96,22 @@
             </div>
         </div>
     </div>
-    <div class="lay"></div>
-    <div class="thick_service">
-        <div class="index_tit"><h6>查询列表</h6></div>
-        <div class="feedback_message">
-            <p>反馈类型：咨询</p>
-            <p>联系方式：13131313131</p>
-            <p>提交时间：2017-09-01 12:12:12</p>
-        </div>
-        <div class="service_particulars">
-            <p>反馈内容：</p><p>This is your contribution graph. Your first s for joining GitHub and you'll earn more as you make additional contributions. More contributions means a darker green square for that day. Over time, your chart might start looking something like this.
-            We have a quick guide that will show you how to create your first repository and earn more green squares!</p>
-        </div>
-        <div class="service_particulars bottom">
-            <a href="javascript:(0)" class="btn_close">确定</a>
+    <div ng-if="layer_detailText">
+        <div class="mask"></div>
+        <div class="thick_service">
+            <div class="index_tit"><h6>查询列表</h6></div>
+            <div class="feedback_message">
+                <p>反馈类型：咨询</p>
+                <p>联系方式：13131313131</p>
+                <p>提交时间：2017-09-01 12:12:12</p>
+            </div>
+            <div class="service_particulars">
+                <p>反馈内容：</p><p>This is your contribution graph. Your first s for joining GitHub and you'll earn more as you make additional contributions. More contributions means a darker green square for that day. Over time, your chart might start looking something like this.
+                We have a quick guide that will show you how to create your first repository and earn more green squares!</p>
+            </div>
+            <div class="service_particulars bottom" ng-click="addralation_sure()">
+                <a  class="btn_close">确定</a>
+            </div>
         </div>
     </div>
 </div>
