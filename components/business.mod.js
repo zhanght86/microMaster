@@ -14,7 +14,7 @@ define([
     'components/suspend/module',
     'components/charge/module',
     'components/region/module',
-    'components/document/module',
+    'components/message/module',
     'components/material/module',
     'components/community/module',
     'components/feedback/module'
@@ -31,7 +31,7 @@ define([
             'business.suspend',
             'business.charge',
             'business.region',
-            'business.document',
+            'business.message',
             'business.material',
             'business.community',
             'business.feedback'

@@ -24,17 +24,16 @@
     "classi": "i_6",
     "uisref": "main.suspend"
 },{
+  "title": "消息管理",
+  "classes": "",
+  "classi": "i_7",
+  "uisref": "main.message"
+},{
   "title": "客户管理",
   "classes": "",
   "classi": "i_1",
   "uisref": "main.application"
 },{
-  "title": "统计管理",
-  "classes": "",
-  "classi": "i_7",
-  "uisref": "main.document"
-},
-{
    "title": "反馈管理",
    "classes": "",
    "classi": "i_8",
