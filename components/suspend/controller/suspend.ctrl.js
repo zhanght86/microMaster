@@ -37,15 +37,15 @@ define([], function () {
             //普通用户管理
             $scope.applicationTab = function(){
                 $scope.curActive='appli';
-                $state.go("main.suspend.proposal");
+                $state.go("main.suspend.ordinary");
             };
             //展业人员管理
             $scope.endorseTab=function(){
                 $scope.curActive='endor';
-                $state.go("main.suspend.endorse");
+                $state.go("main.suspend.proposal");
             };
             $scope.curActive='appli';
-            $state.go("main.suspend.proposal");
+            $state.go("main.suspend.ordinary");
 
             console.log("suspendCtrlHandler end init");
         };

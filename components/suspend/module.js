@@ -19,13 +19,13 @@ define([
                         templateUrl: "components/suspend/tpl/suspend.html",
                         controller: "suspendCtrl"
                     })
+                    .state("main.suspend.ordinary",{
+                        url:"/ordinary",
+                        templateUrl: "components/suspend/tpl/suspend.ordinary.html"
+                    })
                     .state("main.suspend.proposal",{
                         url:"/proposal",
                         templateUrl: "components/suspend/tpl/suspend.proposal.html"
-                    })
-                    .state("main.suspend.endorse",{
-                        url:"/endorse",
-                        templateUrl: "components/suspend/tpl/suspend.endorse.html"
                     });
             }])
         .controller('suspendCtrl',suspendCtrlHandler)
