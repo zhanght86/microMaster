@@ -16,7 +16,8 @@ define([
     'components/region/module',
     'components/document/module',
     'components/material/module',
-    'components/community/module'
+    'components/community/module',
+    'components/feedback/module'
 ],function (angular) {
     'use strict';
     console.log("load business module");
@@ -32,6 +33,7 @@ define([
             'business.region',
             'business.document',
             'business.material',
-            'business.community'
+            'business.community',
+            'business.feedback'
         ]);
 });

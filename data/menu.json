@@ -33,14 +33,21 @@
   "classes": "",
   "classi": "i_7",
   "uisref": "main.document"
-},{
-  "title": "销售数据管理",
+},
+{
+   "title": "反馈管理",
+   "classes": "",
+   "classi": "i_8",
+   "uisref": "main.feedback"
+},
+{
+  "title": "微信客服管理",
   "classes": "",
-  "classi": "i_8",
+  "classi": "i_9",
   "uisref": "main.community"
 },{
   "title": "日志管理",
   "classes": "",
-  "classi": "i_9",
+  "classi": "i_10",
   "uisref": "main.material"
 }]
