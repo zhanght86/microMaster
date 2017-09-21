@@ -4,7 +4,7 @@
  */
 define([], function () {
     'use strict';
-    function messageCtrlHandler($scope,$state,messageServ,InsuredServ) {
+    function messageCtrlHandler($scope,$state,messageServ) {
 
 
 
