@@ -4,7 +4,7 @@
  */
 define([], function () {
     'use strict';
-    function endorseCtrlHandler($scope,$state) {
+    function organizationCtrlHandler($scope,$state) {
 
         $scope.goIndex=function(){
 
@@ -54,5 +54,5 @@ define([], function () {
         ];
     };
 
-    return endorseCtrlHandler;
+    return organizationCtrlHandler;
 });
