@@ -18,7 +18,8 @@ define([
                 $stateProvider
                     .state("main.message", {
                         url:"/message",
-                        templateUrl: "components/message/tpl/message.html"
+                        templateUrl: "components/message/tpl/message.html",
+                        controller: "messageCtrl"
                     });
             }])
         .controller('messageCtrl',messageCtrlHandler)

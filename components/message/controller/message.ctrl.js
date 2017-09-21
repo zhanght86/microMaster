@@ -4,8 +4,20 @@
  */
 define([], function () {
     'use strict';
-    function messageCtrlHandler($scope,$state,messageServ) {
-
+    function messageCtrlHandler($scope,$state) {
+        //创建
+        $scope.foundnew=function () {
+            $scope.layer_found=true;
+        };
+        //删除
+        $scope.cancle=function () {
+            $scope.layer_cancle=true;
+            $scope.tipMessage="您确认删除吗！";
+        };
+        $scope.addRole_back=function () {
+            $scope.layer_found=false;
+            $scope.layer_cancle=false;
+        }
 
 
     };

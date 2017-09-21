@@ -505,9 +505,6 @@ input[type="radio"]{display: block;margin:0 auto;}
 
 
 
-/*20170920 caoruixia*/
-.bigh6{height:32px;}
-
 .thick_service{position:absolute;top:0;left:0;right:0;bottom:0;width:700px;height:500px;margin:auto;background-color: #fff;border:1px solid #999;border-radius:3px;overflow:hidden;padding-bottom:94px;z-index: 199;box-sizing: border-box;}
 .thick_service p{font-size:16px;color:#333;height:22px;}
 .thick_service .feedback_message,.thick_service .service_particulars{padding-top:20px;margin:0 20px;}
@@ -516,3 +513,11 @@ input[type="radio"]{display: block;margin:0 auto;}
 .thick_service .service_particulars p+p{text-indent:1.5em;margin-top: 10px;height:auto;line-height:24px;font-size:16px;}
 .thick_service .service_particulars .btn_close{width: 140px;display:block;height: 32px;background: #fff;text-align: center;line-height: 32px;color: #0b7cc3;font-size: 16px;border-radius: 2px;border:1px solid #0b7cc3;margin: 0 auto;}
 .thick_service .service_particulars.bottom{position: absolute;width: 100%;bottom: 20px;}
+
+
+
+/*20170920 caoruixia*/
+.tal{text-align: left;}
+.bigh6{height:32px;}
+.list_ul .mesContent{width:65%;height:86px;margin-top:10px;}
+.mesContentHeight{width:100%;height:72px;resize: none;border: 1px solid #cdcdcd;}
