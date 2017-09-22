@@ -39,14 +39,27 @@ define(['app','uiRouter',
                         }
                     );
                 }else{
-                    console.log("此菜单暂无二级菜单！");
+                    if($scope.curTitle=="监控管理"){
+                    //$scope.tabMenu = !$scope.tabMenu;
+                    menuServ.getTWOData(user.userCode).then(
+                        function(answer){
+                            $scope.lefttwoMenu = answer.data;
+                        },function(error){
+                            console.log("获取菜单错误");
+                            console.log(JSON.stringify(error));
+                            $state.go("login",{"msg":"获取菜单错误"});
+                        }
+                    );
+                    }else{
+                        console.log("此菜单暂无二级菜单！");
+                    }
                 }
             };
             $scope.activeMenutwo=function(mes){
                 $scope.curTitle = mes.title2;
             };
             $scope.leave=function(mes){
-                if($scope.curTitle=="权限管理"){
+                if($scope.curTitle=="权限管理"||"监控管理"){
                 $scope.lefttwoMenu=false;
                 };
             };

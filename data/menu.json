@@ -34,6 +34,11 @@
   "classi": "i_1",
   "uisref": "main.application"
 },{
+  "title": "焦点图",
+  "classes": "",
+  "classi": "i_1",
+  "uisref": "main.banner"
+},{
    "title": "反馈管理",
    "classes": "",
    "classi": "i_8",
@@ -45,8 +50,8 @@
   "classi": "i_9",
   "uisref": "main.community"
 },{
-  "title": "日志管理",
+  "title": "监控管理",
   "classes": "",
   "classi": "i_10",
-  "uisref": "main.material"
+  "uisref": ""
 }]

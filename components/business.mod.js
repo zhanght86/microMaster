@@ -17,7 +17,8 @@ define([
     'components/message/module',
     'components/material/module',
     'components/community/module',
-    'components/feedback/module'
+    'components/feedback/module',
+    'components/banner/module'
 ],function (angular) {
     'use strict';
     console.log("load business module");
@@ -25,7 +26,7 @@ define([
     /*增加模块依赖*/
     return angular.module('business',
         [   'business.index',
-             'business.power',
+            'business.power',
             'business.application',
             'business.organization',
             'business.suspend',
@@ -34,6 +35,7 @@ define([
             'business.message',
             'business.material',
             'business.community',
+            'business.banner',
             'business.feedback'
         ]);
 });

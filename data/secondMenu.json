@@ -15,5 +15,23 @@
     "classes": "",
     "classi": "i_2",
     "uisref": "main.serManage"
+  },
+  {
+    "title3": "日志监控",
+    "classes": "",
+    "classi": "",
+    "uisref": "main.material"
+  },
+  {
+    "title3": "接口监控",
+    "classes": "",
+    "classi": "i_1",
+    "uisref": "main.interfacemonitor"
+  },
+  {
+    "title3": "定时任务监控",
+    "classes": "",
+    "classi": "i_2",
+    "uisref": "main.timingtask"
   }
  ]

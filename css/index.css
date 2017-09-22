@@ -483,9 +483,9 @@ input[type="radio"]{display: block;margin:0 auto;}
 .a_add{}
 .a_view{}
 .a_move{}
-.staff_list tr:hover td,.group_list ul li:hover{background-color:#ccc;}
-.staff_list tr.hover td,.group_list ul li.hover{background-color:#0b7cc3;color:#fff;}
-.index_list tr.hover td a{color:#fd9a9a;}
+/*.staff_list tr:hover td,.group_list ul li:hover{background-color:#ccc;}*/
+.staff_list tr:hover td,.group_list ul li:hover,.staff_list tr.hover td,.group_list ul li.hover{background-color:#0b7cc3;color:#fff;}
+.index_list tr.hover td a,.index_list tr:hover td a{color:#fd9a9a;}
 .staff_list .text_area span{font-size:14px;display:block;}
 .staff_list .text_area span.text_right{text-align: right;}
 .staff_list .text_area p{font-size:16px;text-indent:1.5em;padding:5px 5px 8px;background-color:#f2f2f2;margin:3px 0 5px;}
@@ -497,6 +497,9 @@ input[type="radio"]{display: block;margin:0 auto;}
     display: inline-block;font-size:18px;color:#666;}
 .box_page div input{width:25px;border-bottom:1px solid #999;padding-right:5px;text-align: right}
 .box_phrase{width:100%;}
+.box_phrase tr td,.box_phrase tr th{height: 28px;padding: 0!important;text-align: center;line-height: 28px;}
+.box_phrase tr:hover td{background-color:#f7f7f7;}/*20170920 caoruixia*/
+.bigh6{height:32px;}
 .box_phrase tr td,.box_phrase tr th{height: 28px;
     padding: 0!important;
     text-align: center;
@@ -513,6 +516,8 @@ input[type="radio"]{display: block;margin:0 auto;}
 .thick_service .service_particulars p+p{text-indent:1.5em;margin-top: 10px;height:auto;line-height:24px;font-size:16px;}
 .thick_service .service_particulars .btn_close{width: 140px;display:block;height: 32px;background: #fff;text-align: center;line-height: 32px;color: #0b7cc3;font-size: 16px;border-radius: 2px;border:1px solid #0b7cc3;margin: 0 auto;}
 .thick_service .service_particulars.bottom{position: absolute;width: 100%;bottom: 20px;}
+.table-center,.table-center tr,.table-center tr th,.table-center tr td{text-align: center}
+.table-amar tr td a{margin:0 8px;display: inline-block;}
 
 
 
