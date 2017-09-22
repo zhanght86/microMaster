@@ -34,6 +34,11 @@
   "classi": "i_1",
   "uisref": "main.application"
 },{
+  "title": "微信模板",
+  "classes": "",
+  "classi": "i_5",
+  "uisref": "main.weChatemplate"
+},{
   "title": "焦点图",
   "classes": "",
   "classi": "i_1",

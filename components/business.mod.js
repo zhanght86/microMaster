@@ -18,7 +18,8 @@ define([
     'components/material/module',
     'components/community/module',
     'components/feedback/module',
-    'components/banner/module'
+    'components/banner/module',
+    'components/weChatemplate/module'
 ],function (angular) {
     'use strict';
     console.log("load business module");
@@ -36,6 +37,7 @@ define([
             'business.material',
             'business.community',
             'business.banner',
-            'business.feedback'
+            'business.feedback',
+            'business.weChatemplate'
         ]);
 });
