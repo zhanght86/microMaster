@@ -9,6 +9,10 @@ define([], function () {
         $scope.foundnew=function () {
             $scope.layer_found=true;
         };
+        //修改
+        $scope.modify=function () {
+            $scope.layer_modfound=true;
+        };
         //删除
         $scope.cancle=function () {
             $scope.layer_cancle=true;
@@ -16,6 +20,7 @@ define([], function () {
         };
         $scope.addRole_back=function () {
             $scope.layer_found=false;
+            $scope.layer_modfound=false;
             $scope.layer_cancle=false;
         };
         /*是否*/

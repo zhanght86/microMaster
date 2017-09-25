@@ -49,7 +49,7 @@
     <!--查询结果-->
     <div class="index_list">
         <div class="index_tit">
-            <h6 class="fl">查询结果</h6>
+            <h6 class="fl">消息列表</h6>
             <div class="fr">
                 <div class="div_a" ng-click="foundnew()">
                     <i></i><span>创建</span>
@@ -95,6 +95,8 @@
 
     <!--创建-->
     <div ng-if="layer_found" data-ng-include="'components/message/tpl/layer/layer_found.html'"></div>
+    <!--修改-->
+    <div ng-if="layer_modfound" data-ng-include="'components/message/tpl/layer/layer_modfound.html'"></div>
     <!--删除-->
     <div ng-if="layer_cancle" data-ng-include="'components/power/tpl/layer/layer_tipMessage.html'"></div>
 </div>
