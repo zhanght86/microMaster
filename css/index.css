@@ -123,8 +123,8 @@
 /*radio*/
 .list_ul li.li_wid{width:75%}
 .list_ul li .radio{display:block;width:27px;height:20px;background:url(../images/radio.png) 0 -23px no-repeat;padding-left:20px;float:left;margin-top:8px;cursor:pointer;}
-.list_ul li .marr43{margin-top: 8px;}
-.list_ul li .on{display:block;width:27px;height:20px;background:url(../images/radio.png) 0 0 no-repeat;padding-left:20px;float:left;margin-top:8px;cursor:pointer;}
+.list_ul li .marr43{margin-top: 16px;}
+.list_ul li .on{display:block;width:27px;height:20px;background:url(../images/radio.png) 0 0 no-repeat;padding-left:20px;float:left;margin-top:16px;cursor:pointer;}
 .list_ul li .mar_right{width: 80px;}
 .list_ul li .mar_right1{width: 80px;}
 .list_ul li .mar_right2{width: 128px;}

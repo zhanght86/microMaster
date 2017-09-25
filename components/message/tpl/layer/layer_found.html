@@ -34,17 +34,18 @@
                 <span>是否立即发送：</span>
             </li>
             <li class="tal">
-                <select>
-                    <option>--请选择--</option>
-                    <option>是</option>
-                    <option>否</option>
-                </select>
+                <span class="radio1 on" ng-class="{true:'on',false:'radio'}[yesflag]" ng-click="yesClick1()" >
+                            <input type="radio" class="hide" value="0" name="trafficIns" /><em>是</em>
+                        </span>
+                <span class="radio radio1  marr43" ng-class="{true:'radio',false:'on'}[noflag]" ng-click="noClick1()" >
+                            <input type="radio" class="hide" value="1" name="trafficIns" checked="checked" /><em>否</em>
+                        </span>
             </li>
             <li>
                 <span>发送时间：</span>
             </li>
             <li class="tal">
-                <input type="text"  id="flightData4" jedate="" placeholder="" class="fl date" format="YYYY-MM-DD" ng-model="x"/>
+                <input type="text"  id="flightData55" jedate="" placeholder="" class="fl date" format="YYYY-MM-DD" ng-model="x"/>
             </li>
             <li><span></span></li>
             <li class="tal"></li>
@@ -57,7 +58,7 @@
         </ul>
     </div>
     <div class="config_button pageBtn">
-        <button class="btnConfirm"  ng-click="addRole_back()">确 定</button>
+        <button class="btnConfirm"  ng-click="addRole_back()">发 布</button><button class="btnConfirm"  ng-click="addRole_back()">保 存</button><button class="btnBack" ng-click="addRole_back()">取 消</button>
     </div>
 </div>
 

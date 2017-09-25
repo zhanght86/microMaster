@@ -17,7 +17,18 @@ define([], function () {
         $scope.addRole_back=function () {
             $scope.layer_found=false;
             $scope.layer_cancle=false;
-        }
+        };
+        /*是否*/
+        $scope.yesClick1 = function () {
+            debugger
+            $scope.yesflag = true;
+            $scope.noflag = true;
+        };
+        $scope.noClick1 = function () {
+            debugger
+            $scope.yesflag = false;
+            $scope.noflag = false;
+        };
 
 
     };
