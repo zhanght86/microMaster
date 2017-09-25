@@ -520,6 +520,8 @@ input[type="radio"]{display: block;margin:0 auto;}
 .lay_addTemplate dl dd textarea,.lay_addTemplate .box_text textarea{border:1px solid #ddd;width:200px;height:64px;border-radius:2px;line-height:24px;padding:4px 8px;resize: none;}
 .lay_addTemplate a{display: inline-block; width: 140px;height: 32px;border:1px solid #999;text-align: center;line-height: 32px;color:#666;font-size: 16px;border-radius: 2px;text-decoration: none;margin:20px 10px;}
 .ready-click tr:hover td{background-color: #0b7cc3;color:#fff;}
+.m20{padding:10px 0;}
+.mt5{margin-top: 5px;}
 /*20170920 caoruixia*/
 .tal{text-align: left;}
 .bigh6{height:32px;}
