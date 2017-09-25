@@ -38,8 +38,7 @@ define(['app','uiRouter',
                             $state.go("login",{"msg":"获取菜单错误"});
                         }
                     );
-                }else{
-                    if($scope.curTitle=="监控管理"){
+                }else if($scope.curTitle=="监控管理"){
                     //$scope.tabMenu = !$scope.tabMenu;
                     menuServ.getTWOData(user.userCode).then(
                         function(answer){
@@ -50,10 +49,9 @@ define(['app','uiRouter',
                             $state.go("login",{"msg":"获取菜单错误"});
                         }
                     );
-                    }else{
-                        console.log("此菜单暂无二级菜单！");
-                    }
-                }
+                }else{
+                console.log("此菜单暂无二级菜单！");
+                };
             };
             $scope.activeMenutwo=function(mes){
                 $scope.curTitle = mes.title2;

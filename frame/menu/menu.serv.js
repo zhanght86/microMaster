@@ -6,7 +6,7 @@ define(['app'], function (app) {
     'use strict';
     app.service('menuServ',['$http','$q',function($http,$q){
         return {
-            /*投保单查询*/
+            /*一级菜单*/
             getData:function (params){
                 var deferred = $q.defer();
                 var urlGetData = "data/menu.json";
@@ -30,7 +30,7 @@ define(['app'], function (app) {
                 //返回promise对象，交由Controller继续处理
                 return deferred.promise;
             },
-            /*投保单查询*/
+            /*二级菜单*/
             getTWOData:function (params){
                 var deferred = $q.defer();
                 var urlGetData = "data/secondMenu.json";
