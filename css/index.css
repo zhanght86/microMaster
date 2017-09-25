@@ -522,8 +522,10 @@ input[type="radio"]{display: block;margin:0 auto;}
 .ready-click tr:hover td{background-color: #0b7cc3;color:#fff;}
 .m20{padding:10px 0;}
 .mt5{margin-top: 5px;}
-/*20170920 caoruixia*/
+
+/*20170920 caoruixia 消息管理*/
 .tal{text-align: left;}
 .bigh6{height:32px;}
 .list_ul .mesContent{width:65%;height:86px;margin-top:10px;}
 .mesContentHeight{width:100%;height:72px;resize: none;border: 1px solid #cdcdcd;}
+.resizeNo{resize: none;}
