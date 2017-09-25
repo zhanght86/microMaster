@@ -482,7 +482,8 @@ input[type="radio"]{display: block;margin:0 auto;}
 .add_phrase{margin:15px;}
 /*.staff_list tr:hover td,.group_list ul li:hover{background-color:#ccc;}*/
 .staff_list tr:hover td,.group_list ul li:hover,.staff_list tr.hover td,.group_list ul li.hover{background-color:#0b7cc3;color:#fff;}
-.index_list tr.hover td a,.index_list tr:hover td a{color:#fd9a9a;}
+/*.index_list tr.hover td a,.index_list tr:hover td a{color:#fd9a9a;}*/
+.index_list tr td a:hover,.index_list tr td a:hover{color:#fd9a9a;}
 .staff_list .text_area span{font-size:14px;display:block;}
 .staff_list .text_area span.text_right{text-align: right;}
 .staff_list .text_area p{font-size:16px;text-indent:1.5em;padding:5px 5px 8px;background-color:#f2f2f2;margin:3px 0 5px;}
