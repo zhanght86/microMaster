@@ -4,9 +4,10 @@
  */
 define([], function () {
     'use strict';
-    function serviCtrl ($scope,$state,$stateParams) {
-
+    function serviCtrlHandler ($scope,$state,$stateParams) {
+        $scope.openClick=function () {
+            $scope.list_date=true;
+        };
     };
-
-    return serviCtrl;
+    return serviCtrlHandler;
 });
