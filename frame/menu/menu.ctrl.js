@@ -50,18 +50,13 @@ define(['app','uiRouter',
                         }
                     );
                 }else{
-                console.log("此菜单暂无二级菜单！");
+                    $scope.lefttwoMenu=false;
+                    console.log("此菜单暂无二级菜单！");
                 };
             };
             $scope.activeMenutwo=function(mes){
                 $scope.curTitle = mes.title2;
             };
-            $scope.leave=function(mes){
-                if($scope.curTitle=="权限管理"||"监控管理"){
-                $scope.lefttwoMenu=false;
-                };
-            };
-
 
         }]);
 });

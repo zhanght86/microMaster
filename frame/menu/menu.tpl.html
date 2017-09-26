@@ -6,7 +6,7 @@
             <i ng-class="message.classi"></i>
             <span ng-bind="message.title"></span>
         </a>
-        <ul class="secondUl" ng-if="message.title=='权限管理'&&curTitle=='权限管理'"  ng-mouseleave="leave()">
+        <ul class="secondUl" ng-if="message.title=='权限管理'&&curTitle=='权限管理'">
             <!--<ul ng-show="tabMenu" ng-if="message.title=='权限管理'">-->
             <li ng-repeat="mes in lefttwoMenu" ui-sref="{{mes.uisref}}" class="secondMenu" ng-click="activeMenutwo(mes)"  ng-if="mes.title2">
                 <a href="#">
@@ -14,7 +14,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="secondUl" ng-if="message.title=='监控管理'&&curTitle=='监控管理'"  ng-mouseleave="leave()">
+        <ul class="secondUl" ng-if="message.title=='监控管理'&&curTitle=='监控管理'">
             <!--<ul ng-show="tabMenu" ng-if="message.title=='监控管理'">-->
             <li ng-repeat="mes in lefttwoMenu" ui-sref="{{mes.uisref}}" class="secondMenu" ng-click="activeMenutwo(mes)"  ng-if="mes.title3">
                 <a href="#">
