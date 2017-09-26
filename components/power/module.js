@@ -4,26 +4,26 @@
  */
 define([
     'angular',
+    'components/power/controller/Functions.ctrl',
     'components/power/controller/focusManage.ctrl',
-    'components/power/controller/function.ctrl',
     'components/power/controller/regionManage.ctrl',
     'components/power/controller/serManage.ctrl',
     'components/power/controller/addRole.ctrl',
     'components/power/controller/addStaf.ctrl',
-    'components/power/service/function.serv',
+    'components/power/service/Functions.serv',
     'components/power/service/focusManage.serv',
     'components/power/service/regionManage.serv',
     'components/power/service/serManage.serv',
     'components/power/service/addRole.serv',
     'components/power/service/addStaf.serv',
 ],function (angular,
-            functionCtrlHandler,
+            FunctionsCtrlHandler,
             focusManageCtrlHandler,
             regionManageCtrlHandler,
             serManageCtrlHandler,
             addRoleCtrlHandler,
             addStafCtrlHandler,
-            functionServHandler,
+            FunctionsServHandler,
             focusManageServHandler,
             regionManageServHandler,
             serManageServHandler,
@@ -36,10 +36,10 @@ define([
         .config(['$stateProvider',
             function ($stateProvider) {
                 $stateProvider
-                .state("main.function", {
-                        url:"/function",
-                        templateUrl: "components/power/tpl/function.html",
-                        controller: "functionCtrl"
+                .state("main.Functions", {
+                        url:"/Functions",
+                        templateUrl: "components/power/tpl/Functions.html",
+                        controller: "FunctionsCtrl"
                 })
                 .state("main.focusManage", {
                     url:"/focusManage",
@@ -67,13 +67,13 @@ define([
                 controller: "addStafCtrl"
                 });
             }])
-        .controller('focusManageCtrl',functionCtrlHandler)
+        .controller('FunctionsCtrl',FunctionsCtrlHandler)
         .controller('focusManageCtrl',focusManageCtrlHandler)
         .controller('regionManageCtrl',regionManageCtrlHandler)
         .controller('serManageCtrl',serManageCtrlHandler)
         .controller('addRoleCtrl',addRoleCtrlHandler)
         .controller('addStafCtrl',addStafCtrlHandler)
-        .service('focusManageServ',functionServHandler)
+        .service('FunctionsServ',FunctionsServHandler)
         .service('focusManageServ',focusManageServHandler)
         .service('regionManageServ',regionManageServHandler)
         .service('serManageServ',serManageServHandler)

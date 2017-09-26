@@ -4,9 +4,9 @@
  */
 define([], function () {
     'use strict';
-    function functionCtrlHandler($scope,$state) {
+    function FunctionsCtrlHandler($scope,$state) {
         $scope.showMainNagiv = false;
     };
 
-    return functionCtrlHandler;
+    return FunctionsCtrlHandler;
 });

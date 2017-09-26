@@ -11,7 +11,7 @@ define([], function () {
             $state.go("main.addRole");
         };
         //删除
-        $scope.canale=function () {
+        $scope.rolecanale=function () {
             $scope.layer_cancle=true;
             $scope.tipMessage="您确认删除吗！";
         };
