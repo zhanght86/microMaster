@@ -55,7 +55,8 @@ define(['app','uiRouter',
                 };
             };
             $scope.activeMenutwo=function(mes){
-                $scope.curTitle = mes.title2;
+                $scope.curTitle2 = mes.title2;
+                $scope.curTitle3 = mes.title3;
             };
 
         }]);
