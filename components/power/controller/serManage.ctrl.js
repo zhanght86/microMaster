@@ -5,7 +5,10 @@
 define([], function () {
     'use strict';
     function serManageCtrlHandler($scope,$state) {
-        // $scope.showMainNagiv = false;
+        //增加
+        $scope.addRoleConfig=function () {
+            $state.go("main.addStaf");
+        }
         //删除
         $scope.canale=function () {
             $scope.layer_cancle=true;

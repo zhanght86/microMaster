@@ -531,3 +531,6 @@ input[type="radio"]{display: block;margin:0 auto;}
 .list_ul .mesContent{width:65%;height:86px;margin-top:10px;}
 .mesContentHeight{width:100%;height:72px;resize: none;border: 1px solid #cdcdcd;}
 .resizeNo{resize: none;}
+/*20170926 caoruixia  人员配置-增加人员配置*/
+.addstafcss .zl{width:30%;}
+.addstafcss .rl{width:46%;}

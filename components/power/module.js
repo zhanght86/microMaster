@@ -8,19 +8,23 @@ define([
     'components/power/controller/regionManage.ctrl',
     'components/power/controller/serManage.ctrl',
     'components/power/controller/addRole.ctrl',
+    'components/power/controller/addStaf.ctrl',
     'components/power/service/focusManage.serv',
     'components/power/service/regionManage.serv',
     'components/power/service/serManage.serv',
     'components/power/service/addRole.serv',
+    'components/power/service/addStaf.serv',
 ],function (angular,
             focusManageCtrlHandler,
             regionManageCtrlHandler,
             serManageCtrlHandler,
             addRoleCtrlHandler,
+            addStafCtrlHandler,
             focusManageServHandler,
             regionManageServHandler,
             serManageServHandler,
-            addRoleServHandler) {
+            addRoleServHandler,
+            addStafServHandler) {
     'use strict';
     console.log("load business.power module");
     /*首页-统计图表*/
@@ -47,15 +51,22 @@ define([
                     url:"/addRole",
                     templateUrl: "components/power/tpl/addRole.html",
                     controller: "addRoleCtrl"
+                })
+                .state("main.addStaf", {
+                url:"/addStaf",
+                templateUrl: "components/power/tpl/addStaf.html",
+                controller: "addStafCtrl"
                 });
             }])
         .controller('focusManageCtrl',focusManageCtrlHandler)
         .controller('regionManageCtrl',regionManageCtrlHandler)
         .controller('serManageCtrl',serManageCtrlHandler)
         .controller('addRoleCtrl',addRoleCtrlHandler)
+        .controller('addStafCtrl',addStafCtrlHandler)
         .service('focusManageServ',focusManageServHandler)
         .service('regionManageServ',regionManageServHandler)
         .service('serManageServ',serManageServHandler)
-        .service('addRoleServ',addRoleServHandler);
+        .service('addRoleServ',addRoleServHandler)
+        .service('addStafServ',addStafServHandler);
 });
 
