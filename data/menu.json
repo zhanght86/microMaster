@@ -29,6 +29,11 @@
   "classi": "i_7",
   "uisref": "main.message"
 },{
+  "title": "销售数据管理",
+  "classes": "",
+  "classi": "i_3",
+  "uisref": "main.saledata"
+},{
   "title": "客户管理",
   "classes": "",
   "classi": "i_1",
