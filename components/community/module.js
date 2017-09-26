@@ -18,8 +18,8 @@ define([
                 $stateProvider
                     .state("main.community", {
                         url:"/community",
-                        templateUrl: "components/community/tpl/servi.html"
-                        //controller: ""
+                        templateUrl: "components/community/tpl/servi.html",
+                        controller: "serviCtrl"
                     });
             }])
         .controller('serviCtrl',serviCtrlHandler)
