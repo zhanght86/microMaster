@@ -15,7 +15,7 @@
                 </ul>
             </div>
             <div class="staff_list">
-                <table class="table-bordered" cellpadding="0" cellspacing="0">
+                <table class="table-bordered index_red" cellpadding="0" cellspacing="0">
                     <tr>
                         <th>序号</th>
                         <th>账号</th>
@@ -25,10 +25,10 @@
                         <th>状态</th>
                         <th>操作</th>
                     </tr>
-                    <tr class="hover">
+                    <tr>
                         <td>1</td>
                         <td>105269</td>
-                        <td>张四</td>
+                        <td ng-click="openClick()"><a>张四</a></td>
                         <td>小四</td>
                         <td>男</td>
                         <td>就绪</td>
@@ -37,7 +37,7 @@
                     <tr>
                         <td>2</td>
                         <td>105268</td>
-                        <td>王六</td>
+                        <td ng-click="openClick()"><a>王六</a></td>
                         <td>小五</td>
                         <td>男</td>
                         <td>禁用中</td>
@@ -46,7 +46,7 @@
                     <tr>
                         <td>3</td>
                         <td>105267</td>
-                        <td>李三</td>
+                        <td  ng-click="openClick()"><a href="">李三</a></td>
                         <td>小六</td>
                         <td>女</td>
                         <td>接待中</td>
@@ -66,7 +66,7 @@
             </div>
         </div>
     </div>
-    <div class="personnel_table" ng-if="list_date">
+    <div class="personnel_table index_list" ng-if="list_date">
         <div class="index_tit"><h6>聊天详情</h6></div>
         <div class="group_list">
             <h6>接待列表</h6>
@@ -86,31 +86,62 @@
         </div>
     </div>
     <div class="personnel_table ">
-        <div>
-            <a href="javascript:(0)" class="add_phrase">新增常用语</a>
+        <div class="index_list">
+            <div class="index_tit">
+                <h6 class="fl">常用语列表</h6>
+                <div class="fr">
+                    <div class="div_a" ng-click="open_phrase()">
+                        <i></i><span><a href="#" >新增常用语</a></span>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-bordered table-hover">
+                <tr>
+                    <th>序号</th>
+                    <th>常用语</th>
 
+
+                    <th width="18%">操作</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>常用语句语句常用语句语句常用语句语句</td>
+                    <td class="t_last">
+                        <div class="div_pad">
+                            <a href="#" class="a_col" ng-click="openLay()">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>常用语句语句常用语句语句常用语句语句</td>
+                    <td class="t_last">
+                        <div class="div_pad">
+                            <a href="#" class="a_col" ng-click="openLay()">删除</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <table class="table-bordered box_phrase" cellpadding="0" cellspacing="0">
-            <tr>
-                <th width="75px">序号</th>
-                <th>常用语</th>
-                <th width="75px">操作</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>亲，您好，请问需要什么帮助？</td>
-                <td><a href="javescript:(0)">删除</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>感谢您对我们工作的大力支持！</td>
-                <td><a href="javescript:(0)">删除</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>亲！给好评哦！</td>
-                <td><a href="javescript:(0)">删除</a></td>
-            </tr>
-        </table>
+    </div>
+</div>
+<div ng-if="phrase_box">
+    <div class="mask"></div>
+    <div class="lay_addTemplate">
+        <ul>
+            <li class="remove_header">
+                <span>查询列表</span>
+                <em ng-click="close_phrase()"><i></i></em>
+            </li>
+        </ul>
+        <dl>
+            <dt>常用语句：</dt>
+            <dd>
+                <textarea></textarea>
+            </dd>
+        </dl>
+        <div>
+            <a href="javascript:(0)" ng-click="close_phrase()">关闭</a>
+        </div>
     </div>
 </div>

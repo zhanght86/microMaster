@@ -124,8 +124,8 @@
 /*radio*/
 .list_ul li.li_wid{width:75%}
 .list_ul li .radio{display:block;width:27px;height:20px;background:url(../images/radio.png) 0 -23px no-repeat;padding-left:20px;float:left;margin-top:8px;cursor:pointer;}
-.list_ul li .marr43{margin-top: 16px;}
-.list_ul li .on{display:block;width:27px;height:20px;background:url(../images/radio.png) 0 0 no-repeat;padding-left:20px;float:left;margin-top:16px;cursor:pointer;}
+.list_ul li .marr43{margin-top: 8px;}
+.list_ul li .on{display:block;width:27px;height:20px;background:url(../images/radio.png) 0 0 no-repeat;padding-left:20px;float:left;margin-top:8px;cursor:pointer;}
 .list_ul li .mar_right{width: 80px;}
 .list_ul li .mar_right1{width: 80px;}
 .list_ul li .mar_right2{width: 128px;}
@@ -194,9 +194,9 @@
 .mask{width:100%;height:100%;background:#000;opacity: 0.3;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);position: fixed;left: 0;top: 0;z-index: 111;}
 .mask_remove,.newMask{z-index: 999;position:fixed;top:30%;left:50%;background-color:#fff;width:516px;box-shadow:0 0 15px rgba(0,0,0,0.15);margin-left:-258px;border-radius:5px;}
 .mask_remove ul li{clear:both;}
-.remove_header{width:100%;height:37px;border-bottom:1px solid #cdcdcd;background:#2a3f54;border-top-left-radius: 3px;border-top-right-radius: 3px;line-height:37px;}
+.remove_header{width:100%;height:37px;border-bottom:1px solid #cdcdcd;background:#2a3f54;border-top-left-radius: 3px;border-top-right-radius: 3px;line-height:37px;    text-align: left;}
 .remove_header span{font-size:16px;color:#fff;margin-left:19px;}
-.remove_header i{float:right;width:24px;height:24px;background:url("../images/icon.png") no-repeat -60px -180px;margin:7px 20px auto auto;}
+.remove_header i{float:right;width:24px;height:24px;background:url("../images/icon.png") no-repeat -60px -180px;margin:7px 20px auto auto;cursor:pointer;}
 .remove_content1,.remove_content2{width:100%;height:28px;vertical-align:middle;}
 .remove_content1 span,.remove_content2 span{width:112px;height:28px;line-height:28px;text-align:right;color:#333;font-size:14px;}
 .remove_content1 select,.remove_content2 input{box-sizing:border-box;width:170px;height:28px;border:1px solid #cdcdcd;margin-left:10px;color:#333;font-size:14px;line-height:26px}
@@ -443,7 +443,7 @@
 /*角色管理*/
 .comLabel{width: 47%;border: 1px solid #cdcdcd;margin:10px 0 10px 10px;background-color:#fff;}
 .confr{width: 47%;margin:10px 0 10px 10px;}
-.comLabel h6,.confr h6{font-size:16px;height: 32px;line-height: 32px;padding-left: 20px;background-color: #f5f5f5;}
+.comLabel h6,.confr h6{height: 32px;line-height: 32px;padding-left: 20px;background-color: #f5f5f5;}
 .rolelist li{width:38%;}
 .rolelist li input{width:100%;}
 .rolelist li textarea{width:100%;height:100px;margin-top: 12px;}
@@ -481,10 +481,10 @@ input[type="radio"]{display: block;margin:0 auto;}
 .pending_edit a,.add_phrase{display:inline-block;width: 140px;height: 32px;background: #0b7cc3;text-align: center;line-height: 32px;color: #fff;font-size: 16px;border-radius: 2px;text-decoration:none;}
 .pending_edit a:hover,.add_phrase:hover{color:#fff;background-color: #4693c8;}
 .add_phrase{margin:15px;}
-/*.staff_list tr:hover td,.group_list ul li:hover{background-color:#ccc;}*/
-.staff_list tr:hover td,.group_list ul li:hover,.staff_list tr.hover td,.group_list ul li.hover{background-color:#0b7cc3;color:#fff;}
+/*.staff_list tr:hover td,.group_list ul li:hover{background-color:#ccc;}.staff_list tr:hover td,*/
+.group_list ul li{color:#0b7cc3;}
 /*.index_list tr.hover td a,.index_list tr:hover td a{color:#fd9a9a;}*/
-.index_list tr td a:hover,.index_list tr td a:hover{color:#fd9a9a;}
+
 .staff_list .text_area span{font-size:14px;display:block;}
 .staff_list .text_area span.text_right{text-align: right;}
 .staff_list .text_area p{font-size:16px;text-indent:1.5em;padding:5px 5px 8px;background-color:#f2f2f2;margin:3px 0 5px;}
@@ -500,7 +500,7 @@ input[type="radio"]{display: block;margin:0 auto;}
 .bigh6{height:32px;}
 .box_phrase tr td,.box_phrase tr th{height: 28px;padding: 0!important;text-align: center;line-height: 28px;}
 .box_phrase tr:hover td{background-color:#f7f7f7;}
-.thick_service{position:absolute;top:0;left:0;right:0;bottom:0;width:700px;height:500px;margin:auto;background-color: #fff;border:1px solid #999;border-radius:3px;overflow:hidden;padding-bottom:94px;z-index: 199;box-sizing: border-box;}
+.thick_service{position: absolute;top: 150px;left: 0;right: 0;width: 700px;margin: auto;background-color: #fff;border: 1px solid #999;border-radius: 3px;overflow: hidden;z-index: 199;box-sizing: border-box;}
 .thick_service p{font-size:16px;color:#333;height:22px;}
 .thick_service .feedback_message,.thick_service .service_particulars{padding-top:20px;margin:0 20px;}
 .thick_service .feedback_message p+p{margin-top:15px;}
@@ -519,13 +519,17 @@ input[type="radio"]{display: block;margin:0 auto;}
 .lay_addTemplate dl dd input{border:1px solid #ddd;width:200px;height:16px;border-radius:2px;line-height:16px;padding:4px 8px;}
 .lay_addTemplate .v_input{width:100%;height:37px;line-height:37px;text-align: center;background-color:transparent;font-size:16px;}
 .lay_addTemplate .box_text{margin-top:20px;}
-.lay_addTemplate dl dd textarea,.lay_addTemplate .box_text textarea{border:1px solid #ddd;width:200px;height:64px;border-radius:2px;line-height:24px;padding:4px 8px;resize: none;}
-.lay_addTemplate a{display: inline-block; width: 140px;height: 32px;border:1px solid #999;text-align: center;line-height: 32px;color:#666;font-size: 16px;border-radius: 2px;text-decoration: none;margin:20px 10px;}
+.lay_addTemplate dl dd textarea,.lay_addTemplate .box_text textarea{border:1px solid #ddd;width:200px;height:64px;border-radius:2px;line-height:24px;padding:0 8px;resize: none;}
+.lay_addTemplate a{display: inline-block; text-align: center;text-decoration: none;width: 102px;heihgt: 28px;line-height: 28px;text-align: center;background: #0b7cc3;color: #fff;font-size: 16px;margin: 10px 15px 15px;border-radius: 5px;}
 .ready-click tr:hover td{background-color: #0b7cc3;color:#fff;}
 .m20{padding:10px 0;}
 .mt5{margin-top: 5px;}
+.img_box{max-height:200px;max-width:450px;padding-top: 20px;}
+.file_box{background-color: #fff;width: 115px;height: 23px;border-radius: 5px;border: 1px solid #ccc;position: relative;text-align: center;font-size: 16px;line-height: 23px;}
+.file_box input{position: absolute;top:0;left:0;opacity: 0;width:100%;height:100%;}
+.file_box span{display:block;height:100%;width:100%;    line-height: 23px;}
 
-/*20170920 caoruixia 消息管理*/
+    /*20170920 caoruixia 消息管理*/
 .tal{text-align: left;}
 .bigh6{height:32px;}
 .list_ul .mesContent{width:65%;height:86px;margin-top:10px;}

@@ -16,30 +16,71 @@
             <td>活动</td>
             <td>2017-09-21 16:18</td>
             <td><a href="javascript:(0)">上移</a><a href="javascript:(0)">下移</a></td>
-            <td><a href="javascript:(0)">修改</a><a href="javascript:(0)">查看图片</a></td>
+            <td><a href="javascript:(0)" ng-click="open_alterimg()">修改</a><a href="javascript:(0)" ng-click="open_viewimg()">查看图片</a></td>
         </tr>
         <tr>
             <td>2</td>
             <td>活动宣传</td>
             <td>2017-09-21 16:18</td>
             <td><a href="javascript:(0)">上移</a><a href="javascript:(0)">下移</a></td>
-            <td><a href="javascript:(0)">修改</a><a href="javascript:(0)">查看图片</a></td>
+            <td><a href="javascript:(0)" ng-click="open_alterimg()">修改</a><a href="javascript:(0)" ng-click="open_viewimg()">查看图片</a></td>
         </tr>
         <tr>
             <td>3</td>
             <td>-</td>
             <td>-</td>
             <td><a href="javascript:(0)">上移</a><a href="javascript:(0)">下移</a></td>
-            <td><a href="javascript:(0)">增加图片</a></td>
+            <td><a href="javascript:(0)" ng-click="open_alterimg()">增加图片</a></td>
         </tr>
         <tr>
             <td>4</td>
             <td>-</td>
             <td>-</td>
             <td><a href="javascript:(0)">上移</a><a href="javascript:(0)">下移</a></td>
-            <td><a href="javascript:(0)">增加图片</a></td>
+            <td><a href="javascript:(0)" ng-click="open_alterimg()">增加图片</a></td>
         </tr>
-
-
     </table>
+</div>
+<div ng-if="layer_viewimg">
+    <div class="mask"></div>
+    <div class="lay_addTemplate">
+        <ul>
+            <li class="remove_header">
+                <span>查看图片</span>
+                <em ng-click="close_viewimg()"><i></i></em>
+            </li>
+        </ul>
+        <div class="img_box">
+            <img src="images/banner1.png" alt="">
+        </div>
+        <div>
+            <a href="javascript:(0)" ng-click="close_viewimg()">关闭</a>
+        </div>
+    </div>
+</div>
+<div ng-if="layer_alterimg">
+    <div class="mask"></div>
+    <div class="lay_addTemplate">
+        <ul>
+            <li class="remove_header">
+                <span>添加、修改图片</span>
+                <em ng-click="close_alterimg()"><i></i></em>
+            </li>
+        </ul>
+        <div>
+            <dl>
+                <dt>选择图片：</dt>
+                <dd><div class="file_box"><input type="file"><span>选择上传图片</span></div></dd>
+            </dl>
+            <dl>
+                <dt>图片描述：</dt>
+                <dd>
+                    <textarea></textarea>
+                </dd>
+            </dl>
+        </div>
+        <div>
+            <a href="javascript:(0)" ng-click="close_alterimg()">关闭</a>
+        </div>
+    </div>
 </div>
