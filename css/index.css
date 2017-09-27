@@ -441,9 +441,9 @@
 .modLi .tal{width:66%;}
 .modLi .tal input{width:62%;}
 /*角色管理*/
-.comLabel{width: 47%;border: 1px solid #cdcdcd;margin:10px 0 10px 10px;background-color:#fff;}
+.comLabel{width: 47%;border: 1px solid #cdcdcd;margin:20px 0 10px 20px;background-color:#fff;}
 .confr{width: 47%;margin:10px 0 10px 10px;}
-.comLabel h6,.confr h6{height: 32px;line-height: 32px;padding-left: 20px;background-color: #f5f5f5;}
+.comLabel h6,.confr h6{height: 37px;line-height: 37px;padding-left: 20px;background-color: #f5f5f5;font-size:16px;}
 .rolelist li{width:38%;}
 .rolelist li input{width:100%;}
 .rolelist li textarea{width:100%;height:100px;margin-top: 12px;}
@@ -456,6 +456,8 @@
 .pimessage{display: block;text-align: center;margin-top: 10px;font-size: 16px;color: #333;margin-bottom: 20px;}
 /*角色指派*/
 .new_tab{width:92%;margin:10px;}
+.new_tab th{font-size:14px;font-weight:bold;text-align: center;}
+.new_tab td{text-align: center;}
 input[type="radio"]{display: block;margin:0 auto;}
 .config_top{border:1px solid #cdcdcd;background-color:#fff;margin-bottom:42px;}
 .index_list{border:1px solid #cdcdcd;}
