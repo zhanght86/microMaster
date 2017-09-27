@@ -137,7 +137,7 @@
 .list_ul li .radio input.input_active{background:#fff}
 /*table*/
 .index_list table{border-left:0;border-right:0!important;margin-bottom:0!important}
-.index_list table td,.index_list table th{border-left:0;height:28px;padding:0!important;text-align:center;line-height:28px!important;border-left:0!important}
+.index_list table td,.index_list table th{border-left:0;height:26px;padding:2px!important;text-align:center;line-height:26px!important;border-left:0!important}
 .index_list table th{border-bottom:0!important;font-weight:700}
 .index_list table td.t_last,.index_list table th.t_last{width:135px;border-right:0!important}
 .index_list table td.t_last .div_pad{padding:0 23px}
