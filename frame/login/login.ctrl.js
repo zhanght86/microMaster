@@ -28,7 +28,7 @@ define(['app'], function (app) {
                         function(answer){
                             if(answer.status){
                                 console.log("login success");
-                                $location.path('/main');
+                                $location.path('/main/index');
                             }else{
                                 console.log("login fail");
                                 $scope.loginmessage = answer.statusText
