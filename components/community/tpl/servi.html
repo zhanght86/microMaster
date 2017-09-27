@@ -108,7 +108,7 @@
                     <td>常用语句语句常用语句语句常用语句语句</td>
                     <td class="t_last">
                         <div class="div_pad">
-                            <a href="#" class="a_col" ng-click="openLay()">删除</a>
+                            <a href="#" class="a_col" ng-click="cancle()">删除</a>
                         </div>
                     </td>
                 </tr>
@@ -117,7 +117,7 @@
                     <td>常用语句语句常用语句语句常用语句语句</td>
                     <td class="t_last">
                         <div class="div_pad">
-                            <a href="#" class="a_col" ng-click="openLay()">删除</a>
+                            <a href="#" class="a_col" ng-click="cancle()">删除</a>
                         </div>
                     </td>
                 </tr>
@@ -135,13 +135,14 @@
             </li>
         </ul>
         <dl>
-            <dt>常用语句：</dt>
+            <dt>新增常用语句：</dt>
             <dd>
                 <textarea></textarea>
             </dd>
         </dl>
         <div>
-            <a href="javascript:(0)" ng-click="close_phrase()">关闭</a>
+            <a href="javascript:(0)" ng-click="close_phrase()">确定</a>
         </div>
     </div>
 </div>
+<div ng-if="layer_cancle" data-ng-include="'components/power/tpl/layer/layer_tipMessage.html'"></div>
