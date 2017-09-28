@@ -11,19 +11,19 @@
 /*main_con*/
 .main{background:#2a3f54;width: 100%;}
 .main_con{min-width:1024px}
-.main_con .main_left{width:162px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px}
+.main_con .main_left{width:230px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px}
 .main_con .main_left_wid{width:60px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px}
 .main_con .main_left span{display:block}
 .main_con .main_left_wid span{display:none}
-.main_con .main_right{background:#f7f7f7;margin-left:162px;overflow:hidden;}
+.main_con .main_right{background:#f7f7f7;margin-left:230px;overflow:hidden;}
 .main_con .main_right_col{margin-left:60px;background:#f7f7f7;overflow:hidden;padding:20px 0 40px 0}
-.main_left .left_ul{width:100%;background:#2a3f54}
+.main_left .left_ul{width:100%;padding-top:14px;background:#2a3f54}
 .left_ul .firstLi{width:100%;position:relative;border-bottom:1px solid #2a3f54;border-top:1px solid #2a3f54}
 .left_ul .secondUl li{border-top:1px solid #fff;}
 .left_ul li em{width:100%;height:2px;position:absolute;left:0;bottom:0;background:url(../images/li_bom.jpg) repeat-x;display:none}
 .left_ul li.li_active{border-bottom:1px solid #25313b}
-.left_ul li.li_active1{border-top:1px solid #4a5c6d}
-.left_ul li i{width:16px;height:16px;float:left;background:url(../images/icon.png) no-repeat 0 -30px;margin:15px 14px 0 16px}
+.left_ul li.li_active1{border-top:1px solid #4a5c6d;}
+.left_ul li i{width:16px;height:16px;float:left;background:url(../images/icon.png) no-repeat 0 -30px;margin:15px 23px 0 21px}
 .left_ul li i.i_1{background-position:0 -60px}
 .left_ul li i.i_2{background-position:0 -90px}
 .left_ul li i.i_3{background-position:0 -120px}
@@ -31,7 +31,7 @@
 .left_ul li i.i_5{background-position:0 -180px}
 .left_ul li i.i_6{background-position:0 -90px}
 .left_ul li i.i_7{background-position:0 -120px}
-.left_ul li span{line-height:45px;color:#d3d6d9;font-size:16px}
+.left_ul li span{line-height:48px;color:#d3d6d9;font-size:16px}
 .left_ul li.li_active{background:#202f3c;}
 .left_ul li.li_active i{background-position:-30px -30px}
 .left_ul li.li_active i.i_1{background-position:-30px -60px}
@@ -406,7 +406,8 @@
 .ind_edo{margin:0 1.9% 0 0;float: right}
 
 
-/*--------------------------------------20170915  caoruixia 不可删样式------------------------------------------------------*/
+/*--------------------------------------20170915  caoruixia 不可删样式---------------------------*/
+.contentMargin{overflow:hidden;margin:20px;}
 /*展业人员管理tab切换*/
 .title{width:100%;padding-top:10px;background-color:#fff;border-bottom: 1px solid #00a0d4;padding-bottom: 1px;min-width:1080px;}
 .title h2{font-size: 16px;font-weight: bold;border-left: 4px solid #00a0d4;padding-left:10px;margin-left: 1px;margin-bottom: 5px;}
@@ -441,8 +442,8 @@
 .modLi .tal{width:66%;}
 .modLi .tal input{width:62%;}
 /*角色管理*/
-.comLabel{width: 47%;border: 1px solid #cdcdcd;margin:20px 0 10px 20px;background-color:#fff;}
-.confr{width: 47%;margin:20px 0 10px 20px;}
+.comLabel{width: 48.8%;border: 1px solid #cdcdcd;background-color:#fff;}
+/*.confr{width: 47%;margin:20px 0 10px 20px;}*/
 .comLabel h6,.confr h6{height: 37px;line-height: 37px;padding-left: 20px;background-color: #f5f5f5;font-size:16px;}
 .rolelist li{width:38%;}
 .rolelist li input{width:100%;}
@@ -498,7 +499,8 @@ input[type="radio"]{display: block;margin:0 auto;}
 .box_page div input{width:25px;border-bottom:1px solid #999;padding-right:5px;text-align: right}
 .box_phrase{width:100%;}
 .box_phrase tr td,.box_phrase tr th{height: 28px;padding: 0!important;text-align: center;line-height: 28px;}
-.box_phrase tr:hover td{background-color:#f7f7f7;}/*20170920 caoruixia*/
+.box_phrase tr:hover td{background-color:#f7f7f7;}
+/*20170920 caoruixia*/
 .bigh6{height:32px;}
 .box_phrase tr td,.box_phrase tr th{height: 28px;padding: 0!important;text-align: center;line-height: 28px;}
 .box_phrase tr:hover td{background-color:#f7f7f7;}
@@ -540,3 +542,23 @@ input[type="radio"]{display: block;margin:0 auto;}
 /*20170926 caoruixia  人员配置-增加人员配置*/
 .addstafcss .zl{width:30%;}
 .addstafcss .rl{width:46%;}
+/*200170928  菜单箭头*/
+.box {
+    position: relative;
+    width: 250px;
+    margin-top: -230px;
+    height: 100%;
+}
+.box .menu-btn {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    z-index: 2;
+    width: 29px;
+    height: 38px;
+    background: url("../images/menu-btn-close.png") no-repeat;
+    margin-top: -19px;cursor: pointer;
+}
+.box .menu-btn.closed {
+    background: url("../images/menu-btn-open.png") no-repeat;
+}
