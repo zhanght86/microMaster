@@ -543,22 +543,14 @@ input[type="radio"]{display: block;margin:0 auto;}
 .addstafcss .zl{width:30%;}
 .addstafcss .rl{width:46%;}
 /*200170928  菜单箭头*/
-.box {
-    position: relative;
-    width: 250px;
-    margin-top: -230px;
-    height: 100%;
-}
-.box .menu-btn {
-    position: absolute;
-    right: 4px;
-    top: 50%;
+.menu-btn {
+    position: absolute;left:220px;top: 50%;
     z-index: 2;
     width: 29px;
     height: 38px;
     background: url("../images/menu-btn-close.png") no-repeat;
     margin-top: -19px;cursor: pointer;
 }
-.box .menu-btn.closed {
+.menu-btn.closed {
     background: url("../images/menu-btn-open.png") no-repeat;
 }
