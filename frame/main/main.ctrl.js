@@ -30,6 +30,7 @@ define(['app', 'config','uiRouter'
             $scope.mouseleave = function () {
                $scope.leftFlag = true;
                $scope.rightFlag = true;
+
             };
 
             //当前的日期
