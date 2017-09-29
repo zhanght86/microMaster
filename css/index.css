@@ -11,14 +11,14 @@
 /*main_con*/
 .main{background:#2a3f54;width: 100%;}
 .main_con{min-width:1024px}
-.main_con .main_left{width:230px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px}
+.main_con .main_left{width:230px;background:#2a3f54;display:flex;position:absolute;padding-bottom:0px;}
 .main_con .main_left_wid{width:60px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px;padding-top:15px;}
 .main_con .main_left span{display:block}
 .main_con .main_left_wid a{display: inline-block;}
 .main_con .main_left_wid span{display:none}
 .main_con .main_right{background:#f7f7f7;margin-left:230px;overflow:hidden;}
 .main_con .main_right_col{margin-left:60px;background:#f7f7f7;overflow:hidden;padding:20px 0 40px 0}
-.main_left .left_ul{width:100%;padding-top:14px;background:#2a3f54}
+.main_left .left_ul{width:100%;padding-top:14px;background:#2a3f54;padding-bottom:14px;}
 .left_ul .firstLi{width:100%;position:relative;border-bottom:1px solid #2a3f54;}
 .left_ul .secondUl li{border-top:1px solid #fff;}
 .left_ul li em{width:100%;height:2px;position:absolute;left:0;bottom:0;background:url(../images/li_bom.jpg) repeat-x;display:none}
