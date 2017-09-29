@@ -20,7 +20,7 @@
 .main_con .main_right_col{margin-left:60px;background:#f7f7f7;overflow:hidden;padding:20px 0 40px 0}
 .main_left .left_ul{width:100%;padding-top:14px;background:#2a3f54;padding-bottom:14px;}
 .left_ul .firstLi{width:100%;position:relative;border-bottom:1px solid #2a3f54;}
-.left_ul .secondUl li{border-top:1px solid #fff;}
+.left_ul .secondUl li{border-top:1px solid #fff; padding-left: 70px;}
 .left_ul li em{width:100%;height:2px;position:absolute;left:0;bottom:0;background:url(../images/li_bom.jpg) repeat-x;display:none}
 .left_ul li.li_active{border-bottom:1px solid #25313b}
 .left_ul li.li_active1{border-top:1px solid #4a5c6d;}
