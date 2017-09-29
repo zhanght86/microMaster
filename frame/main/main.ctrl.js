@@ -21,16 +21,16 @@ define(['app', 'config','uiRouter'
                 //$location.path("/login?msg=注销成功");
             };
 
-            ////鼠标进入菜单区域显示菜单
-            //$scope.mouseenter = function () {
-            //    $scope.leftFlag = false;
-            //    $scope.rightFlag = false;
-            //}
-            ////鼠标离开菜单区域隐藏菜单
-            //$scope.mouseleave = function () {
-            //    $scope.leftFlag = true;
-            //    $scope.rightFlag = true;
-            //}
+            //鼠标进入菜单区域显示菜单
+            $scope.mouseenter = function () {
+               $scope.leftFlag = false;
+               $scope.rightFlag = false;
+            };
+            //鼠标离开菜单区域隐藏菜单
+            $scope.mouseleave = function () {
+               $scope.leftFlag = true;
+               $scope.rightFlag = true;
+            };
 
             //当前的日期
             $interval(function () {

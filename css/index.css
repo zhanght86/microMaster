@@ -12,18 +12,18 @@
 .main{background:#2a3f54;width: 100%;}
 .main_con{min-width:1024px}
 .main_con .main_left{width:230px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px}
-.main_con .main_left_wid{width:60px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px}
+.main_con .main_left_wid{width:60px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px;padding-top:15px;}
 .main_con .main_left span{display:block}
 .main_con .main_left_wid span{display:none}
 .main_con .main_right{background:#f7f7f7;margin-left:230px;overflow:hidden;}
 .main_con .main_right_col{margin-left:60px;background:#f7f7f7;overflow:hidden;padding:20px 0 40px 0}
 .main_left .left_ul{width:100%;padding-top:14px;background:#2a3f54}
-.left_ul .firstLi{width:100%;position:relative;border-bottom:1px solid #2a3f54;border-top:1px solid #2a3f54}
+.left_ul .firstLi{width:100%;position:relative;border-bottom:1px solid #2a3f54;}
 .left_ul .secondUl li{border-top:1px solid #fff;}
 .left_ul li em{width:100%;height:2px;position:absolute;left:0;bottom:0;background:url(../images/li_bom.jpg) repeat-x;display:none}
 .left_ul li.li_active{border-bottom:1px solid #25313b}
 .left_ul li.li_active1{border-top:1px solid #4a5c6d;}
-.left_ul li i{width:16px;height:16px;float:left;background:url(../images/icon.png) no-repeat 0 -30px;margin:15px 23px 0 21px}
+.left_ul li i{width:16px;height:16px;float:left;background:url(../images/icon.png) no-repeat 0 -30px;margin:15px 23px 15px 21px;}
 .left_ul li i.i_1{background-position:0 -60px}
 .left_ul li i.i_2{background-position:0 -90px}
 .left_ul li i.i_3{background-position:0 -120px}
