@@ -1,6 +1,6 @@
 .container-fluid,.container-fluid .row{padding:0;margin:0}
 .index_top{width:100%;min-width:1024px;height:68px;border-bottom:1px solid #dedede;background:url(../images/top_bg.jpg) repeat-x;overflow:hidden;position:fixed;z-index:99;}
-.logo img{margin:26px 20px 0 64px;float:left;height:22px;}
+.logo img{margin:12px 20px 0 64px;float:left;width:418px;height:42px;}
 .logo span{line-height:74px;font-size:18px;color:#0a558d;font-weight:700;float:left}
 .logo_p{width:58px;height:60px;background:url(../images/logo_right.png) no-repeat;background-size:100% 100%;margin:7px 9px 0 0;float:left}
 .logo_p img{display:block;margin:5px auto 0 auto}
@@ -425,7 +425,7 @@ center;}
 /*头部*/
 .top{width: 100%;height: 70px;box-shadow: 0 1px 6px #ced0d2;background-color: #fff;min-width: 1000px;position: fixed;z-index: 9;}
 .top_l{float: left;}
-.login{float: left;margin: 15px 0 0 15px;}
+.login{float: left;}
 .top_l i{float: left;width: 1px;height: 20px;border: 0;background-color: #ccc;margin: 25px 10px 0 10px;}
 .top_l span{float: left;font-size: 18px;color: #666;line-height: 100%;margin-top: 26px;}
 .top_r{width: 373px;height: 33px;border: 1px solid #e8ecf1;border-radius: 5px;background-color: #e4e4e4;margin-right: 20px;margin-top: 17px;line-height: 33px;position: relative;
@@ -434,7 +434,7 @@ center;}
 .top_r img{display: block;float: left;margin: 8px 5px 0 20px;}
 .dateCSS{font-weight:normal;}
 /*修改密码，注销登录*/
-.top_ul{position: absolute;right: 20px;width: 148px;/*height: 142px;*/background-color: #f3f6fa;box-shadow: 0 1px 5px #dceaf8;border: 1px solid #e8ecf1;margin-top: -1px}
+.top_ul{position: fixed;z-index:999;right: 20px;width: 148px;/*height: 142px;*/background-color: #f3f6fa;box-shadow: 0 1px 5px #dceaf8;border: 1px solid #e8ecf1;margin-top: -1px}
 .top_ul li{height: 32px;line-height: 32px;border-top: 1px solid #dde5ef;width: 130px;margin-left: 9px;}
 .top_ul li img{margin-left:21px;margin-right: 10px;float: left; }
 .top_ul li a{display: block;}
