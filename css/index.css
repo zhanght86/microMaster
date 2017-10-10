@@ -12,7 +12,7 @@
 .main{background:#2a3f54;width: 100%;}
 .main_con{min-width:1024px}
 .main_con .main_left{width:230px;background:#2a3f54;display:flex;position:absolute;padding-bottom:0px;}
-.main_con .main_left_wid{width:60px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px;padding-top:15px;}
+.main_con .main_left_wid{width:60px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px;padding-top:15px;overflow:hidden;}
 .main_con .main_left span{display:block}
 .main_con .main_left_wid a{display: inline-block;}
 .main_con .main_left_wid span{display:none}
@@ -20,8 +20,7 @@
 .main_con .main_right_col{margin-left:60px;background:#f7f7f7;overflow:hidden;padding:20px 0 40px 0}
 .main_left .left_ul{width:100%;padding-top:14px;background:#2a3f54;padding-bottom:14px;}
 .left_ul .firstLi{width:100%;position:relative;border-bottom:1px solid #2a3f54;}
-/*.left_ul .secondUl li{border-top:1px solid #fff;    padding-left: 70px; }*/
-.left_ul .secondUl li{border-top:1px solid #fff;}
+.left_ul .secondUl li{position: relative;}
 .left_ul li em{width:100%;height:2px;position:absolute;left:0;bottom:0;background:url(../images/li_bom.jpg) repeat-x;display:none}
 .left_ul li.li_active{border-bottom:1px solid #25313b}
 .left_ul li.li_active1{border-top:1px solid #4a5c6d;}
@@ -44,12 +43,12 @@
 .left_ul li.li_active i.i_6{background-position:-30px -90px}
 .left_ul li.li_active i.i_7{background-position:-30px -120px}
 .left_ul li.li_active span{color:#fff}
-.left_ul ul{background-color: #eff6fd;}
-.left_ul ul li{boeder-top:none;}
-.left_ul ul li p{height: 36px;line-height: 36px;}
+.left_ul ul{background-color: #2a3f54;}
+.left_ul ul li{border-top:none;}
+.left_ul ul li p{height:48px;line-height:48px;font-size:16px;color:#d3d6d9;padding-left: 60px;white-space: nowrap;}
+.main_left_wid .left_ul ul li p{width:60px;}
 .left_ul li.twoli_active{background-color:#00a0d4}
-.left_ul li.secondMenu{background:#1caad9 url("../images/right-arrow.png") no-repeat right
-center;}
+.left_ul li.secondMenu .littleDot{width:10px;height:10px;border-radius:50%;background-color: #ff9900;position: absolute;top:20px;left: 42px;}
 .left_ul li.secondMenu  p{color: #fff;}
     /*local*/
 .index_local{width:100%;height:33px;border-top:1px solid #c3c3c3;border-bottom:1px solid #c3c3c3;background:#fff}
@@ -78,7 +77,6 @@ center;}
 .index_list .index_pos{display: none}
 .index_list .index_pos .pos_abs{position: absolute;width: 100%;height: 100%;background: #000;opacity: 0.3;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);z-index: 111;}
 .index_list .index_pos span{color: #fff;font-size: 18px;position: absolute;width: 100%;text-align: center;top: 50%;margin-top: -5px;z-index: 999;font-weight: bold}
-/*.index_con .index_list.index_list_hide{display:none}*/
 .index_tit{width:100%;height:37px;background:#efefef}
 .index_tit h6{line-height:37px;padding-left:20px;font-size:16px;color:#333}
 .index_tit div.fr .div_a a:hover{color:#fd9a9a;}
@@ -152,12 +150,10 @@ center;}
 .index_tit div.fr .div_a span{line-height:37px;font-size:14px;color:#0b7cc3;float:left}
 .index_tit div.fr select{width:108px;height:26px;border:1px solid #cdcdcd;margin-top:5px}
 .index_tit div.fr select:focus{border:1px solid #f27318;box-shadow:0 0 2px #fde8dc}
-/*.index_list table td .a_edit{float: left;width: 16px;height: 16px;background: url("../images/icon.png") no-repeat 0 -450px;margin: 7px 10px 0 22px;}*/
 .index_list table td span{line-height:28px;font-size:14px;color:#cdcdcd;margin:0 10px}
 .index_list table td span.a_edit,.index_list table td span.a_delete{color:#0b7cc3;font-size: 14px;line-height: 28px;cursor: pointer}
 .index_list table td span.a_edit{margin-right: 0;}
 .index_list table td span.a_delete{margin-left: 0;}
-/*.index_list table td .a_delete{float: left;width: 16px;height: 16px;background: url("../images/icon.png") no-repeat 0 -480px;margin: 7px 14px 0 10px;}*/
 .index_list table td a{color:#0b7cc3;font-size:14px}
 .index_list table td .a_col{color:#0b7cc3;font-size:14px;cursor: pointer}
 .index_page{width:auto;height:54px;background:#fff;float: left}

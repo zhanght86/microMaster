@@ -13,6 +13,7 @@
             <li ng-repeat="mes in lefttwoMenu" ui-sref="{{mes.uisref}}"
                 ng-class="{true:'secondMenu',false:'secondMenu_wid'}[curTitle2==mes.title2]"
                 ng-click="activeMenutwo(mes)"  ng-if="mes.title2">
+                <b class="littleDot"></b>
                 <a href="#">
                     <p ng-bind="mes.title2" ng-class="{true:'',false:'p_wid'}"></p>
                 </a>
@@ -21,6 +22,7 @@
         <ul class="secondUl" ng-if="message.title=='监控管理'&&curTitle=='监控管理'">
             <li ng-repeat="mes in lefttwoMenu" ui-sref="{{mes.uisref}}"                                           ng-class="{true:'secondMenu',false:'secondMenu_wid'}[curTitle3==mes.title3]"
                 ng-click="activeMenutwo(mes)"  ng-if="mes.title3">
+                <b class="littleDot"></b>
                 <a href="#">
                     <p ng-bind="mes.title3"></p>
                 </a>
