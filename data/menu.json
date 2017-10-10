@@ -6,12 +6,12 @@
 },{
   "title": "权限管理",
   "classes": "",
-  "classi": "",
+  "classi": "i_6",
   "uisref": ""
 },{
   "title": "机构管理",
   "classes": "",
-  "classi": "i_2",
+  "classi": "i_5",
   "uisref": "main.organization"
 },{
   "title": "区域管理",
@@ -21,46 +21,46 @@
 },{
     "title": "展业人员管理",
     "classes": "",
-    "classi": "i_6",
+    "classi": "i_4",
     "uisref": "main.suspend"
 },{
   "title": "消息管理",
   "classes": "",
-  "classi": "i_7",
+  "classi": "i_5",
   "uisref": "main.message"
 },{
   "title": "销售数据管理",
   "classes": "",
-  "classi": "i_3",
+  "classi": "i_6",
   "uisref": "main.saledata"
 },{
   "title": "客户管理",
   "classes": "",
-  "classi": "i_1",
+  "classi": "i_4",
   "uisref": "main.application"
 },{
   "title": "微信模板",
   "classes": "",
-  "classi": "i_5",
+  "classi": "i_2",
   "uisref": "main.weChatemplate"
 },{
   "title": "焦点图",
   "classes": "",
-  "classi": "i_1",
+  "classi": "i_3",
   "uisref": "main.banner"
 },{
    "title": "反馈管理",
    "classes": "",
-   "classi": "i_8",
+   "classi": "i_4",
    "uisref": "main.feedback"
 },{
   "title": "微信客服管理",
   "classes": "",
-  "classi": "i_9",
+  "classi": "i_5",
   "uisref": "main.community"
 },{
   "title": "监控管理",
   "classes": "",
-  "classi": "i_10",
+  "classi": "i_6",
   "uisref": ""
 }]
