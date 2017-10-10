@@ -1,5 +1,5 @@
 .container-fluid,.container-fluid .row{padding:0;margin:0}
-.index_top{width:100%;min-width:1024px;height:68px;border-bottom:1px solid #dedede;background:url(../images/top_bg.jpg) repeat-x;overflow:hidden}
+.index_top{width:100%;min-width:1024px;height:68px;border-bottom:1px solid #dedede;background:url(../images/top_bg.jpg) repeat-x;overflow:hidden;position:fixed;z-index:99;}
 .logo img{margin:26px 20px 0 64px;float:left;height:22px;}
 .logo span{line-height:74px;font-size:18px;color:#0a558d;font-weight:700;float:left}
 .logo_p{width:58px;height:60px;background:url(../images/logo_right.png) no-repeat;background-size:100% 100%;margin:7px 9px 0 0;float:left}
@@ -16,11 +16,12 @@
 .main_con .main_left span{display:block}
 .main_con .main_left_wid a{display: inline-block;}
 .main_con .main_left_wid span{display:none}
-.main_con .main_right{background:#f7f7f7;margin-left:230px;overflow:hidden;}
+.main_con .main_right{background:#f7f7f7;margin-left:230px;overflow:hidden;padding-top:20px;}
 .main_con .main_right_col{margin-left:60px;background:#f7f7f7;overflow:hidden;padding:20px 0 40px 0}
 .main_left .left_ul{width:100%;padding-top:14px;background:#2a3f54;padding-bottom:14px;}
 .left_ul .firstLi{width:100%;position:relative;border-bottom:1px solid #2a3f54;}
-.left_ul .secondUl li{border-top:1px solid #fff; padding-left: 70px;}
+/*.left_ul .secondUl li{border-top:1px solid #fff;    padding-left: 70px; }*/
+.left_ul .secondUl li{border-top:1px solid #fff;}
 .left_ul li em{width:100%;height:2px;position:absolute;left:0;bottom:0;background:url(../images/li_bom.jpg) repeat-x;display:none}
 .left_ul li.li_active{border-bottom:1px solid #25313b}
 .left_ul li.li_active1{border-top:1px solid #4a5c6d;}
@@ -544,15 +545,5 @@ input[type="radio"]{display: block;margin:0 auto;}
 /*20170926 caoruixia  人员配置-增加人员配置*/
 .addstafcss .zl{width:30%;}
 .addstafcss .rl{width:46%;}
-/*200170928  菜单箭头*/
-.menu-btn {
-    position: absolute;left:220px;top: 50%;
-    z-index: 2;
-    width: 29px;
-    height: 38px;
-    background: url("../images/menu-btn-close.png") no-repeat;
-    margin-top: -19px;cursor: pointer;
-}
-.menu-btn.closed {
-    background: url("../images/menu-btn-open.png") no-repeat;
-}
+/*20171010  框架样式修改*/
+.maintopHeight{height:68px;}

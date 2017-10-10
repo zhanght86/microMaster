@@ -1,6 +1,7 @@
 <!--菜单页模板-->
-<div style="overflow: hidden;width:230px;">
-<ul class="left_ul" style="width:245px;height:540px;overflow-y: scroll;">
+<!--<div style="overflow: hidden;width:230px;">-->
+<!--<ul class="left_ul" style="width:245px;height:540px;overflow-y: scroll;">-->
+<ul class="left_ul" >
     <li class="firstLi" ng-repeat="message in leftMenu" ui-sref="{{message.uisref}}"
         ng-class="{true:'li_active',false:''}[curTitle==message.title]"
         ng-click="activeMenu(message)"  ng-mouseleave="leave()">
@@ -27,5 +28,5 @@
         </ul>
     </li>
 </ul>
-</div>
+<!--</div>-->
 

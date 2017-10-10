@@ -1,18 +1,14 @@
 <div class="main" ng-controller="mainCtrl">
     <!--<h1>AngularJS Home Page (Ui-router Demonstration)</h1>-->
     <!--主界面区域头-->
-    <div ng-show="true">
+    <div ng-show="true" class="maintopHeight">
         <div data-ng-include="'frame/header/header.tpl.html'"></div>
     </div>
     <div ng-show="true">
         <div class="container-fluid main_con">
             <div class="row">
-                <!--控制菜单的箭头-->
-                <!--<span class="menu-btn open"></span>-->
                 <!--菜单区域-->
-                <!--<div style="overflow:hidden;position:relative">-->
                 <div   class="main_left" ng-class="{true:'main_left_wid',false:'main_left'}[leftFlag]" ng-mouseover="mouseenter()" ng-mouseleave="mouseleave()"  ng-controller="MenuCtrl" data-ng-include="'frame/menu/menu.tpl.html'"></div>
-                <!--</div>-->
                 <!--内容区域-->
                 <div class="main_right" ng-class="{true:'main_right_col',false:'main_right'}[rightFlag]">
                     <!--<div class="index_local" ng-show="showMainNagiv" data-ng-include="'frame/current/current.tpl.html'"></div>-->
