@@ -17,7 +17,7 @@
 .main_con .main_left_wid a{display: inline-block;}
 .main_con .main_left_wid span{display:none}
 .main_con .main_right{background:#f7f7f7;margin-left:230px;overflow:hidden;padding-top:20px;}
-.main_con .main_right_col{margin-left:60px;background:#f7f7f7;overflow:hidden;padding:20px 0 40px 0}
+.main_con .main_right_col{margin-left:60px;background:#f7f7f7;overflow:hidden;padding:4px 0 40px 0}
 .main_left .left_ul{width:100%;padding-top:14px;background:#2a3f54;padding-bottom:14px;overflow: hidden;}
 .left_ul .firstLi{width:100%;border-bottom:1px solid #2a3f54;overflow:hidden;}
 .left_ul .firstLi .aPleft{display: block;border-left:4px solid #2a3f54;overflow:hidden;}
@@ -67,8 +67,8 @@
 .left_ul li.secondMenu .littleDot{width:10px;height:10px;border-radius:50%;background-color: #ff9900;position: absolute;top:20px;left: 42px;}
 .left_ul li.secondMenu  p{color: #fff;}
     /*local*/
-.index_local{width:100%;height:33px;border-top:1px solid #c3c3c3;border-bottom:1px solid #c3c3c3;background:#fff}
-.index_local1{margin-top:1px;width:100%;height:32px;background:#efefef}
+.index_local{width:100%;height:33px;background:#f7f7f7}
+/*.index_local1{margin-top:1px;width:100%;height:32px;background:#f7f7f7}*/
 .index_local1 i{float:left;margin:9px 5px 0 20px;width:16px;height:13px;background:url(../images/icon.png) no-repeat 0 -210px}
 .index_local1 a{color:#666;font-size:14px;line-height:30px}
 .index_local1 span{margin:0 10px}
@@ -88,8 +88,8 @@
 .index_process li.li_finish i.i_2{background-position:-180px -120px}
 .index_process li.li_finish span{color: #f27318}
 .index_process li.li_finish1 span{font-weight: bold}
-.index_con{margin:20px 20px 0 20px}
-.index_con .index_list{margin-top:20px;width:100%;overflow:hidden;border:1px solid #cdcdcd;background:#fff;position: relative}
+.index_con{margin:0 20px 0 20px}
+.index_con .index_list{width:100%;overflow:hidden;border:1px solid #cdcdcd;background:#fff;position: relative}
 .index_list .index_pos{display: none}
 .index_list .index_pos .pos_abs{position: absolute;width: 100%;height: 100%;background: #000;opacity: 0.3;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);z-index: 111;}
 .index_list .index_pos span{color: #fff;font-size: 18px;position: absolute;width: 100%;text-align: center;top: 50%;margin-top: -5px;z-index: 999;font-weight: bold}
@@ -186,7 +186,7 @@
 /*线下收费待确认*/
 .pending_btn{width:100%;height:52px;border-top:1px solid #cdcdcd}
 .pending_btn1{width:140px;height:32px;margin:10px auto 0 auto;position:relative}
-.pending_btn1 a.a_search{width:100%;float:left;height:32px;background:#0b7cc3;text-align:center;line-height:32px;color:#fff;font-size:16px;border-radius:2px}
+.pending_btn1 a.a_search{width:100%;float:left;height:32px;background:#0b7cc3;text-align:center;line-height:32px;color:#fff;font-size:16px;border-radius:5px}
 .pending_btn1 a.a_reset{float:left;position:absolute;left:180px;top:0;font-size:16px;color:#0b7cc3;width:100px;line-height:32px}
 .pend_ul{width:100%;height:50px;margin-top:20px;border-bottom:1px solid #f27318;padding-left:20px}
 .pend_ul li{width:224px;height:48px;background:#efefef;float:left;border:1px solid #cdcdcd;border-bottom:1px solid #efefef;line-height:48px}
