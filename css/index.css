@@ -18,34 +18,50 @@
 .main_con .main_left_wid span{display:none}
 .main_con .main_right{background:#f7f7f7;margin-left:230px;overflow:hidden;padding-top:20px;}
 .main_con .main_right_col{margin-left:60px;background:#f7f7f7;overflow:hidden;padding:20px 0 40px 0}
-.main_left .left_ul{width:100%;padding-top:14px;background:#2a3f54;padding-bottom:14px;}
+.main_left .left_ul{width:100%;padding-top:14px;background:#2a3f54;padding-bottom:14px;overflow: hidden;}
 .left_ul .firstLi{width:100%;position:relative;border-bottom:1px solid #2a3f54;}
+.left_ul .firstLi .aPleft{display: block;border-left:4px solid #2a3f54;}
 .left_ul .secondUl li{position: relative;}
 .left_ul li em{width:100%;height:2px;position:absolute;left:0;bottom:0;background:url(../images/li_bom.jpg) repeat-x;display:none}
 .left_ul li.li_active{border-bottom:1px solid #25313b}
 .left_ul li.li_active1{border-top:1px solid #4a5c6d;}
-.left_ul li i{width:16px;height:16px;float:left;background:url(../images/icon.png) no-repeat 0 -30px;margin:15px 23px 15px 21px;}
+.left_ul li i{width:22px;height:22px;float:left;background:url(../images/newicon.png) no-repeat 0 0px;margin:15px 23px 10px 21px;}
 .left_ul li i.i_1{background-position:0 -60px}
-.left_ul li i.i_2{background-position:0 -90px}
+.left_ul li i.i_2{background-position:0 -62px}
 .left_ul li i.i_3{background-position:0 -120px}
-.left_ul li i.i_4{background-position:0 -150px}
-.left_ul li i.i_5{background-position:0 -180px}
-.left_ul li i.i_6{background-position:0 -90px}
-.left_ul li i.i_7{background-position:0 -120px}
+.left_ul li i.i_4{background-position:0 -180px}
+.left_ul li i.i_5{background-position:0 -234px}
+.left_ul li i.i_6{background-position:0 -290px}
+.left_ul li i.i_7{background-position:0 -640px}
+.left_ul li i.i_8{background-position:0 -348px}
+.left_ul li i.i_9{background-position:0 -406px}
+.left_ul li i.i_10{background-position:0 -524px}
+.left_ul li i.i_11{background-position:0 -580px}
+.left_ul li i.i_12{background-position:0 -754px}
+.left_ul li i.i_13{background-position:0 -698px}
+.left_ul li i.i_14{background-position:0 -812px}
 .left_ul li span{line-height:48px;color:#d3d6d9;font-size:16px}
 .left_ul li.li_active{background:#202f3c;}
-.left_ul li.li_active i{background-position:-30px -30px}
+.left_ul li.li_active .aPleft{display:block;border-left:4px solid #ff9900;}
+.left_ul li.li_active i{background-position:-88px 0px}
 .left_ul li.li_active i.i_1{background-position:-30px -60px}
-.left_ul li.li_active i.i_2{background-position:-30px -90px}
-.left_ul li.li_active i.i_3{background-position:-30px -120px}
-.left_ul li.li_active i.i_4{background-position:-30px -150px}
-.left_ul li.li_active i.i_5{background-position:-30px -180px}
-.left_ul li.li_active i.i_6{background-position:-30px -90px}
-.left_ul li.li_active i.i_7{background-position:-30px -120px}
+.left_ul li.li_active i.i_2{background-position:-88px -62px}
+.left_ul li.li_active i.i_3{background-position:-88px -120px}
+.left_ul li.li_active i.i_4{background-position:-88px -180px}
+.left_ul li.li_active i.i_5{background-position:-88px -234px}
+.left_ul li.li_active i.i_6{background-position:-88px -290px}
+.left_ul li.li_active i.i_7{background-position:-88px -640px}
+.left_ul li.li_active i.i_8{background-position:-88px -348px}
+.left_ul li.li_active i.i_9{background-position:-88px -406px}
+.left_ul li.li_active i.i_10{background-position:-88px -524px}
+.left_ul li.li_active i.i_11{background-position:-88px -580px}
+.left_ul li.li_active i.i_12{background-position:-88px -754px}
+.left_ul li.li_active i.i_13{background-position:-88px -698px}
+.left_ul li.li_active i.i_14{background-position:-88px -812px}
 .left_ul li.li_active span{color:#fff}
 .left_ul ul{background-color: #2a3f54;}
 .left_ul ul li{border-top:none;}
-.left_ul ul li p{height:48px;line-height:48px;font-size:16px;color:#d3d6d9;padding-left: 60px;white-space: nowrap;}
+.left_ul ul li p{height:48px;line-height:48px;font-size:16px;color:#d3d6d9;padding-left: 70px;white-space: nowrap;}
 .main_left_wid .left_ul ul li p{width:60px;}
 .left_ul li.twoli_active{background-color:#00a0d4}
 .left_ul li.secondMenu .littleDot{width:10px;height:10px;border-radius:50%;background-color: #ff9900;position: absolute;top:20px;left: 42px;}

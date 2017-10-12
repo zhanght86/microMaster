@@ -5,7 +5,7 @@
     <li class="firstLi" ng-repeat="message in leftMenu" ui-sref="{{message.uisref}}"
         ng-class="{true:'li_active',false:''}[curTitle==message.title]"
         ng-click="activeMenu(message)"  ng-mouseleave="leave()">
-        <a href="#">
+        <a href="#" class="aPleft">
             <i ng-class="message.classi"></i>
             <span ng-bind="message.title"></span>
         </a>
