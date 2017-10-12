@@ -19,8 +19,8 @@
 .main_con .main_right{background:#f7f7f7;margin-left:230px;overflow:hidden;padding-top:20px;}
 .main_con .main_right_col{margin-left:60px;background:#f7f7f7;overflow:hidden;padding:20px 0 40px 0}
 .main_left .left_ul{width:100%;padding-top:14px;background:#2a3f54;padding-bottom:14px;overflow: hidden;}
-.left_ul .firstLi{width:100%;position:relative;border-bottom:1px solid #2a3f54;}
-.left_ul .firstLi .aPleft{display: block;border-left:4px solid #2a3f54;}
+.left_ul .firstLi{width:100%;border-bottom:1px solid #2a3f54;overflow:hidden;}
+.left_ul .firstLi .aPleft{display: block;border-left:4px solid #2a3f54;overflow:hidden;}
 .left_ul .secondUl li{position: relative;}
 .left_ul li em{width:100%;height:2px;position:absolute;left:0;bottom:0;background:url(../images/li_bom.jpg) repeat-x;display:none}
 .left_ul li.li_active{border-bottom:1px solid #25313b}
@@ -42,7 +42,7 @@
 .left_ul li i.i_14{background-position:0 -812px}
 .left_ul li span{line-height:48px;color:#d3d6d9;font-size:16px}
 .left_ul li.li_active{background:#202f3c;}
-.left_ul li.li_active .aPleft{display:block;border-left:4px solid #ff9900;}
+.left_ul li.li_active .aPleft{border-left-color:#ff9900;}
 .left_ul li.li_active i{background-position:-88px 0px}
 .left_ul li.li_active i.i_1{background-position:-30px -60px}
 .left_ul li.li_active i.i_2{background-position:-88px -62px}
@@ -61,7 +61,7 @@
 .left_ul li.li_active span{color:#fff}
 .left_ul ul{background-color: #2a3f54;}
 .left_ul ul li{border-top:none;}
-.left_ul ul li p{height:48px;line-height:48px;font-size:16px;color:#d3d6d9;padding-left: 70px;white-space: nowrap;}
+.left_ul ul li p{height:48px;line-height:48px;font-size:16px;color:#d3d6d9;padding-left: 70px;white-space:nowrap;}
 .main_left_wid .left_ul ul li p{width:60px;}
 .left_ul li.twoli_active{background-color:#00a0d4}
 .left_ul li.secondMenu .littleDot{width:10px;height:10px;border-radius:50%;background-color: #ff9900;position: absolute;top:20px;left: 42px;}
@@ -559,3 +559,4 @@ input[type="radio"]{display: block;margin:0 auto;}
 .addstafcss .rl{width:46%;}
 /*20171010  框架样式修改*/
 .maintopHeight{height:68px;}
+/*.smallArrow{display:block;width:8px;height:8px;background:url("../images/smallArrow.png") no-repeat 0px 0px;}*/
