@@ -397,7 +397,7 @@ html,body{height:100%}
 
 
 /*login*/
-.login_title{float: left;}
+.login_title{float: left;width: 50%;padding-top:100px;text-align: center;}
 .login_title h2{font-size:40px;font-weight:bold;color:#fff;}
 .login_title p{font-size:30px;color:#fff;}
 .login_img{background: url("../images/login_bg.jpg") no-repeat;background-size:cover;}
