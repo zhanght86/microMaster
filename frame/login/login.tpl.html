@@ -18,24 +18,32 @@
                     <h3>欢迎登录</h3>
                     <ul class="login_ul">
                         <li>
-                            <span>用户名</span>
+                            <i></i>
                             <input type="text" placeholder="请输入您的用户名" ng-model="usercode" required/>
                         </li>
                         <li>
-                            <span>密码</span>
-                            <input type="text" placeholder="请输入您的密码" ng-model="password" required/>
+                            <i class="iconTwo"></i>
+                            <input type="password" placeholder="请输入您的密码" ng-model="password" required/>
                         </li>
-                        <li ng-if="testCodeCheck">
-                            <span>验证码</span>
-                            <input type="text" placeholder="请输入您的验证码" ng-model="user.testcode" required/>
-                        </li>
-                        <li class="li_hei">
-                            <span class="span_col" style="line-height:16px;margin-top:12px;">{{loginmessage}}</span>
-                            <em ng-click="forgetPassword()">忘记密码？</em>
+                        <!--<li ng-if="testCodeCheck">-->
+                            <!--<span>验证码</span>-->
+                            <!--<input type="text" placeholder="请输入您的验证码" ng-model="user.testcode" required/>-->
+                        <!--</li>-->
+                        <li class="li_hei" >
+                            <b class="iconMark" ng-if="tips"></b>
+                            <span class="span_col">{{loginmessage}}</span>
                         </li>
                     </ul>
-                    <div class="login_btn" ng-click="login()">登 录</div>
+                    <div class="clickLogin">
+                        <div class="memoryMe" ng-click="memoryMes()">
+                            <i class="boxRight"></i>
+                            <span>记住我</span>
+                        </div>
+                        <span class="forgetPassword" ng-click="forgetPassword()">忘记密码？</span>
+                        <div class="login_btn" ng-click="login()">登 录</div>
+                    </div>
                 </div>
+                <div class="bg"><div class="bg-inner"></div></div>
             </div>
         </div>
     </div>

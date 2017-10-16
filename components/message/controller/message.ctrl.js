@@ -30,7 +30,6 @@ define([], function () {
             $scope.noflag = true;
         };
         $scope.noClick1 = function () {
-            debugger
             $scope.yesflag = false;
             $scope.noflag = false;
         };
