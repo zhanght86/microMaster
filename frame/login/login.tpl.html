@@ -50,7 +50,22 @@
             <p>中原农业保险股份有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;京ICP备07013339号</p>
         </div>
     </div>
+    <!--忘记密码弹层-->
+    <div class="mask" style="z-index: 999;" ng-if="conLayer"></div>
+    <div class="mask_remove picontent login_contact" ng-if="conLayer">
+        <ul>
+            <li class="remove_header">
+                <span>提示信息</span>
+                <em ng-click="rescind()"><i></i></em>
+            </li>
+        </ul>
+        <div class="picbj1"></div>
+        <span class="pimessage">如您忘记密码，请联系管理员！</span>
+        <span class="pimessage">管理人员：张三 联系电话：010-12345678</span>
+        <div class="config_button pageBtn loginBtn">
+            <button class="btnConfirm" ng-click="reSure()">确 定</button>
+        </div>
+    </div>
 </div>
-<style>
 
-</style>
+

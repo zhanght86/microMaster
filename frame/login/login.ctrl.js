@@ -49,9 +49,11 @@ define(['app'], function (app) {
             };
             //忘记密码
             $scope.forgetPassword=function () {
-                $scope.tips=true;
-                $scope.loginmessage = "如您忘记密码，请联系管理员！";
-            }
+               $scope.conLayer=true;
+            };
+            $scope.reSure=function () {
+               $scope.conLayer=false;
+            };
             //记住我
             $scope.memoryMes=function () {
                 if($scope.tabDui==true){
