@@ -3,7 +3,9 @@ define(['app'], function (app) {
     app.controller('LoginCtrl', ['$scope','$location','$stateParams','AuthHandler',
         function ($scope,$location,$stateParams,AuthHandler) {
             var boxRight=document.getElementById("boxRight");
-            var Pattern=/^(?![\d]+$)(?![a-zA-Z]+$)(?![^\da-zA-Z]+$).{6,20}$/  //能匹配的组合为：数字+字母，数字+特殊字符，字母+特殊字符，数字+字母+特殊字符组合，而且不能是纯数字，纯字母，纯特殊字符
+            //var Pattern=/^(?![\d]+$)(?![a-zA-Z]+$)(?![^\da-zA-Z]+$).{6,20}$/  //能匹配的组合为：数字+字母，数字+特殊字符，字母+特殊字符，数字+字母+特殊字符组合，而且不能是纯数字，纯字母，纯特殊字符
+            var Pattern=/^(?=.*[0-9].*)(?=.*[A-Z].*)(?=.*[a-z].*).{6,20}$/
+
             // $scope.loginmessage = $stateParams.msg;
             $scope.tips=false;
             //系统登录
