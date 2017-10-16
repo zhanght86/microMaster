@@ -52,10 +52,14 @@ define(['app'], function (app) {
                 $scope.tips=true;
                 $scope.loginmessage = "如您忘记密码，请联系管理员！";
             }
-            // //记住我
-            // $scope.memoryMes=function () {
-            //     boxRight.style.backgroundPositionY="-25px";
-            // }
+            //记住我
+            $scope.memoryMes=function () {
+                if($scope.tabDui==true){
+                    $scope.tabDui=false;
+                }else{
+                    $scope.tabDui=true;
+                }
+            }
         }]);
     //编写指令，用于页面repeatFinish渲染完成
 //    app.directive('repeatFinish', function () {
