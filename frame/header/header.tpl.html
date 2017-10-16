@@ -11,9 +11,10 @@
                     <label class="dateCSS">{{currentData | date:'yyyy-MM-dd HH:mm'}}</label>
                 </span>
             </div>
+            <div class="Cancellation" ng-click="logout()"><i title="退出"></i></div>
             <ul class="top_ul" ng-show="headerFunList" ng-mouseenter="funListShow()" ng-mouseleave="contentBoxLeave()">
                 <li ng-click="changePassword()"><img src="images/top_ul2.png" style="margin-top: 5px" >修改密码</li>
-                <li ng-click="logout()"><img src="images/top_ul4.png" style="margin-top: 8px">注销登录</li>
+                <!--<li ng-click="logout()"><img src="images/top_ul4.png" style="margin-top: 8px">注销登录</li>-->
             </ul>
         </div>
     </div>
