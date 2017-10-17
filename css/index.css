@@ -594,7 +594,7 @@ input[type="radio"]{display: block;margin:0 auto;}
 .bigTit p{display:inline-block;color:#333;font-size: 16px;padding-left:30px;}
 .parent_ul{width:96%;padding:2%;}
 .index_ul{overflow: hidden;}
-.index_ul li{position:relative;float:left;width:22.4%;height:126px;padding:1.5%  0 0 1.3%;background-color:#458ad8;border-radius:5px;margin: 0 1.7% 2% 0;}
+.index_ul li{cursor:pointer;position:relative;float:left;width:22.4%;height:126px;padding:1.5%  0 0 1.3%;background-color:#458ad8;border-radius:5px;margin: 0 1.7% 2% 0;}
 .index_ul li.li2{background-color:#866dc1;}
 .index_ul li.li3{background-color:#f1812a;}
 .index_ul li.li4{background-color:#f4777c;}
