@@ -588,4 +588,30 @@ input[type="radio"]{display: block;margin:0 auto;}
 .addstafcss .rl{width:46%;}
 /*20171010  框架样式修改*/
 .maintopHeight{height:68px;}
-/*.smallArrow{display:block;width:8px;height:8px;background:url("../images/smallArrow.png") no-repeat 0px 0px;}*/
+/*20171017 首页*/
+.bigTit{margin-top:20px;margin-bottom:20px;height:60px;line-height:60px;background-color:#fff;box-shadow: 0px 0px 1px 3px #eee;}
+.bigTit i{display:inline-block;position:relative;top:16px;left:20px;width:32px;height:32px;background:url("../images/index_icon.png") no-repeat;}
+.bigTit p{display:inline-block;color:#333;font-size: 16px;padding-left:30px;}
+.parent_ul{width:96%;padding:2%;}
+.index_ul{overflow: hidden;}
+.index_ul li{position:relative;float:left;width:22.4%;height:126px;padding:1.5%  0 0 1.3%;background-color:#458ad8;border-radius:5px;margin: 0 1.7% 2% 0;}
+.index_ul li.li2{background-color:#866dc1;}
+.index_ul li.li3{background-color:#f1812a;}
+.index_ul li.li4{background-color:#f4777c;}
+.index_ul li.li5{background-color:#e4605b;}
+.index_ul li.li6{background-color:#30b980;}
+.index_ul li.li7{background-color:#2daae1;}
+.index_ul li.li8{background-color:#b17156;}
+.index_ul li.li4,.index_ul li.li8{margin-right:0;}
+.index_ul li.li5,.index_ul li.li6,.index_ul li.li7,.index_ul li.li8{margin-bottom:0;}
+.index_ul li span{font-size: 20px;color:#fff;}
+.index_ul li i{width:98px;height:64px;background:url("../images/index_icon.png") no-repeat;display: block;position: absolute;bottom: 0px;right: -13px;background-position: 0 -65px;}
+.index_ul li.li2 i{background-position-y:-178px;right:-2px;}
+.index_ul li.li3 i{background-position-y:-285px;right: 4px;}
+.index_ul li.li4 i{background-position-y:-400px;right:10px;}
+.index_ul li.li5 i{background-position-y:-502px;right:-10px;}
+.index_ul li.li6 i{background-position-y:-592px;right:-10px;}
+.index_ul li.li7 i{background-position-y:-684px;right:-10px;}
+.index_ul li.li8 i{background-position-y:-822px;right:-10px;}
+.recent{font-size: 16px;color:#333;height:36px;line-height:36px;margin-top:10px;}
+.recent .visit{color:#0b7cc3;font-size: 16px;}
