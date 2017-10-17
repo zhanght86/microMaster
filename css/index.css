@@ -615,3 +615,4 @@ input[type="radio"]{display: block;margin:0 auto;}
 .index_ul li.li8 i{background-position-y:-822px;right:-10px;}
 .recent{font-size: 16px;color:#333;height:36px;line-height:36px;margin-top:10px;}
 .recent .visit{color:#0b7cc3;font-size: 16px;}
+.index_con .listBox{border:none;box-shadow:0px 0px 1px 3px #eee;}
