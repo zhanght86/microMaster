@@ -33,6 +33,7 @@ define(['app'], function (app) {
                             if(answer.status){
                                 console.log("login success");
                                 $location.path('/main/index');
+                                location.href=goto("indexUrl");
                             }else{
                                 console.log("login fail");
                                 $scope.loginmessage = answer.statusText
