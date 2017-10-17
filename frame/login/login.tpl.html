@@ -17,13 +17,15 @@
                 <div class="login_cen">
                     <h3>欢迎登录</h3>
                     <ul class="login_ul">
-                        <li>
+                        <li  ng-class="{true:'',false:'typingLi'}[tabLi]">
                             <i></i>
-                            <input type="text" placeholder="请输入您的用户名" ng-model="usercode" required/>
+                            <input type="text" placeholder="请输入您的用户名" ng-model="usercode"
+                                   ng-focus="obtainFocus()" ng-blur="loseFocus()" required/>
                         </li>
-                        <li>
+                        <li ng-class="{true:'',false:'typingLi'}[tabLi2]">
                             <i class="iconTwo"></i>
-                            <input type="password" placeholder="请输入您的密码" ng-model="password" required/>
+                            <input type="password" placeholder="请输入您的密码" ng-model="password"
+                                   ng-focus="obtainFocus2()"  ng-blur="loseFocus2()" required/>
                         </li>
                         <!--<li ng-if="testCodeCheck">-->
                             <!--<span>验证码</span>-->
