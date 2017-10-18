@@ -11,6 +11,7 @@ require.config({
         'jquery': 'lib/jquery/jquery.min',
         'angular': 'lib/angular/angular.min',
         'uiRouter': 'lib/angular-ui-router/angular-ui-router-0.2.10',
+        'ocLazyLoad': 'lib/ocLazyLoad/ocLazyLoad.require.min',
         'ngCookies': 'lib/angular-cookies/angular-cookies',
         'ngStorage': 'lib/angular-storage/ngStorage.min',
         'bootstrap': 'lib/bootstrap/bootstrap.min',
@@ -32,6 +33,7 @@ require.config({
             'exports': 'uiRouter',
             deps: ['angular']
         },
+        'ocLazyLoad': ['angular'],
         'ngAnimate': {
             'exports': 'ngAnimate',
             deps: ['angular']

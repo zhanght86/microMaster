@@ -8,6 +8,7 @@ define([
     'ngAnimate',
     'ngStorage',
     'uiRouter',
+    'ocLazyLoad',
     'business',
     'angular-jeDate',
     ],
