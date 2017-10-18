@@ -4,6 +4,11 @@ define(['app', 'config','uiRouter'
     app.controller('mainCtrl', ['$scope','$state','$interval','AuthHandler',
         function ($scope,$state,$interval,AuthHandler) {
             var pwdPattern=/^(?=.*[0-9].*)(?=.*[A-Z].*)(?=.*[a-z].*).{6,20}$/;
+
+            var minHeight = $(window).height();
+            $(".contentsHeight").css("height", (minHeight - 70) + "px");
+
+
             //校验是否已登录
             if(!AuthHandler.isLogined){
                 console.log("not logined");
@@ -23,15 +28,15 @@ define(['app', 'config','uiRouter'
             };
 
             //鼠标进入菜单区域显示菜单
-            $scope.mouseenter = function () {
-               $scope.leftFlag = false;
-               $scope.rightFlag = false;
-            };
+            // $scope.mouseenter = function () {
+            //    $scope.leftFlag = false;
+            //    $scope.rightFlag = false;
+            // };
             //鼠标离开菜单区域隐藏菜单
-            $scope.mouseleave = function () {
-               $scope.leftFlag = true;
-               $scope.rightFlag = true;
-            };
+            // $scope.mouseleave = function () {
+            //    $scope.leftFlag = true;
+            //    $scope.rightFlag = true;
+            // };
 
             //当前的日期
             $interval(function () {

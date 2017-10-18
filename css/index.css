@@ -11,7 +11,7 @@ html,body{height:100%}
 .logo_span span{display:block;color:#0a558d;line-height:23px}
 /*main_con*/
 .main{background:#2a3f54;width: 100%;}
-.main_con{min-width:1024px}
+.main_con{min-width:1024px;height:100%;}
 .main_con .main_left{width:230px;background:#2a3f54;display:flex;position:absolute;padding-bottom:0px;}
 .main_con .main_left_wid{width:60px;background:#2a3f54;display:flex;position:absolute;padding-bottom:60px;padding-top:15px;overflow:hidden;}
 .main_con .main_left span{display:block}
