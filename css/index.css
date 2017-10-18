@@ -90,7 +90,7 @@ html,body{height:100%}
 .index_process li.li_finish span{color: #f27318}
 .index_process li.li_finish1 span{font-weight: bold}
 .index_con{margin:0 20px 0 20px}
-.index_con .index_list{width:100%;overflow:hidden;border:1px solid #cdcdcd;background:#fff;position: relative}
+.index_con .index_list{width:100%;overflow:hidden;border:1px solid #cdcdcd;background:#fff;position: relative;margin-bottom: 20px;}
 .index_list .index_pos{display: none}
 .index_list .index_pos .pos_abs{position: absolute;width: 100%;height: 100%;background: #000;opacity: 0.3;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);z-index: 111;}
 .index_list .index_pos span{color: #fff;font-size: 18px;position: absolute;width: 100%;text-align: center;top: 50%;margin-top: -5px;z-index: 999;font-weight: bold}
