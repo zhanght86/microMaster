@@ -25,7 +25,7 @@ define(['app'], function (app) {
                         return;
                     }else if(!Pattern.test($scope.password)){
                         $scope.tips=true;
-                        $scope.loginmessage ="密码必须为6-20位英文字母、数字、下划线的组合"
+                        $scope.loginmessage ="密码为6-20位英文字母、数字、下划线的组合"
                         return;
                     }
                     AuthHandler.login(authUser).then(

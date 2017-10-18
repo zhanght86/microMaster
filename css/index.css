@@ -98,7 +98,7 @@ html,body{height:100%}
 .index_tit h6{line-height:37px;padding-left:20px;font-size:16px;color:#333}
 .index_tit div.fr .div_a a:hover{color:#fd9a9a;}
 .list_ul{width:100%;padding:20px 0;overflow:hidden}
-.list_ul li{width:23%;height:44px;text-align:right;float:left;position:relative}
+.list_ul li{width:23%;height:42px;text-align:right;float:left;position:relative}
 .list_ul li em{color:#f5752d;font-size:14px;line-height:44px}
 .list_ul li strong{color:#f5752d;font-size:12px;line-height:44px;overflow:hidden;height:100%;width:100%;position:absolute;left:0;font-weight:400;text-align:left;top:21px;}
 .list_ul li span{color:#333;font-size:14px;line-height:44px}
@@ -422,7 +422,7 @@ html,body{height:100%}
 .login_ul li .iconTwo{background-position:0px -52px}
 .login_ul li input{background-color: #f7f7f7;height:20px;line-height:20px;top: -4px;position: relative;width: 236px;border-left:1px solid #d7d7d7;padding-left:10px;}
 .login_ul li.li_hei{margin-top:0px;background: none;height: 28px;line-height:28px;}
-.login_ul li.li_hei .iconMark{position:relative;top:3px;display:inline-block;width:14px;height:15px;background:url("../images/tips.png") no-repeat;}
+.iconMark{position:relative;top:3px;display:inline-block;width:14px;height:15px;background:url("../images/tips.png") no-repeat;}
 .login_ul li span.span_col{width: 72%;color: #ff4c15;font-size: 12px;height:28px;line-height:28px;}
 .clickLogin{overflow:hidden;width: 300px;margin:0 auto;}
 .memoryMe,.memorydui{cursor:pointer;float: left;height: 40px;line-height: 40px;margin-right:20px;}
@@ -479,8 +479,13 @@ html,body{height:100%}
 .top_ul li a{display: block;}
 .top_ul li:first-child{border-top: 0;}
 .modbg{background-color:#f7f7f7;}
-.modLi{overflow: hidden;border: 1px solid #e4e4e4;}
-.modLi .describe{width:34%;}
+.modLi{overflow: hidden;border: 1px solid #e4e4e4;padding:8px 0;}
+.modLi .describe{width:100%;}
+.modLi .li_hei{height:28px;line-height:28px;margin-left:31%;}
+.modLi .describe span{float:left;width:28%;}
+.modLi .describe .span_tips{width:85%;height: 28px;line-height: 28px;color: #ff4c15;text-align: left;}
+.modLi .describe input{width:60%;}
+.modLi .describe .iconMark{right:490px;top:2px;}
 .modLi .tal{width:66%;}
 .modLi .tal input{width:62%;}
 .Cancellation{display: inline-block;cursor: pointer;}
