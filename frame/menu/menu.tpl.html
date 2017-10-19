@@ -1,14 +1,13 @@
 <!--菜单页模板-->
-<!--<div style="overflow: hidden;width:230px;">-->
-<!--<ul class="left_ul" style="width:245px;height:540px;overflow-y: scroll;">-->
-<ul class="left_ul" >
+<div class="simulationScroll">
+<ul class="left_ul">
+<!--<ul class="left_ul" >-->
     <li class="firstLi" ng-repeat="message in leftMenu" ui-sref="{{message.uisref}}"
         ng-class="{true:'li_active',false:''}[curTitle==message.title]"
         ng-click="activeMenu(message)"  ng-mouseleave="leave()">
         <a href="#" class="aPleft">
             <i ng-class="message.classi"></i>
             <span ng-bind="message.title"></span>
-            <!--<b class="smallArrow"></b>-->
         </a>
         <ul class="secondUl" ng-if="message.title=='权限管理'&&curTitle=='权限管理'">
             <li ng-repeat="mes in lefttwoMenu" ui-sref="{{mes.uisref}}"
@@ -31,5 +30,5 @@
         </ul>
     </li>
 </ul>
-<!--</div>-->
+</div>
 

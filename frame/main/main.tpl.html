@@ -6,9 +6,9 @@
     </div>
     <div ng-show="true" class="contentsHeight">
         <div class="container-fluid main_con">
-            <div class="row" style="height: 100%;">
+            <div class="row">
                 <!--菜单区域-->
-                <div   class="main_left" ng-class="{true:'main_left_wid',false:'main_left'}[leftFlag]" ng-mouseover="mouseenter()" ng-mouseleave="mouseleave()"  ng-controller="MenuCtrl" data-ng-include="'frame/menu/menu.tpl.html'"></div>
+                <div  style="height: 100%" class="main_left" ng-class="{true:'main_left_wid',false:'main_left'}[leftFlag]" ng-mouseover="mouseenter()" ng-mouseleave="mouseleave()"  ng-controller="MenuCtrl" data-ng-include="'frame/menu/menu.tpl.html'"></div>
                 <!--内容区域-->
                 <div style="height: 100%" class="main_right" ng-class="{true:'main_right_col',false:'main_right'}[rightFlag]">
                     <!--<div class="index_local" ng-show="showMainNagiv" data-ng-include="'frame/current/current.tpl.html'"></div>-->
