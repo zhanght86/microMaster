@@ -432,7 +432,7 @@ html,body{height:100%}
 .forgetPassword{float: left;cursor:pointer;height:40px;line-height: 40px;font-size: 14px;color: #0b7cc3;margin-right: -5px;}
 .login_btn{cursor:pointer;float:right;width:130px;display: block;height:40px;background: #0099ff;border-radius:5px;color: #fff;text-align: center;line-height:40px;font-size: 18px;}
 .login_btn:hover,.login_btn:focus{text-decoration: none;color: #fff;}
-.copyright{width:34%;height:35px;line-height:35px;background-color:rgba(0,0,0,.3);text-align: center;border-radius:26px;position: fixed;bottom:10px;left: 50%;margin-left:-17%;}
+.copyright{width:34%;height:35px;line-height:35px;background-color:rgba(0,0,0,.3);text-align: center;border-radius:26px;position: absolute;bottom:10px;left: 50%;margin-left:-17%;}
 .copyright p{color: #999999;font-size: 12px;}
 /*忘记密码*/
 .login_contact{width:680px;margin-left:-340px;}

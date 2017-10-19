@@ -5,7 +5,7 @@
     <li class="firstLi" ng-repeat="message in leftMenu" ui-sref="{{message.uisref}}"
         ng-class="{true:'li_active',false:''}[curTitle==message.title]"
         ng-click="activeMenu(message)"  ng-mouseleave="leave()">
-        <a href="#" class="aPleft">
+        <a href="javascript:void(0)" class="aPleft">
             <i ng-class="message.classi"></i>
             <span ng-bind="message.title"></span>
         </a>
@@ -14,7 +14,7 @@
                 ng-class="{true:'secondMenu',false:'secondMenu_wid'}[curTitle2==mes.title2]"
                 ng-click="activeMenutwo(mes)"  ng-if="mes.title2">
                 <b class="littleDot"></b>
-                <a href="#">
+                <a href="javascript:void(0)">
                     <p ng-bind="mes.title2" ng-class="{true:'',false:'p_wid'}"></p>
                 </a>
             </li>
@@ -23,7 +23,7 @@
             <li ng-repeat="mes in lefttwoMenu" ui-sref="{{mes.uisref}}"                                           ng-class="{true:'secondMenu',false:'secondMenu_wid'}[curTitle3==mes.title3]"
                 ng-click="activeMenutwo(mes)"  ng-if="mes.title3">
                 <b class="littleDot"></b>
-                <a href="#">
+                <a href="javascript:void(0)">
                     <p ng-bind="mes.title3"></p>
                 </a>
             </li>
