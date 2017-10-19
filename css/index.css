@@ -104,7 +104,7 @@ html,body{height:100%}
 .list_ul li strong{color:#f5752d;font-size:12px;line-height:44px;overflow:hidden;height:100%;width:100%;position:absolute;left:0;font-weight:400;text-align:left;top:21px;}
 .list_ul li span{color:#333;font-size:14px;line-height:44px}
 .list_ul li input{width:80%;height:26px;border:1px solid #cdcdcd;margin-top:8px;text-align:left;box-shadow:inset 0 1px 1px rgba(0,0,0,.075);line-height:26px;float: left}
-.list_ul li input:focus{border:1px solid #f27318;box-shadow:0 0 2px #fde8dc}
+.list_ul li input:focus{border:1px solid #0099ff;box-shadow:0 0 2px #fde8dc}
 
 .list_ul li input.ng-dirty.ng-invalid {border: 1px solid red; }
 .list_tit{padding: 23px 0 0 0;}
