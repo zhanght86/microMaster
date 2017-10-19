@@ -20,7 +20,7 @@ html,body{height:100%}
 .main_con .main_left_wid span{display:none}
 .main_con .main_right{background:#f7f7f7;margin-left:230px;overflow:hidden;}
 .main_con .main_right_col{margin-left:60px;background:#f7f7f7;overflow:hidden;padding:4px 0 40px 0}
-.main_left .left_ul{width:245px;padding-top:14px;background:#2a3f54;padding-bottom:14px;overflow: hidden;}
+.main_left .left_ul{/*width:245px;*/padding-top:14px;background:#2a3f54;padding-bottom:14px;overflow: hidden;}
 .left_ul .firstLi{width:100%;border-bottom:1px solid #2a3f54;overflow:hidden;}
 .left_ul .firstLi .aPleft{display: block;border-left:4px solid #2a3f54;overflow:hidden;}
 .left_ul .secondUl li{position: relative;}
@@ -623,10 +623,11 @@ input[type="radio"]{display: block;margin:0 auto;}
 .recent .visit{color:#0b7cc3;font-size: 16px;}
 .index_con .listBox{border:none;box-shadow:0px 0px 1px 3px #eee;}
 /*20171019   caoruixia   菜单栏模拟滚动条*/
-.main_left .simulationScroll::-webkit-scrollbar{-webkit-appearance: none;}
-.main_left .simulationScroll::-webkit-scrollbar:vertical{width: 10px;}
-.main_left .simulationScroll::-webkit-scrollbar:horizontal{height: 10px;}
-.main_left .simulationScroll::-webkit-scrollbar-thumb{background-color: rgba(0, 0, 0, .3);border-radius: 5px;border: 2px solid #fff;}
-.main_left .simulationScroll::-webkit-scrollbar-track{background-color: #fff;}
+/*.main_left .simulationScroll::-webkit-scrollbar{-webkit-appearance: none;}*/
+/*.main_left .simulationScroll::-webkit-scrollbar:vertical{width: 10px;}*/
+/*.main_left .simulationScroll::-webkit-scrollbar:horizontal{height: 10px;}*/
+/*.main_left .simulationScroll::-webkit-scrollbar-thumb{background-color: rgba(0, 0, 0, .3);border-radius: 5px;border: 2px solid #fff;}*/
+/*.main_left .simulationScroll::-webkit-scrollbar-track{background-color: #fff;}*/
 /*20171019  caoruixia  菜单栏样式*/
+.hideScroll{width:213px;overflow:hidden;}
 .simulationScroll{overflow: hidden;width:230px;height:100%;overflow-y: auto;}

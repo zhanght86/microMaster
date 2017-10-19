@@ -1,34 +1,36 @@
 <!--菜单页模板-->
-<div class="simulationScroll">
-<ul class="left_ul">
-<!--<ul class="left_ul" >-->
-    <li class="firstLi" ng-repeat="message in leftMenu" ui-sref="{{message.uisref}}"
-        ng-class="{true:'li_active',false:''}[curTitle==message.title]"
-        ng-click="activeMenu(message)"  ng-mouseleave="leave()">
-        <a href="javascript:void(0)" class="aPleft">
-            <i ng-class="message.classi"></i>
-            <span ng-bind="message.title"></span>
-        </a>
-        <ul class="secondUl" ng-if="message.title=='权限管理'&&curTitle=='权限管理'">
-            <li ng-repeat="mes in lefttwoMenu" ui-sref="{{mes.uisref}}"
-                ng-class="{true:'secondMenu',false:'secondMenu_wid'}[curTitle2==mes.title2]"
-                ng-click="activeMenutwo(mes)"  ng-if="mes.title2">
-                <b class="littleDot"></b>
-                <a href="javascript:void(0)">
-                    <p ng-bind="mes.title2" ng-class="{true:'',false:'p_wid'}"></p>
+<div class="hideScroll">
+    <div class="simulationScroll">
+        <ul class="left_ul">
+            <!--<ul class="left_ul" >-->
+            <li class="firstLi" ng-repeat="message in leftMenu" ui-sref="{{message.uisref}}"
+                ng-class="{true:'li_active',false:''}[curTitle==message.title]"
+                ng-click="activeMenu(message)"  ng-mouseleave="leave()">
+                <a href="javascript:void(0)" class="aPleft">
+                    <i ng-class="message.classi"></i>
+                    <span ng-bind="message.title"></span>
                 </a>
+                <ul class="secondUl" ng-if="message.title=='权限管理'&&curTitle=='权限管理'">
+                    <li ng-repeat="mes in lefttwoMenu" ui-sref="{{mes.uisref}}"
+                        ng-class="{true:'secondMenu',false:'secondMenu_wid'}[curTitle2==mes.title2]"
+                        ng-click="activeMenutwo(mes)"  ng-if="mes.title2">
+                        <b class="littleDot"></b>
+                        <a href="javascript:void(0)">
+                            <p ng-bind="mes.title2" ng-class="{true:'',false:'p_wid'}"></p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="secondUl" ng-if="message.title=='监控管理'&&curTitle=='监控管理'">
+                    <li ng-repeat="mes in lefttwoMenu" ui-sref="{{mes.uisref}}"                                           ng-class="{true:'secondMenu',false:'secondMenu_wid'}[curTitle3==mes.title3]"
+                        ng-click="activeMenutwo(mes)"  ng-if="mes.title3">
+                        <b class="littleDot"></b>
+                        <a href="javascript:void(0)">
+                            <p ng-bind="mes.title3"></p>
+                        </a>
+                    </li>
+                </ul>
             </li>
         </ul>
-        <ul class="secondUl" ng-if="message.title=='监控管理'&&curTitle=='监控管理'">
-            <li ng-repeat="mes in lefttwoMenu" ui-sref="{{mes.uisref}}"                                           ng-class="{true:'secondMenu',false:'secondMenu_wid'}[curTitle3==mes.title3]"
-                ng-click="activeMenutwo(mes)"  ng-if="mes.title3">
-                <b class="littleDot"></b>
-                <a href="javascript:void(0)">
-                    <p ng-bind="mes.title3"></p>
-                </a>
-            </li>
-        </ul>
-    </li>
-</ul>
+    </div>
 </div>
 
