@@ -13,7 +13,21 @@
     <link rel="stylesheet" type="text/css" href="css/jedate.min.css"/>
     <link rel="stylesheet" href="css/base.css"/>
     <link rel="stylesheet" href="css/index.css"/>
-
+    <!--IE9以下-->
+    <script src="lib/es5-shim.js"></script>
+    <script src="lib/es5-sham.min.js"></script>
+    <script>
+        document.createElement('ui-select');
+        document.createElement('ui-select-match');
+        document.createElement('ui-select-choices');
+        document.createElement('code-type');
+        document.createElement('ng-form');
+        document.createElement('line-chart');
+        document.createElement('map-chart');
+        document.createElement('ng-pdf8');
+        document.createElement('sino-a');
+    </script>
+    <!--自定义指令在IE9及以下兼容需要document.createElement("自定义指令名称")-->
 </head>
 <body style="overflow: hidden;">
 <div ng-controller="IndexCtrl" style="height:100%">
