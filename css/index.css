@@ -484,7 +484,7 @@ html,body{height:100%}
 .modLi .describe{width:100%;}
 .modLi .li_hei{height:28px;line-height:28px;margin-left:31%;}
 .modLi .describe span{float:left;width:28%;}
-.modLi .describe .span_tips{width:85%;height: 28px;line-height: 28px;color: #ff4c15;text-align: left;}
+.modLi .describe .span_tips{width:85%;height: 28px;line-height: 28px;color: #ff4c15;text-align: left;font-size:13px;}
 .modLi .describe input{width:60%;}
 .modLi .describe .iconMark{right:490px;top:2px;}
 .modLi .tal{width:66%;}

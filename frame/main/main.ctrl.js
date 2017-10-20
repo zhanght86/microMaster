@@ -82,7 +82,7 @@ define(['app', 'config','uiRouter'
                     return;
                 }else if($scope.con.newPassWord !=$scope.con.surenewPassWord){
                     $scope.tips=true;
-                    $scope.loginmessage="确认新密码和新密码不一致！";
+                    $scope.loginmessage="确认新密码和新密码不一致,请重新输入！";
                     return;
                 }else if($scope.con.newPassWord ==$scope.con.surenewPassWord){
                     $scope.tips=false;
