@@ -57,6 +57,31 @@ define([], function () {
             $scope.layer_cancle=true;
             $scope.tipMessage="您确认删除吗！";
         };
+        var deleteUser = function(){
+            debugger;
+            var conditionDto={};
+            conditionDto.Id=$scope.Id;
+            focusManageServ.roleCancleserv(conditionDto).then(
+                function(answer){
+                    if(answer.data.status==1){
+                        roleSearchDemand();
+                        $scope.tipMessage="恭喜你，删除成功！";
+                        $scope.layer_tipMessage=true;
+                        return;
+                    }else if(answer.data.status==0){
+                        $scope.tipMessage="对不起，删除失败！";
+                        $scope.layer_tipMessage=true;
+                        return;
+                    }
+                },
+                function(error){
+                    //console.log(JSON.stringify(error.data));
+                }
+            );
+        };
+        $scope.roleCancleSure=function () {
+            deleteUser();
+        }
         //弹层关闭
         $scope.addRole_back=function () {
             $scope.layer_cancle=false;
