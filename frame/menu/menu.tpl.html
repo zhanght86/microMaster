@@ -2,10 +2,11 @@
 <div class="hideScroll">
     <div class="simulationScroll">
         <ul class="left_ul">
-            <!--<ul class="left_ul" >-->
-            <li class="firstLi" ng-repeat="message in leftMenu" ui-sref="{{message.uisref}}"
+            <li class="firstLi" ng-repeat="message in leftMenu"
+                ui-sref="{{message.uisref}}"
                 ng-class="{true:'li_active',false:''}[curTitle==message.title]"
-                ng-click="activeMenu(message)"  ng-mouseleave="leave()">
+                ng-click="activeMenu(message)"
+                ng-mouseleave="leave()">
                 <a href="javascript:void(0)" class="aPleft">
                     <i ng-class="message.classi"></i>
                     <span ng-bind="message.title"></span>

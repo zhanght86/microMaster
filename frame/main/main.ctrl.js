@@ -17,9 +17,6 @@ define(['app', 'config','uiRouter'
                 $scope.user = AuthHandler.getUser();
             }
 
-            //显示导航栏
-            $scope.showMainNagiv = true;
-
             //登录注销响应
             $scope.logout = function(){
                 AuthHandler.logout();
