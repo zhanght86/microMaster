@@ -468,10 +468,11 @@ html,body{height:100%}
 /*.login{float: left;}*/
 .top_l i{float: left;width: 1px;height: 20px;border: 0;background-color: #ccc;margin: 25px 10px 0 10px;}
 .top_l span{float: left;font-size: 18px;color: #666;line-height: 100%;margin-top: 26px;}
-.top_r{float:left;width: 373px;height: 33px;/*border: 1px solid #e8ecf1;border-radius: 5px;background-color: #e4e4e4;*/margin-right: 20px;margin-top: 17px;line-height: 33px;position: relative;
-    background-image: url("../images/icon_bot.png");background-repeat: no-repeat;background-position: 343px 14px;}
+.top_r{float:left;width:340px;height: 33px;/*border: 1px solid #e8ecf1;border-radius: 5px;background-color: #e4e4e4;*/margin-right: 20px;margin-top: 17px;line-height: 33px;position: relative;
+    background-image: url("../images/icon_bot.png");background-repeat: no-repeat;background-position: 312px 14px;}
 .top_rback{background-image: url("../images/icon_top.png");background-repeat: no-repeat;background-position: 343px 14px;}
-.top_r img{display: block;float: left;margin: 8px 5px 0 20px;}
+.top_r img{display: block;float: left;margin: 8px 10px 0 0;}
+.fontSize{font-weight:normal;}
 .dateCSS{font-weight:normal;}
 /*修改密码，注销登录*/
 .top_ul{position: fixed;z-index:999;top:50px;right:55px;width: 148px;/*height: 142px;*/background-color: #f3f6fa;box-shadow: 0 1px 5px #dceaf8;border: 1px solid #e8ecf1;margin-top: -1px}
