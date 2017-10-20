@@ -36,7 +36,7 @@ define(['app'
                 var promise = $http({
                     method:'GET',
                     url:url,
-                    data:{"userCode":authUser.usercode,"passWord":authUser.password}
+                    data:{"topName":authUser.topName}
                 });
                 promise.then(
                     //通讯成功
