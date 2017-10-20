@@ -33,7 +33,7 @@ define(['app'], function (app) {
                             if(answer.status){
                                 console.log("login success");
                                 $location.path('/main/index');
-                                location.href=goto("indexUrl");
+                                location.href=goto("indexUrl");  //系统进入默认展示首页
                             }else{
                                 console.log("login fail");
                                 $scope.loginmessage = answer.statusText
