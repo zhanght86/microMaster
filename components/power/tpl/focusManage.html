@@ -10,19 +10,13 @@
                 <span>角色名称：</span>
             </li>
             <li>
-                <input type="text" class="fl"  ng-model="xxxx">
-            </li>
-            <li>
-                <span>修改日期：</span>
-            </li>
-            <li>
-                <input type="text"  id="flightData4" jedate="" placeholder="" class="fl date" format="YYYY-MM-DD" ng-model="xxx"/>
+                <input type="text" class="fl"  ng-model="roleName">
             </li>
         </ul>
         <div class="pending_btn">
             <div class="pending_btn1">
-                <a href="#" class="a_search">查询</a>
-                <a href="#" class="a_reset">重置</a>
+                <a href="#" class="a_search" ng-click="roleSearch()">查询</a>
+                <a href="#" class="a_reset" ng-click="roleReset()">重置</a>
             </div>
         </div>
     </div>
@@ -70,7 +64,7 @@
                 </td>
             </tr>
         </table>
-        <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
+        <tm-pagination conf="paginationConf"></tm-pagination>
     </div>
 
     <!--删除-->
