@@ -4,10 +4,10 @@
  */
 define([], function () {
     'use strict';
-    function materialCtrl ($scope,$state,$stateParams) {
-        $scope.riskName = $stateParams.riskName; //城乡居民住宅地震巨灾保险
-        $scope.policyNo = $stateParams.policyNo; //P201600E000001
-    };
+    function materialCtrl ($scope,$state,$stateParams,materialServ) {
 
+
+
+    };
     return materialCtrl;
 });

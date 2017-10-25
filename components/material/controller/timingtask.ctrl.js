@@ -4,7 +4,7 @@
  */
 define([], function () {
     'use strict';
-    function timingtaskCtrl ($scope,$state,$stateParams) {
+    function timingtaskCtrl ($scope,$state,$stateParams,timingtaskServ) {
 
     };
 

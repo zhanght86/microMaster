@@ -4,7 +4,7 @@
  */
 define([], function () {
     'use strict';
-    function interfacemonitorCtrl ($scope,$state,$stateParams) {
+    function interfacemonitorCtrl ($scope,$state,$stateParams,interfacemonitorServ) {
 
     };
 

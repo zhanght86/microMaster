@@ -11,19 +11,19 @@
                 <span>操作用户：</span>
             </li>
             <li>
-                <input type="text" class="fl"  ng-model="xxxx">
+                <input type="text" class="fl"  ng-model="Journal.name">
             </li>
             <li>
                 <span>操作日期：</span>
             </li>
             <li>
-                <input type="text"  id="flightData4" jedate="" placeholder="" class="fl date" format="YYYY-MM-DD" ng-model="xxx"/>
+                <input type="text"  id="flightData4" jedate="" placeholder="" class="fl date" format="YYYY-MM-DD" ng-model="Journal.date"/>
             </li>
             <li>
                 <span>模块：</span>
             </li>
             <li>
-                <select  class="fl" >
+                <select  class="fl">
                     <option value ="volvo">--请选择--</option>
                     <option value ="volvo">001</option>
                     <option value ="saab">002</option>
@@ -33,13 +33,13 @@
                 <span>操作描述：</span>
             </li>
             <li>
-                <input type="text" class="fl"  ng-model="xxxx">
+                <input type="text" class="fl"  ng-model="Journal.describe">
             </li>
         </ul>
         <div class="pending_btn">
             <div class="pending_btn1">
-                <a href="#" class="a_search">查询</a>
-                <a href="#" class="a_reset">重置</a>
+                <a href="#" class="a_search" ng-click="JournalSearch()">查询</a>
+                <a href="#" class="a_reset" ng-click="JournalReset()">重置</a>
             </div>
         </div>
     </div>
