@@ -7,31 +7,31 @@
                 <span>用户姓名：</span>
             </li>
             <li>
-                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="userName">
             </li>
             <li>
                 <span>员工工号：</span>
             </li>
             <li>
-                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="staffNum">
             </li>
             <li>
                 <span>归属机构：</span>
             </li>
             <li>
-                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="gency">
             </li>
             <li>
                 <span>是否有效：</span>
             </li>
             <li>
-                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="effective">
             </li>
         </ul>
         <div class="pending_btn">
             <div class="pending_btn1">
-                <a href="#" class="a_search">查询</a>
-                <a href="#" class="a_reset">重置</a>
+                <a href="#" class="a_search" ng-click="zySearch()">查询</a>
+                <a href="#" class="a_reset"  ng-click="zyReset()">重置</a>
             </div>
         </div>
     </div>
