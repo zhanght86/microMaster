@@ -26,7 +26,6 @@ define([], function () {
 
        //最近访问
         var recentWay=function () {
-            debugger;
             var conditionDto={};
             indexServ.dataindexServ(conditionDto).then(
                 function (answer) {
