@@ -4,7 +4,7 @@
  */
 define([], function () {
     'use strict';
-    function indexCtrlHandler($scope,$state) {
+    function indexCtrlHandler($scope,$state,indexServ) {
         $scope.region=function () {
             $state.go("main.region");
         }
@@ -23,6 +23,24 @@ define([], function () {
         $scope.feedbacks=function () {
             $state.go("main.feedback");
         }
+
+       //最近访问
+        var recentWay=function () {
+            debugger;
+            var conditionDto={};
+            indexServ.dataindexServ(conditionDto).then(
+                function (answer) {
+                    if (answer.data.status == 1) {
+                        $scope.recentNameList = answer.data.data.list;
+                        return;
+                    };
+                },
+                function (error) {
+                }
+            );
+        }
+        recentWay();
+
 
     };
     return indexCtrlHandler;

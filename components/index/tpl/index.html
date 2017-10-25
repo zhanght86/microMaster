@@ -41,5 +41,10 @@
         </ul>
         </div>
     </div>
-    <p class="recent">最近访问：<span class="visit">区域管理</span></p>
+    <p class="recent">最近访问：
+        <!--<span class="visit">区域管理</span>-->
+        <ul ng-repeat="d in recentNameList">
+            <li>{{d.recentName}}</li>
+        </ul>
+    </p>
 </div>
