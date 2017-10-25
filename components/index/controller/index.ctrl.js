@@ -30,7 +30,7 @@ define([], function () {
             indexServ.dataindexServ(conditionDto).then(
                 function (answer) {
                     if (answer.data.status == 1) {
-                        $scope.recentNameList = answer.data.data.list;
+                        $scope.recentNameList = answer.data.list;
                         return;
                     };
                 },
