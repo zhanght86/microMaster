@@ -4,7 +4,7 @@
  */
 define([], function () {
     'use strict';
-    function regionCtrlHandler($scope,$state) {
+    function regionCtrlHandler($scope,$state,regionServ) {
         // 添加关联机构
         $scope.addRelation=function () {
             $scope.layer_addRalation=true;

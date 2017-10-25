@@ -4,35 +4,6 @@
 define([], function () {
     'use strict';
     function suspendCtrlHandler($scope,$state,suspendServ) {
-
-        /*查询被保人清单*/
-        var getInsuredList = function(){
-            var pageIndex = $scope.paginationConf.currentPage;
-            var pageSize = $scope.paginationConf.itemsPerPage;
-            suspendServ.ProqueryByPage(pageIndex,pageSize).then(
-                function(answer){
-                    console.log("count="+answer.data.count);
-                    $scope.paginationConf.totalItems = answer.data.count;
-                    $scope.insureDatas = answer.data.items;
-                },function(error){
-                    console.log(JSON.stringify(error.data));
-                }
-            );
-        };
-
-        //初始化界面
-        var initFunc = function(){
-            console.log("suspendCtrlHandler begin init");
-            //初始化分页
-            $scope.paginationConf = {
-                currentPage: 1,     //当前所在的页
-                totalItems: 1,      //总共有多少条记录
-                itemsPerPage: 15,   //每页展示的数据条数
-                pagesLength: 15,    //分页条目的长度（如果设置建议设置为奇数）
-                perPageOptions: [10, 20, 30, 40, 50]   // 可选择显示条数的数组
-            };
-            $scope.$watch('paginationConf.currentPage + paginationConf.itemsPerPage', getInsuredList);
-
             /!*tab切换响应方法*!/
             //普通用户管理
             $scope.applicationTab = function(){
@@ -48,9 +19,39 @@ define([], function () {
             $state.go("main.suspend.ordinary");
 
             console.log("suspendCtrlHandler end init");
+
+        //===================================普通用户管理部分=====================================
+        /*查询被保人清单*/
+        var getInsuredList = function(){
+            var pageIndex = $scope.paginationConfp.currentPage;
+            var pageSize = $scope.paginationConfp.itemsPerPage;
+            suspendServ.ProqueryByPage(pageIndex,pageSize).then(
+                function(answer){
+                    // console.log("count="+answer.data.count);
+                    $scope.paginationConfp.totalItems = answer.data.count;
+                    $scope.insureDatas = answer.data.items;
+                },function(error){
+                    console.log(JSON.stringify(error.data));
+                }
+            );
+        };
+
+        //初始化界面
+        var initFunc = function(){
+            //初始化分页
+            $scope.paginationConfp = {
+                currentPage: 1,     //当前所在的页
+                totalItems: 1,      //总共有多少条记录
+                itemsPerPage: 15,   //每页展示的数据条数
+                pagesLength: 15,    //分页条目的长度（如果设置建议设置为奇数）
+                perPageOptions: [10, 20, 30, 40, 50]   // 可选择显示条数的数组
+            };
+            $scope.$watch('paginationConfp.currentPage + paginationConfp.itemsPerPage', getInsuredList);
         };
         initFunc();
-        //===================================普通用户管理部分=====================================
+        $scope.ptSearch=function () {
+            getInsuredList();
+        };
         //账户名(会员详细信息)
         $scope.userMess=function () {
             $scope.layer_Policy=true;

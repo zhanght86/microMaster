@@ -50,8 +50,8 @@
         </ul>
         <div class="pending_btn">
             <div class="pending_btn1">
-                <a href="#" class="a_search">查询</a>
-                <a href="#" class="a_reset">重置</a>
+                <a href="#" class="a_search" ng-click="ptSearch()">查询</a>
+                <a href="#" class="a_reset" ng-click="ptReset()">重置</a>
             </div>
         </div>
     </div>
@@ -99,7 +99,7 @@
                 <td class="Downdrag" ng-click="attribute()"><a href="#">一级</a></td>
             </tr>
         </table>
-        <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
+        <tm-pagination conf="paginationConfp"></tm-pagination>
     </div>
 
     <!--保单详情-->

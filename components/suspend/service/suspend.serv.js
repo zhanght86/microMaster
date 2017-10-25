@@ -5,31 +5,32 @@ define([], function () {
     'use strict';
     function suspendServHandler($http,$q) {
         return {
-            /**/
-            ProqueryByPage: function (currentPage, itemsPerPage) {
-
-                var urlStr = 'data/insuredDatas.json';
+            //查询
+            ProqueryByPage:function (conditionDto){
                 var deferred = $q.defer();
-                var promise = $http({
-                    method: 'GET',
-                    url: urlStr,
-                    params: {curPage: currentPage, itePerPage: itemsPerPage}
+                var promise  = $http({
+                    method:'POST',
+                    // method:'GET',
+                    url:'pppp',//http://172.16.30.140:8090/gscore-pa-web
+                    data:conditionDto
                 });
                 promise.then(
                     //通讯成功
-                    function (answer) {
+                    function(answer){
                         answer.status = true;
                         deferred.resolve(answer);
                     },
                     //通讯失败
-                    function (error) {
+                    function(error){
                         error.status = false;
                         deferred.reject(error);
-                    }
-                );
-
+                    });
+                //返回promise对象，交由Controller继续处理
                 return deferred.promise;
             }
+
+
+
         }
     };
 
