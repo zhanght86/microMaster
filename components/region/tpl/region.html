@@ -49,8 +49,8 @@
         </ul>
         <div class="pending_btn">
             <div class="pending_btn1">
-                <a href="#" class="a_search">查询</a>
-                <a href="#" class="a_reset">重置</a>
+                <a href="#" class="a_search" ng-click="reSearch()">查询</a>
+                <a href="#" class="a_reset" ng-click="reReset()">重置</a>
             </div>
         </div>
     </div>
@@ -75,48 +75,22 @@
                 <th width="13%">操作员代码</th>
                 <th width="12%">操作业务机构</th>
             </tr>
-            <!--<tr ng-repeat="d in correctiondata|orderBy:col:desc">-->
-            <!--<td ng-bind="$index+1"></td>-->
-            <!--<td ng-bind="d.xxx">1</td>-->
-            <!--<td ng-bind="d.xxx">1</td>-->
-            <!--<td ng-bind="d.xxx">1</td>-->
-            <!--<td ng-bind="d.xxx">1</td>-->
-            <!--<td class="t_last">-->
-            <!--<div class="div_pad">-->
-            <!--<a href="#" class="a_col" ng-click="modify()">修改</a><span>|</span><a href="#" class="a_col" ng-click="canale()">删除</a>-->
-            <!--</div>-->
-            <!--</td>-->
-            <!--</tr>-->
-            <tr>
-                <td>1</td>
-                <td>测试测试</td>
-                <td>45342</td>
-                <td>中原机构1</td>
-                <td>5657</td>
-                <td>20876</td>
-                <td>3567</td>
-                <td class="t_last">
-                    <div class="div_pad">
-                        <a href="#" class="a_col" ng-click="modify()">修改</a><span>|</span><a href="#" class="a_col" ng-click="Disable()">停用</a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>测试测试</td>
-                <td>45342</td>
-                <td>中原机构1</td>
-                <td>5657</td>
-                <td>20876</td>
-                <td>3567</td>
-                <td class="t_last">
-                    <div class="div_pad">
-                        <a href="#" class="a_col" ng-click="modify()">修改</a><span>|</span><a href="#" class="a_col" ng-click="Disable()">停用</a>
-                    </div>
-                </td>
+            <tr ng-repeat="d in regionDatalist|orderBy:col:desc">
+            <td ng-bind="$index+1"></td>
+            <td ng-bind="d.regionName"></td>
+            <td ng-bind="d.regionCode"></td>
+            <td ng-bind="d.zyregionName"></td>
+            <td ng-bind="d.ywregionName"></td>
+            <td ng-bind="d.jbrCode"></td>
+            <td ng-bind="d.czyCode"></td>
+            <td class="t_last">
+                <div class="div_pad">
+                <a href="#" class="a_col" ng-click="modify()">修改</a><span>|</span><a href="#" class="a_col" ng-click="canale()">删除</a>
+                </div>
+            </td>
             </tr>
         </table>
-        <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
+        <tm-pagination conf="paginationConf"></tm-pagination>
     </div>
 
     <!--添加关联机构-->
