@@ -13,8 +13,8 @@ define([
 ],function (angular,
             materialCtrlHandler,
             materialServHandler,
-            timingtaskServHandler,
             timingtaskCtrlHandler,
+            timingtaskServHandler,
             interfacemonitorCtrlHandler,
             interfacemonitorservHandler
             ) {
@@ -27,20 +27,20 @@ define([
                 $stateProvider
                     .state("main.material", {
                         url:"/material",
-                        templateUrl: "components/material/tpl/material.html"
-                        //controller: ""
+                        templateUrl: "components/material/tpl/material.html",
+                        controller: "materialCtrl"
                     });
                 $stateProvider
                     .state("main.interfacemonitor", {
                         url:"/interfacemonitor",
-                        templateUrl: "components/material/tpl/interfacemonitor.html"
-                        //controller: ""
+                        templateUrl: "components/material/tpl/interfacemonitor.html",
+                        controller: "interfacemonitorCtrl"
                     });
                 $stateProvider
                     .state("main.timingtask", {
                         url:"/timingtask",
-                        templateUrl: "components/material/tpl/timingtask.html"
-                        //controller: ""
+                        templateUrl: "components/material/tpl/timingtask.html",
+                        controller: "timingtaskCtrl"
                     });
             }])
         .controller('interfacemonitorCtrl',interfacemonitorCtrlHandler)
