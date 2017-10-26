@@ -60,6 +60,19 @@ define(['app', 'config','uiRouter'
                 if($scope.con.surenewPassWord == undefined){
                     $scope.con.surenewPassWord = '';
                 }
+                if($scope.con.oldPassword == undefined){
+                    $scope.con.oldPassword = '';
+                }
+                if($scope.con.oldPassword==''){
+                    $scope.tips=true;
+                    $scope.loginmessage ="请输入原密码！"
+                    return;
+                  // 需要取到原密码进行对比？？？
+                }else if($scope.con.oldPassword != $scope.password){
+                    $scope.tips=true;
+                    $scope.loginmessage ="原密码不正确，请重新输入！"
+                    return;
+                };
                 if($scope.con.newPassWord == ''){
                     $scope.tips=true;
                     $scope.loginmessage ="请输入新密码！"
