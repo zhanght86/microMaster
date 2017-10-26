@@ -50,7 +50,7 @@
         </div>
         <table class="table table-striped table-bordered table-hover">
             <tr>
-                <th width="3.7%">序号</thwid>
+                <th width="3.7%">序号</th>
                 <th width="7.7%">操作用户</th>
                 <th width="7.7%">模块</th>
                 <th width="7.7%">操作结果</th>
@@ -58,24 +58,33 @@
                 <th width="14%">操作日期</th>
                 <th>描述</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>张某某</td>
-                <td>权限管理</td>
-                <td>成功</td>
-                <td>255.255.0.0</td>
-                <td>2013-7-1 09:21:32</td>
-                <td>XXXX</td>
+            <tr ng-repeat="d in metList|orderBy:col:desc">
+                <td ng-bind="$index+1"></td>
+                <td ng-bind="d.timingName"></td>
+                <td ng-bind="d.date"></td>
+                <td ng-bind="d.servName"></td>
+                <td ng-bind="d.InterfaceUrl"></td>
+                <td ng-bind="d.ExceptionType"></td>
+                <td ng-bind="d.ExceptionMs"></td>
             </tr>
-            <tr>
-                <td>2</td>
-                <td>admin</td>
-                <td>机构管理</td>
-                <td>成功</td>
-                <td>255.255.255.255</td>
-                <td>2013-7-1 09:24:30</td>
-                <td>修改机构，机构代码1039274，机构名称：XXXX</td>
-            </tr>
+            <!--<tr>-->
+                <!--<td>1</td>-->
+                <!--<td>张某某</td>-->
+                <!--<td>权限管理</td>-->
+                <!--<td>成功</td>-->
+                <!--<td>255.255.0.0</td>-->
+                <!--<td>2013-7-1 09:21:32</td>-->
+                <!--<td>XXXX</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>2</td>-->
+                <!--<td>admin</td>-->
+                <!--<td>机构管理</td>-->
+                <!--<td>成功</td>-->
+                <!--<td>255.255.255.255</td>-->
+                <!--<td>2013-7-1 09:24:30</td>-->
+                <!--<td>修改机构，机构代码1039274，机构名称：XXXX</td>-->
+            <!--</tr>-->
         </table>
         <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
     </div>
