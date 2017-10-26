@@ -1,8 +1,9 @@
 {
   "status":1,
   "message":"成功",
-  "list":{
-      "recentName":"区域管理"
-  }
+  "list":[
+    {"recentName":"区域管理"},
+    {"recentName":"消息管理"},
+    {"recentName":"日志管理"}]
 }
 
