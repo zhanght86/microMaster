@@ -20,7 +20,8 @@ define([], function () {
                 function(answer){
                     // $scope.paginationConf.totalItems = answer.data.data.total;
                     // $scope.dataDictionaryListR=answer.data.data.list;
-                    $scope.selectRightRadio="";
+                    $scope.paginationConf.totalItems = answer.data.count;
+                    $scope.roleDataList=answer.data.items;
                 },function(error){
                     //cconsole.log(JSON.stringify(error.data));
                 }

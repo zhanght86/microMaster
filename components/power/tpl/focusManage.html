@@ -40,27 +40,15 @@
                 <th width="16%">修改日期</th>
                 <th class="t_last" width="16%">操作</th>
             </tr>
-            <!--<tr ng-repeat="d in correctiondata|orderBy:col:desc">-->
-                <!--<td ng-bind="$index+1"></td>-->
-                <!--<td ng-bind="d.xxx">1</td>-->
-                <!--<td ng-bind="d.xxx">1</td>-->
-                <!--<td ng-bind="d.xxx">1</td>-->
-                <!--<td ng-bind="d.xxx">1</td>-->
-                <!--<td class="t_last">-->
-                    <!--<div class="div_pad">-->
-                        <!--<a href="#" class="a_col" ng-click="modify()">修改</a><span>|</span><a href="#" class="a_col" ng-click="canale()">删除</a>-->
-                    <!--</div>-->
-                <!--</td>-->
-            <!--</tr>-->
-            <tr>
-                <td>1</td>
-                <td>管理员</td>
-                <td>描述描述描述描述描述描述描述描述描述描述</td>
-                <td>20170927</td>
-                <td>20170927</td>
+            <tr ng-repeat="d in roleDataList|orderBy:col:desc">
+                <td ng-bind="$index+1"></td>
+                <td ng-bind="d.roleName">1</td>
+                <td ng-bind="d.roleDesc">1</td>
+                <td ng-bind="d.startData">1</td>
+                <td ng-bind="d.endData">1</td>
                 <td class="t_last">
                     <div class="div_pad">
-                        <a href="#" class="a_col" ng-click="modify()">修改</a><span>|</span><a href="javascript:void(0)" class="a_col" ng-click="rolecanale()">删除</a>
+                        <a href="#" class="a_col" ng-click="modify()">修改</a><span>|</span><a href="#" class="a_col" ng-click="canale()">删除</a>
                     </div>
                 </td>
             </tr>
