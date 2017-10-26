@@ -65,7 +65,6 @@ define([], function () {
         };
         //===================================展业人员管理部分=====================================
         var getInsuredListuu = function(){
-            debugger;
             // $scope.conditionone.pageNo = $scope.paginationConfone.currentPage;
             // $scope.conditionone.pageSize = $scope.paginationConfone.itemsPerPage;
             // var conditionDto = $scope.conditionone;;
