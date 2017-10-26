@@ -6,7 +6,7 @@ define([], function () {
     'use strict';
     function timingtaskCtrlHandler ($scope,$state,timingtaskServ) {
         var timeSrarchFun = function () {
-            debugger;
+            // debugger;
             $scope.condition.pageNum= $scope.paginationConf.currentPage;
             $scope.condition.pageSize=$scope.paginationConf.itemsPerPage;
             var conditionDto = $scope.condition;
