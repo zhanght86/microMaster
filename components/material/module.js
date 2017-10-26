@@ -7,7 +7,7 @@ define([
     'components/material/controller/timingtask.ctrl',
     'components/material/service/interfacemonitor.serv',
     'components/material/service/material.serv',
-    'components/material/service/timingtask.serv',
+    'components/material/service/timingtask.serv'
 ],function (angular,
             materialCtrlHandler,
             materialServHandler,
@@ -27,14 +27,12 @@ define([
                         url:"/material",
                         templateUrl: "components/material/tpl/material.html",
                         controller: "materialCtrl"
-                    });
-                $stateProvider
+                    })
                     .state("main.interfacemonitor", {
                         url:"/interfacemonitor",
                         templateUrl: "components/material/tpl/interfacemonitor.html",
                         controller: "interfacemonitorCtrl"
-                    });
-                $stateProvider
+                    })
                     .state("main.timingtask", {
                         url:"/timingtask",
                         templateUrl: "components/material/tpl/timingtask.html",

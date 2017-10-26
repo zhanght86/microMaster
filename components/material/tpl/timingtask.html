@@ -21,7 +21,7 @@
                 <span>执行时间：</span>
             </li>
             <li>
-                <input type="text"  id="flightData4" jedate="" placeholder="" class="fl date" format="YYYY-MM-DD" ng-model="xxx"/>
+                <input type="text"  id="flightData4" jedate="" placeholder="" class="fl date" format="YYYY-MM-DD" ng-model="executeDate"/>
             </li>
             <li>
                 <span>异常类型：</span>
@@ -56,25 +56,16 @@
                 <th width="8%">异常类型</th>
                 <th>异常原因描述</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>投保查询接口</td>
-                <td>核心</td>
-                <td>2017-07-07 10:30</td>
-                <td>255.255.0.0:90</td>
-                <td>用户管理</td>
-                <td>查询</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>河南省-郑州市-金水区</td>
-                <td>410105</td>
-                <td></td>
-                <td>XXXXXX机构</td>
-                <td>3124325</td>
-                <td>添加角色，修改角色，删除角色</td>
+            <tr ng-repeat="d in timingList|orderBy:col:desc">
+                <td ng-bind="$index+1"></td>
+                <td ng-bind="d.timingName"></td>
+                <td ng-bind="d.date"></td>
+                <td ng-bind="d.servName"></td>
+                <td ng-bind="d.InterfaceUrl"></td>
+                <td ng-bind="d.ExceptionType"></td>
+                <td ng-bind="d.ExceptionMs"></td>
             </tr>
         </table>
-        <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
+        <tm-pagination conf="paginationConf"></tm-pagination>
     </div>
 </div>

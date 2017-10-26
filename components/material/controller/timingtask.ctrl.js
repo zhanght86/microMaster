@@ -10,20 +10,23 @@ define([], function () {
             var conditionDto = $scope.condition;
             if(conditionDto == '' || conditionDto == null){
             }
-            if($scope.xxxx == undefined){
-                $scope.xxxx = "";
+            if($scope.executeDate == undefined){
+                $scope.executeDate = "";
             }
-            conditionDto.xxxx=$scope.xxxx;
-            timingtaskServ.timeSearchdata(conditionDto).then(
+            conditionDto.executeDate=$scope.executeDate;
+            timingtaskServ.PPPPPP(conditionDto).then(
                 function(answer){
                     // $scope.paginationConf.totalItems = answer.data.data.total;
                     // $scope.dataDictionaryListR=answer.data.data.list;
+                    $scope.paginationConf.totalItems = answer.data.count;
+                    $scope.timingList=answer.data.items;
                 },function(error){
                     //cconsole.log(JSON.stringify(error.data));
                 }
             );
+
         };
-        var timeInitPage = function(){
+        var initPage = function(){
             $scope.paginationConf = {
                 currentPage: 1,
                 totalItems: 0,
@@ -37,12 +40,12 @@ define([], function () {
             };
             $scope.$watch('paginationConf.currentPage + paginationConf.itemsPerPage',timeSrarchFun);
         };
-        timeInitPage();
-        $scope.timeSrarch = function () {
-            // debugger;
+        initPage();
+        $scope.timeSrarch=function () {
+            debugger
             timeSrarchFun();
         };
-    };
 
+    };
     return timingtaskCtrlHandler;
 });

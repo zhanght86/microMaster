@@ -5,12 +5,12 @@ define([], function () {
     function timingtaskServHandler($http,$q){
         return {
             //查询
-            timeSearchdata:function (conditionDto){
+            PPPPPP:function (conditionDto){
                 var deferred = $q.defer();
                 var promise  = $http({
                     method:'POST',
                     // method:'GET',
-                    url:'/prpins-web/customer/getLowerAreaCode',//http://172.16.30.140:8090/gscore-pa-web
+                    url:'data/timingtaskData.json',//http://172.16.30.140:8090/gscore-pa-web
                     data:conditionDto
                 });
                 promise.then(
@@ -27,8 +27,6 @@ define([], function () {
                 //返回promise对象，交由Controller继续处理
                 return deferred.promise;
             },
-
-
 
         }
     };
