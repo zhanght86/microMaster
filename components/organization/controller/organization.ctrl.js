@@ -1,6 +1,4 @@
 /**
- * Created by ZhangJiansen on 2016/9/10.
- * 批改模块控制器
  */
 define([], function () {
     'use strict';

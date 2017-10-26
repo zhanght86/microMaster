@@ -1,5 +1,4 @@
 /**
- * Created by ZhangJiansen on 2016/9/18.
  * 文件资料维护模块定义
  */
 define([

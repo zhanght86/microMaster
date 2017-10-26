@@ -1,6 +1,4 @@
 /**
- * Created by ZhangJiansen on 2016/9/18.
- * 投保模块定义
  */
 define([
     'angular',

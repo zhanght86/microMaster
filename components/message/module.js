@@ -1,6 +1,4 @@
 /**
- * Created by ZhangJiansen on 2016/9/19.
- * 单证模块
  */
 define([
     'angular',
