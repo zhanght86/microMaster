@@ -1,0 +1,44 @@
+{
+  "count": 50,
+  "items": [{
+    "accountName": "王五",
+    "phone": "15745863215",
+    "cardCode": "41092319960112",
+    "mail": "1361874583@qq.com",
+    "friends": "88",
+    "reAddress": "北京市",
+    "cbMonry": "100万",
+    "cbNums": "200",
+    "attribute": "一级"
+  },{
+    "accountName": "王五",
+    "phone": "15745863215",
+    "cardCode": "41092319960112",
+    "mail": "1361874583@qq.com",
+    "friends": "88",
+    "reAddress": "北京市",
+    "cbMonry": "100万",
+    "cbNums": "200",
+    "attribute": "一级"
+  },{
+    "accountName": "王五",
+    "phone": "15745863215",
+    "cardCode": "41092319960112",
+    "mail": "1361874583@qq.com",
+    "friends": "88",
+    "reAddress": "北京市",
+    "cbMonry": "100万",
+    "cbNums": "200",
+    "attribute": "一级"
+  },{
+    "accountName": "王五",
+    "phone": "15745863215",
+    "cardCode": "41092319960112",
+    "mail": "1361874583@qq.com",
+    "friends": "88",
+    "reAddress": "北京市",
+    "cbMonry": "100万",
+    "cbNums": "200",
+    "attribute": "一级"
+  }]
+}

@@ -21,30 +21,41 @@ define([], function () {
 
         //===================================普通用户管理部分=====================================
         var getInsuredList = function(){
-            var pageIndex = $scope.paginationConfp.currentPage;
-            var pageSize = $scope.paginationConfp.itemsPerPage;
-            suspendServ.ProqueryByPage(pageIndex,pageSize).then(
+            $scope.condition.pageNum= $scope.paginationConf.currentPage;
+            $scope.condition.pageSize=$scope.paginationConf.itemsPerPage;
+            var conditionDto = $scope.condition;
+            if(conditionDto == '' || conditionDto == null){
+            }
+            if($scope.accountName == undefined){
+                $scope.accountName = "";
+            }
+            conditionDto.accountName=$scope.accountName;
+            suspendServ.ordinarySearchserv(conditionDto).then(
                 function(answer){
-                    // console.log("count="+answer.data.count);
-                    $scope.paginationConfp.totalItems = answer.data.count;
-                    $scope.insureDatas = answer.data.items;
+                    // $scope.paginationConf.totalItems = answer.data.data.total;
+                    // $scope.dataDictionaryListR=answer.data.data.list;
+                    $scope.paginationConf.totalItems = answer.data.count;
+                    $scope.ordinaryList=answer.data.items;
                 },function(error){
-                    console.log(JSON.stringify(error.data));
+                    //cconsole.log(JSON.stringify(error.data));
                 }
             );
         };
 
         //初始化界面
         var initFunc = function(){
-            //初始化分页
-            $scope.paginationConfp = {
-                currentPage: 1,     //当前所在的页
-                totalItems: 1,      //总共有多少条记录
-                itemsPerPage: 15,   //每页展示的数据条数
-                pagesLength: 15,    //分页条目的长度（如果设置建议设置为奇数）
-                perPageOptions: [10, 20, 30, 40, 50]   // 可选择显示条数的数组
+            $scope.paginationConf = {
+                currentPage: 1,
+                totalItems: 0,
+                itemsPerPage: 5,
+                pagesLength: 5,
+                perPageOptions: [5, 10, 15,20]
             };
-            $scope.$watch('paginationConfp.currentPage + paginationConfp.itemsPerPage', getInsuredList);
+            $scope.condition = {
+                pageNum: $scope.paginationConf.currentPage,
+                pageSize: $scope.paginationConf.itemsPerPage
+            };
+            $scope.$watch('paginationConf.currentPage + paginationConf.itemsPerPage',getInsuredList);
         };
         initFunc();
         $scope.ptSearch=function () {

@@ -7,25 +7,25 @@
                 <span>账户名：</span>
             </li>
             <li>
-                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="accountName">
             </li>
             <li>
                 <span>手机号码：</span>
             </li>
             <li>
-                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="phone">
             </li>
             <li>
                 <span>证件号码：</span>
             </li>
             <li>
-                <input type="text" class="fl ng-pristine ng-valid" ng-model="xxxx">
+                <input type="text" class="fl ng-pristine ng-valid" ng-model="cardCode">
             </li>
             <li>
                 <span>注册时间：</span>
             </li>
             <li>
-                <input type="text"  id="flightData4" jedate="" placeholder="" class="fl date" format="YYYY-MM-DD" ng-model="xxx"/>
+                <input type="text"  id="flightData4" jedate="" placeholder="" class="fl date" format="YYYY-MM-DD" ng-model="register"/>
             </li>
             <li>
                 <span>人员属性：</span>
@@ -73,33 +73,20 @@
                 <th  width="10%">承包笔数</th>
                 <th  width="10%">人员属性</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td class="Downdrag" ng-click="userMess()">
-                    <a href="#">李四</a></td>
-                <td>15745863215</td>
-                <td>41092319960112</td>
-                <td>1361874583@qq.com</td>
-                <td>88</td>
-                <td>北京市</td>
-                <td>40万</td>
-                <td class="Downdrag" ng-click="nums()"><a href="#">6</a></td>
-                <td class="Downdrag" ng-click="attribute()"><a href="#">一级</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td class="Downdrag" ng-click="userMess()"><a href="#">王五</a></td>
-                <td>15745863215</td>
-                <td>41092319960112</td>
-                <td>1361874583@qq.com</td>
-                <td>88</td>
-                <td>北京市</td>
-                <td>40万</td>
-                <td class="Downdrag" ng-click="nums()"><a href="#">6</a></td>
-                <td class="Downdrag" ng-click="attribute()"><a href="#">一级</a></td>
+            <tr ng-repeat="d in ordinaryList|orderBy:col:desc">
+                <td ng-bind="$index+1"></td>
+                <td  class="Downdrag" ng-click="userMess()" ng-bind="d.accountName"></td>
+                <td ng-bind="d.phone"></td>
+                <td ng-bind="d.cardCode"></td>
+                <td ng-bind="d.mail"></td>
+                <td ng-bind="d.friends"></td>
+                <td ng-bind="d.reAddress"></td>
+                <td ng-bind="d.cbMonry"></td>
+                <td class="Downdrag" ng-click="nums()" ng-bind="d.cbNums"></td>
+                <td class="Downdrag" ng-click="attribute()" ng-bind="d.attribute"></td>
             </tr>
         </table>
-        <tm-pagination conf="paginationConfp"></tm-pagination>
+        <tm-pagination conf="paginationConf"></tm-pagination>
     </div>
 
     <!--保单详情-->
