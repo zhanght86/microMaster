@@ -46,13 +46,6 @@ define([], function () {
             organSearchDemand();
         };
 
-        //
-        // $scope.goPath = function(){
-        //     $state.go('application');
-        // };
-        // $scope.goIndex = function(){
-        //     $state.go('application');
-        // };
 
     };
     return organizationCtrlHandler;
