@@ -15,13 +15,13 @@
                         <span>当前机构：</span>
                     </li>
                     <li>
-                        <input type="text" class="fl"  ng-model="xxxx">
+                        <input type="text" class="fl"  ng-model="nowOrgan">
                     </li>
                 </ul>
                 <div class="pending_btn">
                     <div class="pending_btn1">
-                        <a href="#" class="a_search">查询</a>
-                        <a href="#" class="a_reset">重置</a>
+                        <a href="#" class="a_search" ng-click="organSearch()">查询</a>
+                        <a href="#" class="a_reset" ng-click="organReset()">重置</a>
                     </div>
                 </div>
             </div>
@@ -39,12 +39,12 @@
                         <th width="18%">电话</th>
                         <th width="15%">操作</th>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>21465</td>
-                        <td>机构1</td>
-                        <td>北京市朝阳区</td>
-                        <td>15713684582</td>
+                    <tr ng-repeat="d in organDataList|orderBy:col:desc">
+                        <td ng-bind="$index+1"></td>
+                        <td ng-bind="d.organCode"></td>
+                        <td ng-bind="d.organName"></td>
+                        <td ng-bind="d.address"></td>
+                        <td ng-bind="d.phone"></td>
                         <td class="t_last">
                             <div class="div_pad">
                                 <a href="#" class="a_col" ng-click="see()">查看</a>

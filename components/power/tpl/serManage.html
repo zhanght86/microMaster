@@ -52,9 +52,9 @@
                     </tr>
                     <tr ng-repeat="d in peopleDatalist|orderBy:col:desc">
                     <td ng-bind="$index+1"></td>
-                    <td ng-bind="d.ygCode">1</td>
-                    <td ng-bind="d.ygName">1</td>
-                    <td ng-bind="d.organ">1</td>
+                    <td ng-bind="d.ygCode"></td>
+                    <td ng-bind="d.ygName"></td>
+                    <td ng-bind="d.organ"></td>
                     <td class="t_last">
                         <div class="div_pad">
                             <a href="#" class="a_col" ng-click="modify()">修改</a><span>|</span><a href="#" class="a_col" ng-click="canale()">删除</a>

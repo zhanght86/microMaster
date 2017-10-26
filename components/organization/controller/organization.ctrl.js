@@ -4,55 +4,56 @@
  */
 define([], function () {
     'use strict';
-    function organizationCtrlHandler($scope,$state) {
-
-        $scope.goIndex=function(){
-
-        }
-
-        $scope.goPath = function(){
-            $state.go('application');
+    function organizationCtrlHandler($scope,$state,organizationServ) {
+        //----------------------------查询------------------------------------------
+        var organSearchDemand=function () {
+            $scope.condition.pageNum= $scope.paginationConf.currentPage;
+            $scope.condition.pageSize=$scope.paginationConf.itemsPerPage;
+            var conditionDto = $scope.condition;
+            if(conditionDto == '' || conditionDto == null){
+            }
+            if($scope.nowOrgan == undefined){
+                $scope.nowOrgan = "";
+            }
+            conditionDto.nowOrgan=$scope.nowOrgan;
+            organizationServ.organSearchserv(conditionDto).then(
+                function(answer){
+                    // $scope.paginationConf.totalItems = answer.data.data.total;
+                    // $scope.dataDictionaryListR=answer.data.data.list;
+                    $scope.paginationConf.totalItems = answer.data.count;
+                    $scope.organDataList=answer.data.items;
+                },function(error){
+                    //cconsole.log(JSON.stringify(error.data));
+                }
+            );
+        };
+        var initPage = function(){
+            $scope.paginationConf = {
+                currentPage: 1,
+                totalItems: 0,
+                itemsPerPage: 5,
+                pagesLength: 5,
+                perPageOptions: [5, 10, 15,20]
+            };
+            $scope.condition = {
+                pageNum: $scope.paginationConf.currentPage,
+                pageSize: $scope.paginationConf.itemsPerPage
+            };
+            $scope.$watch('paginationConf.currentPage + paginationConf.itemsPerPage',organSearchDemand);
+        };
+        initPage();
+        $scope.organSearch=function () {
+            organSearchDemand();
         };
 
-        $scope.goIndex = function(){
-            $state.go('application');
-        };
+        //
+        // $scope.goPath = function(){
+        //     $state.go('application');
+        // };
+        // $scope.goIndex = function(){
+        //     $state.go('application');
+        // };
 
-
-        $scope.correction = [
-            {label:'保单号码：',classes:'',require:'',inputVal:'',placeholder:''},
-            {label:'投保人名称：',classes:'',require:'*',inputVal:'',placeholder:''},
-            {label:'投保人证件类型：',classes:'',require:'*',inputVal:'',placeholder:''},
-            {label:'投保人证件号码：',classes:'',require:'',inputVal:'',placeholder:''},
-            {label:'批改录入人员姓名：',classes:'',require:'',inputVal:'',placeholder:''},
-            {label:'批改申请号码：',classes:'',require:'',inputVal:'',placeholder:''},
-            {label:'批改申请日（开始）：',classes:'',require:'',inputVal:'',placeholder:''},
-            {label:'批改申请日（结束）：',classes:'',require:'',inputVal:'',placeholder:''},
-            {label:'批改生效日（开始）：',classes:'',require:'',inputVal:'',placeholder:''},
-            {label:'批改生效日（结束）：',classes:'',require:'',inputVal:'',placeholder:''},
-            {label:'销售人员代码：',classes:'',require:'',inputVal:'',placeholder:''},
-            {label:'销售人员姓名/名称：',classes:'',require:'',inputVal:'',placeholder:''},
-            {label:'批单录入人员代码：',classes:'',require:'',inputVal:'',placeholder:''}
-        ];
-
-        $scope.col = 'name';
-        $scope.desc = 0;
-        $scope.data = [
-            {name: '赵老汉',idente:'232321199301081222',adress:'黑龙江省大庆市让胡路区创业城3号楼',amount:'5万',premium:'5000元'},
-            {name: '赵老汉',idente:'232321199301081333',adress:'黑龙江省大庆市让胡路区创业城3号楼',amount:'5万',premium:'5000元'},
-            {name: '赵老汉',idente:'232321199301081111',adress:'黑龙江省大庆市让胡路区创业城3号楼',amount:'5万',premium:'5000元'},
-            {name: '赵老汉',idente:'232321199301081444',adress:'黑龙江省大庆市让胡路区创业城3号楼',amount:'5万',premium:'5000元'},
-            {name: '赵老汉',idente:'232321199301081666',adress:'黑龙江省大庆市让胡路区创业城3号楼',amount:'5万',premium:'5000元'}
-        ];
-        $scope.pendingdata = [
-            {name: '赵老汉',idente:'TE20160010000000001',startDate:'2016-07-18',insurDate:'2016-07-18',premium:'50.00'},
-            {name: '中科软科技股份有限公司',idente:'TE20160010000000001',startDate:'2016-07-18',insurDate:'2016-07-18',premium:'200.00'}
-        ];
-        $scope.correctiondata = [
-            {state:'批改中',name: '赵老汉',idente:'TE20160010000000001',checkNum:'TE20160010000000001',startDate:'2016-07-18',premium:'50.00'},
-            {state:'批改中',name: '中科软科技股份有限公司',idente:'TE20160010000000001',checkNum:'TE20160010000000001',startDate:'2016-07-18',premium:'200.00'}
-        ];
     };
-
     return organizationCtrlHandler;
 });

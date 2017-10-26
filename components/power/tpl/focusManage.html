@@ -42,10 +42,10 @@
             </tr>
             <tr ng-repeat="d in roleDataList|orderBy:col:desc">
                 <td ng-bind="$index+1"></td>
-                <td ng-bind="d.roleName">1</td>
-                <td ng-bind="d.roleDesc">1</td>
-                <td ng-bind="d.startData">1</td>
-                <td ng-bind="d.endData">1</td>
+                <td ng-bind="d.roleName"></td>
+                <td ng-bind="d.roleDesc"></td>
+                <td ng-bind="d.startData"></td>
+                <td ng-bind="d.endData"></td>
                 <td class="t_last">
                     <div class="div_pad">
                         <a href="#" class="a_col" ng-click="modify()">修改</a><span>|</span><a href="#" class="a_col" ng-click="canale()">删除</a>
