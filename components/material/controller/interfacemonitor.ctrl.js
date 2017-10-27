@@ -2,7 +2,7 @@
  */
 define([], function () {
     'use strict';
-    function interfacemonitorCtrlHandler ($scope,$state,$stateParams,interfacemonitorServ) {
+    function interfacemonitorCtrlHandler ($scope,$state,interfacemonitorServ) {
         //----------------------------查询------------------------------------------
         var interSearchWay=function () {
             $scope.condition.pageNum= $scope.paginationConf.currentPage;

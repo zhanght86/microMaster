@@ -29,7 +29,7 @@ define([
             addStafServHandler) {
     'use strict';
     console.log("load business.power module");
-    /*首页-统计图表*/
+    /*首页-权限管理*/
     return angular.module('business.power', [])
         .config(['$stateProvider',
             function ($stateProvider) {

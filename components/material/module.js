@@ -10,12 +10,11 @@ define([
     'components/material/service/timingtask.serv'
 ],function (angular,
             materialCtrlHandler,
-            materialServHandler,
             timingtaskCtrlHandler,
-            timingtaskServHandler,
             interfacemonitorCtrlHandler,
-            interfacemonitorservHandler
-            ) {
+            materialServHandler,
+            timingtaskServHandler,
+            interfacemonitorservHandler) {
     'use strict';
     console.log("load business.material module");
     /*监控管理*/
