@@ -38,8 +38,8 @@
         </ul>
         <div class="pending_btn">
             <div class="pending_btn1">
-                <a  class="a_search" ng-click="JournalSearch()">查询</a>
-                <a href="#" class="a_reset" ng-click="JournalReset()">重置</a>
+                <a  class="a_search" ng-click="meSearch()">查询</a>
+                <a href="#" class="a_reset" ng-click="meReset()">重置</a>
             </div>
         </div>
     </div>
@@ -60,12 +60,12 @@
             </tr>
             <tr ng-repeat="d in metList|orderBy:col:desc">
                 <td ng-bind="$index+1"></td>
-                <td ng-bind="d.timingName"></td>
-                <td ng-bind="d.date"></td>
-                <td ng-bind="d.servName"></td>
-                <td ng-bind="d.InterfaceUrl"></td>
-                <td ng-bind="d.ExceptionType"></td>
-                <td ng-bind="d.ExceptionMs"></td>
+                <td ng-bind="d.me1"></td>
+                <td ng-bind="d.me2"></td>
+                <td ng-bind="d.me3"></td>
+                <td ng-bind="d.me4"></td>
+                <td ng-bind="d.me5"></td>
+                <td ng-bind="d.me6"></td>
             </tr>
         </table>
         <tm-pagination conf="paginationConf"></tm-pagination>

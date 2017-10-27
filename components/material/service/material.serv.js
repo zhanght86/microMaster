@@ -10,7 +10,7 @@ define([], function () {
             var promise  = $http({
                 method:'POST',
                 // method:'GET',
-                url:'data/timingtaskData.json',//http://172.16.30.140:8090/gscore-pa-web
+                url:'data/materialData.json',//http://172.16.30.140:8090/gscore-pa-web
                 data:conditionDto
             });
             promise.then(
