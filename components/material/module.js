@@ -9,12 +9,12 @@ define([
     'components/material/service/material.serv',
     'components/material/service/timingtask.serv'
 ],function (angular,
+            interfacemonitorCtrlHandler,
             materialCtrlHandler,
             timingtaskCtrlHandler,
-            interfacemonitorCtrlHandler,
+            interfacemonitorservHandler,
             materialServHandler,
-            timingtaskServHandler,
-            interfacemonitorservHandler) {
+            timingtaskServHandler) {
     'use strict';
     console.log("load business.material module");
     /*监控管理*/
@@ -22,15 +22,15 @@ define([
         .config(['$stateProvider',
             function ($stateProvider) {
                 $stateProvider
-                    .state("main.material", {
-                        url:"/material",
-                        templateUrl: "components/material/tpl/material.html",
-                        controller: "materialCtrl"
-                    })
                     .state("main.interfacemonitor", {
                         url:"/interfacemonitor",
                         templateUrl: "components/material/tpl/interfacemonitor.html",
                         controller: "interfacemonitorCtrl"
+                    })
+                    .state("main.material", {
+                        url:"/material",
+                        templateUrl: "components/material/tpl/material.html",
+                        controller: "materialCtrl"
                     })
                     .state("main.timingtask", {
                         url:"/timingtask",
@@ -39,10 +39,10 @@ define([
                     });
             }])
         .controller('interfacemonitorCtrl',interfacemonitorCtrlHandler)
-        .controller('timingtaskCtrl',timingtaskCtrlHandler)
         .controller('materialCtrl',materialCtrlHandler)
+        .controller('timingtaskCtrl',timingtaskCtrlHandler)
         .service('interfacemonitorServ',interfacemonitorservHandler)
+        .service('materialServ',materialServHandler)
         .service('timingtaskServ',timingtaskServHandler)
-        .service('materialServ',materialServHandler);
 });
 
