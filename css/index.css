@@ -556,7 +556,7 @@ input[type="radio"]{display: block;margin:0 auto;}
 .bigh6{height:32px;}
 .box_phrase tr td,.box_phrase tr th{height: 28px;padding: 0!important;text-align: center;line-height: 28px;}
 .box_phrase tr:hover td{background-color:#f7f7f7;}
-.thick_service{position: absolute;top: 150px;left: 0;right: 0;width: 700px;margin: auto;background-color: #fff;border: 1px solid #999;border-radius: 3px;overflow: hidden;z-index: 199;box-sizing: border-box;}
+.thick_service{position: absolute;top: 80px;left: 0;right: 0;width: 700px;margin: auto;background-color: #fff;border: 1px solid #999;border-radius: 3px;overflow: hidden;z-index: 199;box-sizing: border-box;}
 .thick_service p{font-size:16px;color:#333;height:22px;}
 .thick_service .feedback_message,.thick_service .service_particulars{padding-top:20px;margin:0 20px;}
 .thick_service .feedback_message p+p{margin-top:15px;}
