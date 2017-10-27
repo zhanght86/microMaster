@@ -1,0 +1,40 @@
+{
+  "count": 50,
+  "items": [{
+    "ygName": "王五",
+    "jobNum": "21465",
+    "staff": "机构1",
+    "friendNum": "88",
+    "thisMoney": "88万",
+    "thisNum": "66",
+    "thisMonry": "100万",
+    "totalMoney": "200万",
+    "totalNum": "666",
+    "totalJx": "300万",
+    "effective": "是"
+  },{
+    "ygName": "王五",
+    "jobNum": "21465",
+    "staff": "机构1",
+    "friendNum": "88",
+    "thisMoney": "88万",
+    "thisNum": "66",
+    "thisMonry": "100万",
+    "totalMoney": "200万",
+    "totalNum": "666",
+    "totalJx": "300万",
+    "effective": "是"
+  },{
+    "ygName": "王五",
+    "jobNum": "21465",
+    "staff": "机构1",
+    "friendNum": "88",
+    "thisMoney": "88万",
+    "thisNum": "66",
+    "thisMonry": "100万",
+    "totalMoney": "200万",
+    "totalNum": "666",
+    "totalJx": "300万",
+    "effective": "是"
+  }]
+}
