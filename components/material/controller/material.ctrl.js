@@ -2,7 +2,7 @@
  */
 define([], function () {
     'use strict';
-    function materialCtrlHandler ($scope,$state,$stateParams,materialServ) {
+    function materialCtrlHandler ($scope,$state,materialServ) {
 
 
         //----------------------------查询------------------------------------------
@@ -28,7 +28,7 @@ define([], function () {
                 }
             );
         };
-        var initPages = function(){
+        var rrrr = function(){
             $scope.paginationConf = {
                 currentPage: 1,
                 totalItems: 0,
@@ -42,7 +42,7 @@ define([], function () {
             };
             $scope.$watch('paginationConf.currentPage + paginationConf.itemsPerPage',JournalSearchDemand);
         };
-        initPages();
+        rrrr();
         $scope.JournalSearch=function () {
             debugger;
             JournalSearchDemand();

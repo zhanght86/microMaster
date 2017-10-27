@@ -36,8 +36,8 @@
         </ul>
         <div class="pending_btn">
             <div class="pending_btn1">
-                <a href="#" class="a_search">查询</a>
-                <a href="#" class="a_reset">重置</a>
+                <a href="#" class="a_search" ng-click="interSearch()">查询</a>
+                <a href="#" class="a_reset" ng-click="interReset()">重置</a>
             </div>
         </div>
     </div>
@@ -56,25 +56,16 @@
                 <th width="8%">异常类型</th>
                 <th>异常原因描述</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>投保查询接口</td>
-                <td>核心</td>
-                <td>2017-07-07 10:30</td>
-                <td>255.255.0.0:90</td>
-                <td>用户管理</td>
-                <td>查询</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>河南省-郑州市-金水区</td>
-                <td>410105</td>
-                <td></td>
-                <td>XXXXXX机构</td>
-                <td>3124324</td>
-                <td>添加角色，删除角色，修改角色</td>
+            <tr ng-repeat="d in interList">
+                <td ng-bind="$index+1"></td>
+                <td ng-bind="d.InterfaceName"></td>
+                <td ng-bind="d.InterfaceServ"></td>
+                <td ng-bind="d.callDate"></td>
+                <td ng-bind="d.InterfaceAddress"></td>
+                <td ng-bind="d.ycType"></td>
+                <td ng-bind="d.ycdec"></td>
             </tr>
         </table>
-        <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
+        <tm-pagination conf="paginationConf"></tm-pagination>
     </div>
 </div>

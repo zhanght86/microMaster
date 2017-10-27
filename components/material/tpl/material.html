@@ -38,7 +38,7 @@
         </ul>
         <div class="pending_btn">
             <div class="pending_btn1">
-                <a href="#" class="a_search" ng-click="JournalSearch()">查询</a>
+                <a  class="a_search" ng-click="JournalSearch()">查询</a>
                 <a href="#" class="a_reset" ng-click="JournalReset()">重置</a>
             </div>
         </div>
@@ -67,24 +67,6 @@
                 <td ng-bind="d.ExceptionType"></td>
                 <td ng-bind="d.ExceptionMs"></td>
             </tr>
-            <!--<tr>-->
-                <!--<td>1</td>-->
-                <!--<td>张某某</td>-->
-                <!--<td>权限管理</td>-->
-                <!--<td>成功</td>-->
-                <!--<td>255.255.0.0</td>-->
-                <!--<td>2013-7-1 09:21:32</td>-->
-                <!--<td>XXXX</td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-                <!--<td>2</td>-->
-                <!--<td>admin</td>-->
-                <!--<td>机构管理</td>-->
-                <!--<td>成功</td>-->
-                <!--<td>255.255.255.255</td>-->
-                <!--<td>2013-7-1 09:24:30</td>-->
-                <!--<td>修改机构，机构代码1039274，机构名称：XXXX</td>-->
-            <!--</tr>-->
         </table>
         <tm-pagination conf="paginationConf"></tm-pagination>
     </div>

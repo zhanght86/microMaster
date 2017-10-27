@@ -1,0 +1,20 @@
+{
+  "count": 50,
+  "items": [{
+    "ID": "01",
+    "InterfaceName": "投保查询接口",
+    "InterfaceServ": "核心",
+    "callDate": "2017-07-07 10:30",
+    "InterfaceAddress": "255.255.0.0:90",
+    "ycType": "用户管理",
+    "ycdec": "查询"
+  },{
+    "ID": "02",
+    "InterfaceName": "投保查询接口",
+    "InterfaceServ": "核心",
+    "callDate": "2017-07-07 10:30",
+    "InterfaceAddress": "255.255.0.0:90",
+    "ycType": "用户管理",
+    "ycdec": "查询"
+  }]
+}

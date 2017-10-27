@@ -18,7 +18,7 @@ define([
             ) {
     'use strict';
     console.log("load business.material module");
-    /*文件资料维护*/
+    /*监控管理*/
     return angular.module('business.material', [])
         .config(['$stateProvider',
             function ($stateProvider) {
