@@ -1,0 +1,34 @@
+{
+  "count": 50,
+  "items": [{
+    "PolicyId": "1",
+    "PolicyNum": "569882366554",
+    "insuranceType": "意外险",
+    "cdStaff": "机构1",
+    "tbName": "张小四",
+    "zfType": "微信支付",
+    "premium": "2000",
+    "startDate": "20170927",
+    "endDate": "20171027"
+  },{
+    "PolicyId": "2",
+    "PolicyNum": "569882366554",
+    "insuranceType": "意外险",
+    "cdStaff": "机构1",
+    "tbName": "张小四",
+    "zfType": "微信支付",
+    "premium": "2000",
+    "startDate": "20170927",
+    "endDate": "20171027"
+  },{
+    "PolicyId": "3",
+    "PolicyNum": "569882366554",
+    "insuranceType": "意外险",
+    "cdStaff": "机构1",
+    "tbName": "张小四",
+    "zfType": "微信支付",
+    "premium": "2000",
+    "startDate": "20170927",
+    "endDate": "20171027"
+  }]
+}

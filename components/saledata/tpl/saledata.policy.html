@@ -42,8 +42,8 @@
         </ul>
         <div class="pending_btn">
             <div class="pending_btn1">
-                <a href="#" class="a_search">查询</a>
-                <a href="#" class="a_reset">重置</a>
+                <a href="#" class="a_search" ng-click="policySearch()">查询</a>
+                <a href="#" class="a_reset" ng-click="policyReset()">重置</a>
             </div>
         </div>
     </div>
@@ -64,28 +64,18 @@
                 <th width="11%">起保日期</th>
                 <th width="11%">投保日期</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>5896646569636</td>
-                <td>车险</td>
-                <td>机构8</td>
-                <td>张三</td>
-                <td>微信</td>
-                <td>800</td>
-                <td>20170926</td>
-                <td>20170930</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>5896646569636</td>
-                <td>车险</td>
-                <td>机构8</td>
-                <td>张三</td>
-                <td>微信</td>
-                <td>800</td>
-                <td>20170926</td>
-                <td>20170930</td>
+            <tr  ng-repeat="d in policyList|orderBy:col:desc">
+                <td ng-bind="$index+1"></td>
+                <td ng-bind="d.PolicyNum"></td>
+                <td ng-bind="d.insuranceType"></td>
+                <td ng-bind="d.cdStaff"></td>
+                <td ng-bind="d.tbName"></td>
+                <td ng-bind="d.zfType"></td>
+                <td ng-bind="d.premium"></td>
+                <td ng-bind="d.startDate"></td>
+                <td ng-bind="d.endDate"></td>
             </tr>
         </table>
+        <tm-pagination conf="bdpaginationConf"></tm-pagination>
     </div>
 </div>
