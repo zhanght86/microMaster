@@ -9,7 +9,7 @@ define([
             messageServHandler) {
     'use strict';
     console.log("load business.message module");
-    /*单证模块*/
+    /*消息管理模块*/
     return angular.module('business.message', [])
         .config(['$stateProvider',
             function ($stateProvider) {

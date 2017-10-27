@@ -3,7 +3,47 @@
  */
 define([], function () {
     'use strict';
-    function messageCtrlHandler($scope,$state) {
+    function messageCtrlHandler($scope,$state,messageServ) {
+        //===========================查询=========================================
+        var mesSearchDemand=function () {
+            $scope.condition.pageNum= $scope.mespaginationConf.currentPage;
+            $scope.condition.pageSize=$scope.mespaginationConf.itemsPerPage;
+            var conditionDto = $scope.condition;
+            if(conditionDto == '' || conditionDto == null){
+            }
+            if($scope.roleName == undefined){
+                $scope.roleName = "";
+            }
+            conditionDto.roleName=$scope.roleName;
+            messageServ.mesSearchserv(conditionDto).then(
+                function(answer){
+                    // $scope.mespaginationConf.totalItems = answer.data.data.total;
+                    // $scope.dataDictionaryListR=answer.data.data.list;
+                    $scope.mespaginationConf.totalItems = answer.data.count;
+                    $scope.messageList=answer.data.items;
+                },function(error){
+                    //cconsole.log(JSON.stringify(error.data));
+                }
+            );
+        };
+        var initPage = function(){
+            $scope.mespaginationConf = {
+                currentPage: 1,
+                totalItems: 0,
+                itemsPerPage: 5,
+                pagesLength: 5,
+                perPageOptions: [5, 10, 15,20]
+            };
+            $scope.condition = {
+                pageNum: $scope.mespaginationConf.currentPage,
+                pageSize: $scope.mespaginationConf.itemsPerPage
+            };
+            $scope.$watch('mespaginationConf.currentPage + mespaginationConf.itemsPerPage',mesSearchDemand);
+        };
+        initPage();
+        $scope.mesSearch=function () {
+            mesSearchDemand();
+        };
         //创建
         $scope.foundnew=function () {
             $scope.layer_found=true;
@@ -24,7 +64,6 @@ define([], function () {
         };
         /*是否*/
         $scope.yesClick1 = function () {
-            debugger
             $scope.yesflag = true;
             $scope.noflag = true;
         };

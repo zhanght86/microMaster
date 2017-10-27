@@ -41,8 +41,8 @@
         </ul>
         <div class="pending_btn">
             <div class="pending_btn1">
-                <a href="#" class="a_search" ng-click="search()">查询</a>
-                <a href="#" class="a_reset">重置</a>
+                <a href="#" class="a_search" ng-click="mesSearch()">查询</a>
+                <a href="#" class="a_reset" ng-click="mesReset()">重置</a>
             </div>
         </div>
     </div>
@@ -65,24 +65,12 @@
                 <th width="16.5%">创建时间</th>
                 <th width="20%">操作</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>标题1</td>
-                <td>娱乐</td>
-                <td>已读</td>
-                <td>20170921</td>
-                <td class="t_last">
-                    <div class="div_pad">
-                        <a href="#" class="a_col" ng-click="see()">查看</a><span>|</span><a href="#" class="a_col" ng-click="modify()">修改</a><span>|</span><a href="#" class="a_col" ng-click="cancle()">删除</a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>标题1</td>
-                <td>娱乐</td>
-                <td>已发布</td>
-                <td>20170921</td>
+            <tr ng-repeat="d in messageList|orderBy:col:desc">
+                <td ng-bind="$index+1"></td>
+                <td ng-bind="d.mesTitle"></td>
+                <td ng-bind="d.mesType"></td>
+                <td ng-bind="d.mesZt"></td>
+                <td ng-bind="d.mesDate"></td>
                 <td class="t_last">
                     <div class="div_pad">
                         <a href="#" class="a_col" ng-click="see()">查看</a><span>|</span><a href="#" class="a_col" ng-click="modify()">修改</a><span>|</span><a href="#" class="a_col" ng-click="cancle()">删除</a>
@@ -90,7 +78,7 @@
                 </td>
             </tr>
         </table>
-        <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
+        <tm-pagination conf="mespaginationConf"></tm-pagination>
     </div>
 
     <!--创建-->

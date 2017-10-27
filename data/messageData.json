@@ -1,0 +1,22 @@
+{
+  "count": 50,
+  "items": [{
+    "ID": "01",
+    "mesTitle": "标题一",
+    "mesType": "娱乐八卦",
+    "mesZt": "已读",
+    "mesDate": "20171027"
+  },{
+    "ID": "01",
+    "mesTitle": "标题二",
+    "mesType": "十九大",
+    "mesZt": "已读",
+    "mesDate": "20171027"
+  },{
+    "ID": "01",
+    "mesTitle": "标题三",
+    "mesType": "世界杯",
+    "mesZt": "已读",
+    "mesDate": "20171027"
+  }]
+}
