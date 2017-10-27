@@ -47,8 +47,8 @@
         </ul>
         <div class="pending_btn">
             <div class="pending_btn1">
-                <a href="#" class="a_search">查询</a>
-                <a href="#" class="a_reset">重置</a>
+                <a href="#" class="a_search" ng-click="appSearch()">查询</a>
+                <a href="#" class="a_reset" ng-click="appReset()">重置</a>
             </div>
         </div>
     </div>
@@ -70,32 +70,20 @@
                 <th width="10%">承保金额</th>
                 <th width="10%">承保笔数</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td class="Downdrag" ng-click="downCustomer()"><a href="#">张三</a></td>
-                <td>15788864576</td>
-                <td>410923199601128888</td>
-                <td>已承保</td>
-                <td>1361874583@qq.com</td>
-                <td>北京市</td>
-                <td>中原</td>
-                <td>10万</td>
-                <td class="Downdrag" ng-click="downPolicy()"><a href="#">8</a></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td class="Downdrag" ng-click="downCustomer()"><a href="#">张三</a></td>
-                <td>15788864576</td>
-                <td>410923199601128888</td>
-                <td>已承保</td>
-                <td>1361874583@qq.com</td>
-                <td>北京市</td>
-                <td>中原</td>
-                <td>10万</td>
-                <td class="Downdrag" ng-click="downPolicy()"><a href="#">8</a></td>
+            <tr ng-repeat="d in appDataList|orderBy:col:desc">
+                <td ng-bind="$index+1"></td>
+                <td ng-bind="d.khName" class="Downdrag" ng-click="downCustomer()"></td>
+                <td ng-bind="d.phone"></td>
+                <td ng-bind="d.idCard"></td>
+                <td ng-bind="d.cbState"></td>
+                <td ng-bind="d.mail"></td>
+                <td ng-bind="d.region"></td>
+                <td ng-bind="d.cbStaff"></td>
+                <td ng-bind="d.cbMoney"></td>
+                <td ng-bind="d.cbNum" class="Downdrag" ng-click="downPolicy()"></td>
             </tr>
         </table>
-        <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
+        <tm-pagination conf="paginationConf"></tm-pagination>
     </div>
 
     <!-- 保单详情-->
