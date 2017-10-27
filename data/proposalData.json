@@ -1,6 +1,7 @@
 {
   "count": 50,
   "items": [{
+    "Id": "1",
     "ygName": "王五",
     "jobNum": "21465",
     "staff": "机构1",
@@ -13,6 +14,7 @@
     "totalJx": "300万",
     "effective": "是"
   },{
+    "Id": "2",
     "ygName": "王五",
     "jobNum": "21465",
     "staff": "机构1",
@@ -25,6 +27,7 @@
     "totalJx": "300万",
     "effective": "是"
   },{
+    "Id": "3",
     "ygName": "王五",
     "jobNum": "21465",
     "staff": "机构1",
