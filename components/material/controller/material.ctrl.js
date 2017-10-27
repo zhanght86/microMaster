@@ -2,21 +2,21 @@
  */
 define([], function () {
     'use strict';
-    function materialCtrl ($scope,$state,$stateParams,materialServ) {
+    function materialCtrlHandler ($scope,$state,$stateParams,materialServ) {
 
 
         //----------------------------查询------------------------------------------
         var JournalSearchDemand=function () {
             debugger
-            // $scope.condition.pageNum= $scope.paginationConf.currentPage;
-            // $scope.condition.pageSize=$scope.paginationConf.itemsPerPage;
+            $scope.condition.pageNum= $scope.paginationConf.currentPage;
+            $scope.condition.pageSize=$scope.paginationConf.itemsPerPage;
             var conditionDto = $scope.condition;
             if(conditionDto == '' || conditionDto == null){
             }
-            if($scope.Journal.describe == undefined){
-                $scope.Journal.describe = "";
+            if($scope.describe == undefined){
+                $scope.describe = "";
             }
-            conditionDto.describe=$scope.Journal.describe;
+            conditionDto.describe=$scope.describe;
             materialServ.materialServdata(conditionDto).then(
                 function(answer){
                     // $scope.paginationConf.totalItems = answer.data.data.total;
@@ -28,21 +28,21 @@ define([], function () {
                 }
             );
         };
-        // var initPages = function(){
-        //     $scope.paginationConf = {
-        //         currentPage: 1,
-        //         totalItems: 0,
-        //         itemsPerPage: 5,
-        //         pagesLength: 5,
-        //         perPageOptions: [5, 10, 15,20]
-        //     };
-        //     $scope.condition = {
-        //         pageNum: $scope.paginationConf.currentPage,
-        //         pageSize: $scope.paginationConf.itemsPerPage
-        //     };
-        //     $scope.$watch('paginationConf.currentPage + paginationConf.itemsPerPage',JournalSearchDemand);
-        // };
-        // initPages();
+        var initPages = function(){
+            $scope.paginationConf = {
+                currentPage: 1,
+                totalItems: 0,
+                itemsPerPage: 5,
+                pagesLength: 5,
+                perPageOptions: [5, 10, 15,20]
+            };
+            $scope.condition = {
+                pageNum: $scope.paginationConf.currentPage,
+                pageSize: $scope.paginationConf.itemsPerPage
+            };
+            $scope.$watch('paginationConf.currentPage + paginationConf.itemsPerPage',JournalSearchDemand);
+        };
+        initPages();
         $scope.JournalSearch=function () {
             debugger;
             JournalSearchDemand();
@@ -50,5 +50,5 @@ define([], function () {
 
 
     };
-    return materialCtrl;
+    return materialCtrlHandler;
 });
