@@ -1,0 +1,13 @@
+<div class=" tree-node-content" ui-tree data-drag-enabled="tree.enabled" data-max-depth="5" data-drag-delay="500">
+    <a class="" ng-if="node.childList && node.childList.length > 0" data-nodrag ng-click="toggle(this)">
+        <span class="glyphicon" ng-class="{'glyphicon-chevron-right1': collapsed,'glyphicon-chevron-down1': !collapsed}"></span>
+    </a>
+    <input type="radio" ng-if="node.aptitName !='资质定义'" ng-class="" name="radioSelect" ng-model="node.checked" ng-click="clickNode(node.aptitId,node.aptitName,node.remark,$parentNodeScope)">
+    <span ng-class="node.functionIcon"></span>
+    <span ng-class="node.aptitIcon"></span>
+    {{node.aptitName}}
+</div>
+<ol ui-tree-nodes="" ng-model="node.childList" ng-class="{'hide': collapsed}">
+    <li ng-repeat="node in node.childList" ui-tree-node ng-include="'templates/FunctionsTree.html'">
+    </li>
+</ol>

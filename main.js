@@ -22,6 +22,8 @@ require.config({
         'jquery-keypad':'lib/jquery.keypad/jquery.keypad.min',
         'jedate': 'lib/angular-jedate/jedate',
         'angular-jeDate': 'lib/angular-jedate/angular-jedate',
+        'angular-ui-tree': 'lib/angular-ui-tree/angular-ui-tree.min',  //机构树插件
+        'fueluxTree':'lib/fuelux/tree.min',
         /*业务模块入口文件*/
         'business': 'components/business.mod'
     },
@@ -56,7 +58,9 @@ require.config({
         'business': {
             'exports': 'business',
             deps: ['angular']
-        }
+        },
+        'angular-ui-tree': ['angular'],
+        'fueluxTree':['jquery','bootstrap'],
     },
     priority: [
         'jquery',

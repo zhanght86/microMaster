@@ -11,6 +11,8 @@ define([
     'ocLazyLoad',
     'business',
     'angular-jeDate',
+    'angular-ui-tree',
+    'fueluxTree',
     ],
     function (angular) {
         'use  strict';
@@ -24,6 +26,7 @@ define([
             'ui.router.state',
             'business',
             'angular-jedate',
+            'ui.tree',
         ]);
 
         app.config([

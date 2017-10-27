@@ -6,7 +6,16 @@
     <div class="contentMargin">
         <div class="fl comLabel">
             <h6>机构列表</h6>
-            <div>机构树插件</div>
+            <!--机构树插件-->
+            <div class="tree_list tree_funmenu aptitTree">
+                <div class="tree_all aptitTreeAll fl">
+                    <div ui-tree data-drag-enabled="tree.enabled" id="tree-roo">
+                        <ol ui-tree-nodes ng-model="copyData">
+                            <li ng-repeat="node in copyData" ui-tree-node ng-include="'templates/FunctionsTree.html'"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="fr comLabel">
             <h6>功能列表</h6>
