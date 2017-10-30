@@ -1,0 +1,22 @@
+{"status":1,
+  "msg":"查询成功",
+  "data":[
+    {"aptitId":"11",
+      "aptitName":"张小三",
+      "aptitDesc":"020001",
+      "List":{
+        "aptitId":"21",
+        "aptitName":"张小三",
+        "aptitDesc":"020001",
+        "List":{
+          "aptitId":"31",
+          "aptitName":"张小三",
+          "aptitDesc":"020001"}
+      }
+    },
+    {"aptitId":"12","aptitName":"张小三","aptitDesc":"020001"},
+    {"aptitId":"13","aptitName":"张小三","aptitDesc":"020001"},
+    {"aptitId":"14","aptitName":"张小三","aptitDesc":"020001"},
+    {"aptitId":"15","aptitName":"张小三","aptitDesc":"020001"}
+  ]
+}
