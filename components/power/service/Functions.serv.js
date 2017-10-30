@@ -11,7 +11,7 @@ define([], function () {
                 var promise  = $http({
                     method:'POST',
                     // method:'GET',
-                    url:'data/FunctionsTreeData.json',//http://172.16.30.140:8090/gscore-pa-web
+                    url:'data/FunctionsTreeData.json',
                     data:conditionDto
                 });
                 promise.then(
