@@ -2,18 +2,15 @@
   "count": 50,
   "items": [{
     "feedType": "评价",
-    "feedState": "待处理",
-    "subDate": "2017-10-27",
-    "describe": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    "feedState": "未处理",
+    "subDate": "2017-10-27"
   },{
     "feedType": "评价",
-    "feedState": "待处理",
-    "subDate": "2017-10-27",
-    "describe": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    "feedState": "未处理",
+    "subDate": "2017-10-27"
   },{
     "feedType": "评价",
-    "feedState": "待处理",
-    "subDate": "2017-10-27",
-    "describe": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    "feedState": "未处理",
+    "subDate": "2017-10-27"
   }]
 }

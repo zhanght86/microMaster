@@ -5,12 +5,15 @@
     <div class="index_list">
         <div class="index_tit"><h6>反馈管理</h6></div>
         <ul class="list_ul">
-
             <li>
-                <span>查询时间范围：</span>
+                <span>反馈类型：</span>
             </li>
             <li>
-                <input type="text"  id="flightData4" jedate="" placeholder="" class="fl date" format="YYYY-MM-DD" ng-model="xxx"/>
+                <select  class="fl" >
+                    <option value ="volvo">--请选择--</option>
+                    <option value ="volvo">001</option>
+                    <option value ="saab">002</option>
+                </select>
             </li>
             <li>
                 <span>反馈状态：</span>
@@ -23,14 +26,16 @@
                 </select>
             </li>
             <li>
-                <span>反馈类型：</span>
+                <span>查询起期：</span>
             </li>
             <li>
-                <select  class="fl" >
-                    <option value ="volvo">--请选择--</option>
-                    <option value ="volvo">001</option>
-                    <option value ="saab">002</option>
-                </select>
+                <input type="text"  id="flightData4" jedate="" placeholder="" class="fl date" format="YYYY-MM-DD" ng-model="xxx"/>
+            </li>
+            <li>
+                <span>查询止期：</span>
+            </li>
+            <li>
+                <input type="text"  id="flightData5" jedate="" placeholder="" class="fl date" format="YYYY-MM-DD" ng-model="xxx"/>
             </li>
         </ul>
         <div class="pending_btn">
@@ -49,14 +54,19 @@
                     <th>反馈类型</th>
                     <th>反馈状态</th>
                     <th>提交时间</th>
-                    <th>描述</th>
+                    <th>操作</th>
                 </tr>
                 <tr ng-repeat="d in feedbackList">
                     <td ng-bind="$index+1"></td>
                     <td ng-bind="d.feedType"></td>
                     <td ng-bind="d.feedState"></td>
                     <td ng-bind="d.subDate"></td>
-                    <td ng-bind="d.describe" ng-click="bigDescribe()" class="Downdrag"><a href=""></a></td>
+                    <td>
+                        <div class="div_pad">
+                            <a href="#" class="a_col" ng-click="bigDescribe()">查看</a>
+                            <span>|</span><a href="#" class="a_col" ng-click="sign()">标记为完成</a>
+                        </div>
+                    </td>
                 </tr>
             </table>
             <tm-pagination conf="paginationConf"></tm-pagination>
