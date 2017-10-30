@@ -17,9 +17,9 @@
           "aptitDesc":"020001"}
       }
     },
-    {"aptitId":"12","aptitIcon":"span_icon","aptitName":"张小三","aptitDesc":"020001"},
-    {"aptitId":"13","aptitIcon":"span_icon","aptitName":"张小三","aptitDesc":"020001"},
-    {"aptitId":"14","aptitIcon":"span_icon","aptitName":"张小三","aptitDesc":"020001"},
-    {"aptitId":"15","aptitIcon":"span_icon","aptitName":"张小三","aptitDesc":"020001"}
+    {"aptitId":"12","aptitIcon":"span_icon_1","aptitName":"张小三","aptitDesc":"020001"},
+    {"aptitId":"13","aptitIcon":"span_icon_1","aptitName":"张小三","aptitDesc":"020001"},
+    {"aptitId":"14","aptitIcon":"span_icon_1","aptitName":"张小三","aptitDesc":"020001"},
+    {"aptitId":"15","aptitIcon":"span_icon_1","aptitName":"张小三","aptitDesc":"020001"}
   ]
 }

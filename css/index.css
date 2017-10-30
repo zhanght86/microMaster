@@ -660,3 +660,4 @@ input[type="radio"]{display: block;margin:0 auto;}
 .tree_orgleft:hover .glyphicon-plus,.tree_orgleft:hover .glyphicon-edit,.tree_orgleft:hover .glyphicon-remove{display:none;}
 
 .span_icon{position:relative;top:2px;width:14px;height:14px;display:inline-block;background:url("../images/floder.png") no-repeat 0 1px;}
+.span_icon_1{width:14px;height:14px;display:inline-block;background:url("../images/floder_1.png") no-repeat;}
