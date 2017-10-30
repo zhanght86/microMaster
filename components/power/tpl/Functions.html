@@ -19,7 +19,16 @@
         </div>
         <div class="fr comLabel">
             <h6>功能列表</h6>
-            <div>功能树插件</div>
+            <!--功能树插件-->
+            <div class="tree_list tree_funmenu aptitTree">
+                <div class="tree_all aptitTreeAll fl">
+                    <div ui-tree data-drag-enabled="tree.enabled" id="tree-roo2">
+                        <ol ui-tree-nodes ng-model="copyData" style="padding-left:22px;">
+                            <li ng-repeat="node in copyData" ui-tree-node ng-include="'templates/FunctionsTree.html'"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
