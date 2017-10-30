@@ -633,3 +633,30 @@ input[type="radio"]{display: block;margin:0 auto;}
 /*20171019  caoruixia  菜单栏样式*/
 .hideScroll{width:213px;overflow:hidden;}
 .simulationScroll{overflow: hidden;width:230px;height:100%;overflow-y: auto;}
+/*20171030 机构树样式*/
+.tree_list .tree_all{width:100%;}
+.tree_funmenu .tree_all,.tree_menuright .tree_all{width:42%;}
+.tree_funmenu .aptitTreeAll{width:80%;}
+.tree_funmenu .radioclass{display:none;}
+.tree_right .radioclass{display:none;}
+.tree_unit{min-height: 229px;}
+.tree_unit_hei{min-height: 428px}
+.tree_unit .radioclass,.tree_unit .glyphicon-remove,.tree_unit .glyphicon-edit,.tree_unit .glyphicon-plus{display:none;}
+.glyphicon-remove{width:17px;height:16px;display:inline-block;background:url(../images/icon_1.png) no-repeat -4px -45px;}
+.glyphicon-edit{width:17px;height:16px;display:inline-block;background:url(../images/icon_1.png) no-repeat -4px -25px;}
+.glyphicon-plus{width:17px;height:16px;display:inline-block;background:url(../images/icon_1.png) no-repeat -4px -5px;}
+.glyphicon-remove,.glyphicon-edit,.glyphicon-plus{display:none;}
+.tree-node-content:hover .glyphicon-remove,.tree-node-content:hover .glyphicon-edit,.tree-node-content:hover .glyphicon-plus{display:inline-block;}
+
+.tree_unit .tree-node-content:hover .glyphicon-remove,.tree_unit .tree-node-content:hover .glyphicon-edit,.tree_unit .tree-node-content:hover .glyphicon-plus{display:none;}
+
+.tree_menuright .glyphicon-remove{display:none}
+.tree_menuright .glyphicon-edit{display:none}
+.tree_menuright .glyphicon-plus{display:none}
+
+.tree_menuright:hover .glyphicon-remove,.tree_menuright:hover .glyphicon-edit,.tree_menuright:hover .glyphicon-plus{display:none}
+
+.tree_org:hover .glyphicon-edit,.tree_org:hover .glyphicon-plus{display:none;}
+.tree_orgleft:hover .glyphicon-plus,.tree_orgleft:hover .glyphicon-edit,.tree_orgleft:hover .glyphicon-remove{display:none;}
+
+.span_icon{position:relative;top:2px;width:14px;height:14px;display:inline-block;background:url("../images/floder.png") no-repeat 0 1px;}

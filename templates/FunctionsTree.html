@@ -1,8 +1,9 @@
-<div class=" tree-node-content" ui-tree data-drag-enabled="tree.enabled" data-max-depth="5" data-drag-delay="500">
+<div class=" tree-node-content" ui-tree data-drag-enabled="tree.enabled" data-max-depth="5" data-drag-delay="500"   style="height:30px;line-height:30px;">
     <a class="" ng-if="node.childList && node.childList.length > 0" data-nodrag ng-click="toggle(this)">
         <span class="glyphicon" ng-class="{'glyphicon-chevron-right1': collapsed,'glyphicon-chevron-down1': !collapsed}"></span>
     </a>
-    <input type="radio" ng-if="node.aptitName !='资质定义'" ng-class="" name="radioSelect" ng-model="node.checked" ng-click="clickNode(node.aptitId,node.aptitName,node.remark,$parentNodeScope)">
+    <input type="radio" ng-if="node.aptitName !='资质定义'" ng-class="" name="radioSelect" ng-model="node.checked" ng-click="clickNode(node.aptitId,node.aptitName,node.remark,$parentNodeScope)"
+    style="display: inline;position: relative;top:2px;">
     <span ng-class="node.functionIcon"></span>
     <span ng-class="node.aptitIcon"></span>
     {{node.aptitName}}

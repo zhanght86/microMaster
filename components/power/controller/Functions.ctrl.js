@@ -315,7 +315,7 @@ define([], function () {
         }
 
         function funMenu(){
-            debugger;
+            // debugger;
             FunctionsServ.getAptitTree().then(
                 function(answer){
                     $scope.copyData = answer.data.data;
