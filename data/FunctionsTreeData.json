@@ -3,7 +3,7 @@
   "data":[
     {"aptitId":"11",
       "aptitIcon":"span_icon",
-      "aptitName":"张小三",
+      "aptitName":"北京市",
       "aptitDesc":"020001",
       "List":{
         "aptitId":"21",
@@ -17,9 +17,9 @@
           "aptitDesc":"020001"}
       }
     },
-    {"aptitId":"12","aptitIcon":"span_icon_1","aptitName":"张小三","aptitDesc":"020001"},
-    {"aptitId":"13","aptitIcon":"span_icon_1","aptitName":"张小三","aptitDesc":"020001"},
-    {"aptitId":"14","aptitIcon":"span_icon_1","aptitName":"张小三","aptitDesc":"020001"},
-    {"aptitId":"15","aptitIcon":"span_icon_1","aptitName":"张小三","aptitDesc":"020001"}
+    {"aptitId":"12","aptitIcon":"span_icon_1","aptitName":"河北省","aptitDesc":"020001"},
+    {"aptitId":"13","aptitIcon":"span_icon_1","aptitName":"天津市","aptitDesc":"020001"},
+    {"aptitId":"14","aptitIcon":"span_icon_1","aptitName":"河南省","aptitDesc":"020001"},
+    {"aptitId":"15","aptitIcon":"span_icon_1","aptitName":"四川省","aptitDesc":"020001"}
   ]
 }
