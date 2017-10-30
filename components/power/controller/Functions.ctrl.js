@@ -15,6 +15,8 @@ define([], function () {
         // };
         //开关触发器
         $scope.toggle = function (scope) {
+            debugger
+            alert(ooo);
             scope.toggle();
         };
         //

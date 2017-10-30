@@ -7,7 +7,6 @@ define([], function () {
 
         //----------------------------查询------------------------------------------
         var JournalSearchDemand=function () {
-            debugger
             $scope.condition.pageNum= $scope.paginationConf.currentPage;
             $scope.condition.pageSize=$scope.paginationConf.itemsPerPage;
             var conditionDto = $scope.condition;
@@ -44,7 +43,6 @@ define([], function () {
         };
         rrrr();
         $scope.JournalSearch=function () {
-            debugger;
             JournalSearchDemand();
         };
 
