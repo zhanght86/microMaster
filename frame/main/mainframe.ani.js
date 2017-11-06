@@ -1,5 +1,4 @@
 /**
- * Created by ZhangJiansen on 2016/9/12.
  */
 define(['app'], function (app) {
     'use strict';

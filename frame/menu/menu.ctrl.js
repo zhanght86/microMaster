@@ -1,5 +1,4 @@
 /**
- * Created by ZhangJiansen on 2016/9/10.
  * 菜单页面控制器
  */
 define(['app','uiRouter',

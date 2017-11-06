@@ -1,5 +1,4 @@
 /**
- * Created by ZhangJiansen on 2016/9/16.
  * 首页控制
  */
 define(['app', 'config'

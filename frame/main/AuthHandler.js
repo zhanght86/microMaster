@@ -1,5 +1,4 @@
 /**
- * Created by ZhangJiansen on 2016/9/15.
  * 授权服务
  */
 define(['app'

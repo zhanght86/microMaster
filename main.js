@@ -1,5 +1,4 @@
 /**
- * Created by ZhangJiansen on 2016/9/10.
  * requireJS入口文件
  */
 require.config({

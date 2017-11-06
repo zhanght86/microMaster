@@ -1,5 +1,4 @@
 /**
- * Created by ZhangJiansen on 2016/9/10.
  * Angular入口模块
  */
 define([

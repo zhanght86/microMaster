@@ -1,5 +1,4 @@
 /**
- * Created by ZhangJiansen on 2016/9/16.
  * 菜单获取服务
  */
 define(['app'], function (app) {

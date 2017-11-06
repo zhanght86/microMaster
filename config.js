@@ -1,5 +1,4 @@
 /**
- * Created by ZhangJiansen on 2016/9/10.
  * 存储全局的常量信息
  */
 var printIp='../';

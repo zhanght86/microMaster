@@ -1,5 +1,4 @@
 /**
- * Created by ZhangJiansen on 2016/9/10.
  * Angular 路由控制
  * 只有主框架的模块才可以在此文件中引入，业务模块请在components/business.mod中定义依赖
  */
